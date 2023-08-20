@@ -42,7 +42,7 @@ form {
 }
 
 .menu {
-    width: 200px;
+    width: 230px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -98,17 +98,19 @@ select {
 
 .atributos-perfil{
     padding: 10px;
+    padding-bottom: 50px;
     width: 330px;
     display: flex;
     justify-content: space-between;
 }
 
-.atributos-perfil h4:hover{
+.atributos-perfil h4:hover, .menu img{
     cursor: pointer;
 }
 
 .atributos-perfil-artes{
-    width: 380px;
+    width: 440px;
+    font-size: 18px;
     display: flex;
     justify-content: space-between;
     border-top: 1px solid rgba(255, 255, 255, 0.411);
