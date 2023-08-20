@@ -6,11 +6,12 @@
 }
 
 body {
-    background-color: rgb(77, 77, 77);
+    background-color: rgb(61, 61, 61);
     color: white;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-/*-------------TOPO---------------*/
+/*----------------TOPO------------------*/
 
 #topo {
     background-color: rgb(12, 12, 12);
@@ -69,37 +70,108 @@ select {
 /*----------------PERFIL------------------*/
 
 #perfil {
-    height: 600px;
+    height: 550px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 .secao-esquerda {
-    width: 150px;
+    width: 280px;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.secao-esquerda div{
+    background-color: black;
+    width: 220px;
+    padding: 20px 10px;
 }
 
 .secao-centro {
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.atributos-perfil, .atributos-perfil-artes{
+.atributos-perfil{
+    padding: 10px;
     width: 330px;
     display: flex;
     justify-content: space-between;
 }
 
-.atributos-perfil-artes {
-    border-top: 1px solid white;
+.atributos-perfil h4:hover{
+    cursor: pointer;
+}
+
+.atributos-perfil-artes{
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.411);
+}
+
+.atributos-perfil-artes h4 {
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.atributos-perfil-artes h4:hover{
+    background-color: rgba(255, 235, 205, 0.514);
+    color: black;
+    cursor: pointer;
+    transition: 400ms;
 }
 
 .secao-centro img {
+    width: 300px;
+    border: 5px solid white;
+    border-radius: 100%;
+}
+
+.secao-direita  {
+    padding: 20px 0;
     width: 280px;
 }
 
-.secao-direita {
-    
+.inspiracoes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
+
+.inspiracoes div {
+    background-color: black;
+    font-size: 1.2rem;
+    padding: 15px;
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+    border-radius: 15px;
+}
+
+.inspiracoes div img{
+    height: 40px;
+    border-radius: 100%;
+}
+
+/*-------------ARTES DO PERFIL---------------*/
+
+#artes-perfil {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+#artes-perfil img {
+    width: 430px;
+}
+
+/*------------------RODAPÉ-------------------*/
