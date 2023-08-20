@@ -1,0 +1,104 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(77, 77, 77);
+    color: white;
+}
+
+/*-------------TOPO---------------*/
+
+#topo {
+    background-color: rgb(12, 12, 12);
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.barra-pesquisa {
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-pesquisa {
+    background-color: #f7f7f7;
+    padding: 3px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.menu {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+	border: none;
+	background-color: #f7f7f7;
+    padding: 10px;
+	width: 400px;
+    height: 25px;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: #333333;
+	border-radius: 35px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*----------------PERFIL------------------*/
+
+#perfil {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secao-esquerda {
+    width: 150px;
+}
+
+.secao-centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.atributos-perfil, .atributos-perfil-artes{
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.atributos-perfil-artes {
+    border-top: 1px solid white;
+}
+
+.secao-centro img {
+    width: 280px;
+}
+
+.secao-direita {
+    
+}
