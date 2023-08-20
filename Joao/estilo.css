@@ -88,6 +88,22 @@ select {
     padding: 20px 10px;
 }
 
+.secao-esquerda button {
+    background: linear-gradient(#00DF95,#0020AB);
+    font-size: .8rem;
+    padding-bottom: 5px;
+    width: 50px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 15px;
+    letter-spacing: 2px;
+}
+
+.secao-esquerda button:hover {
+    cursor: pointer;
+}
+
 .secao-centro {
     padding: 20px 0;
     display: flex;
@@ -121,8 +137,15 @@ select {
     border-radius: 15px;
 }
 
+.atributos-perfil-artes span {
+    background-color: red;
+    color: black;
+    width: 100px;
+    border-radius: 100%;
+}
+
 .atributos-perfil-artes h4:hover{
-    background-color: rgba(255, 235, 205, 0.514);
+    background-color: white;
     color: black;
     cursor: pointer;
     transition: 400ms;
@@ -177,3 +200,52 @@ select {
 }
 
 /*------------------RODAPÉ-------------------*/
+
+#rodapé {
+    background-color: black;
+    font-size: 12px;
+    margin-top: 20vh;
+    padding: 30px 40px;
+    height: 40vh;
+    display: flex;
+    column-gap: 10%;
+}
+
+.parte1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parte1 div {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.parte1 img {
+    width: 70px;
+    border-radius: 100%;
+}
+
+.parte2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.parte2 div{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.parte2 img{
+    width: 30px;
+    border-radius: 100%;
+}
+
