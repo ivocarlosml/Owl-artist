@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,18 +5,27 @@
 }
 
 body {
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(22, 22, 22);
     color: white;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #666565;
 }
 
 /*----------------TOPO------------------*/
 
 #topo {
-    background-color: rgb(12, 12, 12);
+    position: fixed;
+    background-color:#000000;
     padding: 0 20px;
     width: 100%;
-    height: 50px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +37,7 @@ form {
 }
 
 .barra-pesquisa {
-    width: 460px;
+    width: 490px;
     display: flex;
     justify-content: space-between;
 }
@@ -41,13 +49,6 @@ form {
     border-radius: 100%;
 }
 
-.menu {
-    width: 230px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -55,23 +56,31 @@ input[type="number"],
 input[type="date"],
 textarea,
 select {
-	border: none;
-	background-color: #f7f7f7;
+    border: none;
+    background-color: #f7f7f7;
     padding: 10px;
-	width: 400px;
-    height: 25px;
-	font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
-	color: #333333;
-	border-radius: 35px;
+    width: 440px;
+    height: 30px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    border-radius: 35px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*----------------PERFIL------------------*/
 
 #perfil {
-    height: 550px;
+    height: 620px;
     padding: 20px;
+    padding-top: 90px;
     display: flex;
     justify-content: space-between;
 }
@@ -82,14 +91,14 @@ select {
     font-size: 14px;
 }
 
-.secao-esquerda div{
+.secao-esquerda div {
     background-color: black;
     width: 220px;
     padding: 20px 10px;
 }
 
 .secao-esquerda button {
-    background: linear-gradient(#00DF95,#0020AB);
+    background: linear-gradient(#00DF95, #0020AB);
     font-size: .8rem;
     padding-bottom: 5px;
     width: 50px;
@@ -112,7 +121,7 @@ select {
     align-items: center;
 }
 
-.atributos-perfil{
+.atributos-perfil {
     padding: 10px;
     padding-bottom: 50px;
     width: 330px;
@@ -120,11 +129,12 @@ select {
     justify-content: space-between;
 }
 
-.atributos-perfil h4:hover, .menu img{
+.atributos-perfil h4:hover,
+.menu img {
     cursor: pointer;
 }
 
-.atributos-perfil-artes{
+.atributos-perfil-artes {
     width: 440px;
     font-size: 18px;
     display: flex;
@@ -135,16 +145,24 @@ select {
 .atributos-perfil-artes h4 {
     padding: 5px;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
 }
 
-.atributos-perfil-artes span {
+.atributos-perfil-artes h4 div {
     background-color: red;
     color: black;
-    width: 100px;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 100%;
 }
 
-.atributos-perfil-artes h4:hover{
+.atributos-perfil-artes h4:hover {
     background-color: white;
     color: black;
     cursor: pointer;
@@ -157,7 +175,7 @@ select {
     border-radius: 100%;
 }
 
-.secao-direita  {
+.secao-direita {
     padding: 20px 0;
     width: 280px;
 }
@@ -180,7 +198,7 @@ select {
     border-radius: 15px;
 }
 
-.inspiracoes div img{
+.inspiracoes div img {
     height: 40px;
     border-radius: 100%;
 }
@@ -189,14 +207,112 @@ select {
 
 #artes-perfil {
     padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 10px;
+    display: grid;
+    width: 100%;
+    height: 1700px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(13, 100px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
 }
 
-#artes-perfil img {
-    width: 430px;
+.imagem1 {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 1/5;
+}
+
+.imagem2 {
+    width: 100%;
+    height: 100%;
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+
+.imagem3 {
+    width: 100%;
+    height: 100%;
+    grid-column: 5/7;
+    grid-row: 1/4;
+}
+
+.imagem4 {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 5/7;
+}
+
+.imagem5 {
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 5/8;
+}
+
+.imagem6 {
+    width: 100%;
+    height: 100%;
+    grid-column: 3/5;
+    grid-row: 3/7;
+}
+
+.imagem7 {
+    width: 100%;
+    height: 100%;
+    grid-column: 5/7;
+    grid-row: 4/7;
+}
+
+.imagem8 {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 7/10;
+}
+
+.imagem9 {
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 8/10;
+}
+
+.imagem10 {
+    width: 100%;
+    height: 100%;
+    grid-column: 3/6;
+    grid-row: 7/10;
+}
+
+.imagem11 {
+    width: 100%;
+    height: 100%;
+    grid-column: 6/7;
+    grid-row: 7/10;
+}
+
+.imagem12 {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 10/13;
+}
+
+.imagem13 {
+    width: 100%;
+    height: 100%;
+    grid-column: 4/5;
+    grid-row: 10/13;
+}
+
+.imagem14 {
+    width: 100%;
+    height: 100%;
+    grid-column: 5/7;
+    grid-row:10/13;
 }
 
 /*------------------RODAPÉ-------------------*/
@@ -236,7 +352,7 @@ select {
     justify-content: space-between;
 }
 
-.parte2 div{
+.parte2 div {
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -244,8 +360,7 @@ select {
     column-gap: 15px;
 }
 
-.parte2 img{
+.parte2 img {
     width: 30px;
     border-radius: 100%;
 }
-
