@@ -1,0 +1,251 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*----------------TOPO------------------*/
+
+#topo {
+    background-color: rgb(12, 12, 12);
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.barra-pesquisa {
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-pesquisa {
+    background-color: #f7f7f7;
+    padding: 3px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.menu {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+textarea,
+select {
+	border: none;
+	background-color: #f7f7f7;
+    padding: 10px;
+	width: 400px;
+    height: 25px;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: #333333;
+	border-radius: 35px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*----------------PERFIL------------------*/
+
+#perfil {
+    height: 550px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secao-esquerda {
+    width: 280px;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.secao-esquerda div{
+    background-color: black;
+    width: 220px;
+    padding: 20px 10px;
+}
+
+.secao-esquerda button {
+    background: linear-gradient(#00DF95,#0020AB);
+    font-size: .8rem;
+    padding-bottom: 5px;
+    width: 50px;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    border-radius: 15px;
+    letter-spacing: 2px;
+}
+
+.secao-esquerda button:hover {
+    cursor: pointer;
+}
+
+.secao-centro {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.atributos-perfil{
+    padding: 10px;
+    padding-bottom: 50px;
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.atributos-perfil h4:hover, .menu img{
+    cursor: pointer;
+}
+
+.atributos-perfil-artes{
+    width: 440px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.411);
+}
+
+.atributos-perfil-artes h4 {
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.atributos-perfil-artes span {
+    background-color: red;
+    color: black;
+    width: 100px;
+    border-radius: 100%;
+}
+
+.atributos-perfil-artes h4:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.secao-centro img {
+    width: 300px;
+    border: 5px solid white;
+    border-radius: 100%;
+}
+
+.secao-direita  {
+    padding: 20px 0;
+    width: 280px;
+}
+
+.inspiracoes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.inspiracoes div {
+    background-color: black;
+    font-size: 1.2rem;
+    padding: 15px;
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+    border-radius: 15px;
+}
+
+.inspiracoes div img{
+    height: 40px;
+    border-radius: 100%;
+}
+
+/*-------------ARTES DO PERFIL---------------*/
+
+#artes-perfil {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+#artes-perfil img {
+    width: 430px;
+}
+
+/*------------------RODAPÉ-------------------*/
+
+#rodapé {
+    background-color: black;
+    font-size: 12px;
+    margin-top: 20vh;
+    padding: 30px 40px;
+    height: 40vh;
+    display: flex;
+    column-gap: 10%;
+}
+
+.parte1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parte1 div {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.parte1 img {
+    width: 70px;
+    border-radius: 100%;
+}
+
+.parte2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.parte2 div{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.parte2 img{
+    width: 30px;
+    border-radius: 100%;
+}
+
