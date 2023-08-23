@@ -1,5 +1,6 @@
 /* Estilos globais */
 body {
+    
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -212,21 +213,23 @@ main{
 
 }
 footer{
-    padding-top: 50px;
+
     display: flex;
-    margin-top: 250px;
+    margin-top: 400px;
     width: 100%;
-    height: 450px;
+    height: 500px;
     background-color: #000000;
-    justify-content:space-evenly ;
+    justify-content:space-between ;
     box-shadow: 0px -55px 150px rgba(0, 0, 0, 0.9)
 }
 .contato{
-    
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
+    height: 200px;
 }
 #containerDeapoio{
+    position: relative;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -241,20 +244,23 @@ footer{
     margin-bottom: 15px;
 }
 .detalhesFooter{
+    margin-left:50px;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .detalhesFooter h3{
     margin-top: 0;
     padding: 2px;
     margin-bottom: 0;
     color:#fff;    
-    font-size: 20px;
+    font-size: 27px;
 }
 .topo{
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
+    
 
 }
 footer span{
@@ -461,4 +467,12 @@ margin-top: 30px;
 }
 .apoioLateral span{
     margin-bottom: 50px;
+}
+
+#triangulo-para-direita{
+    width: 600px;
+    height: 499px;
+position: relative;
+left: 0;
+
 }
