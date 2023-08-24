@@ -372,11 +372,6 @@ select {
 /*-----------MEDIA SCREEN-------------*/
 
 @media screen and (max-width: 680px) {
-
-    #container {
-        background-color: #251919;
-    }
-
     #topo {
         flex-wrap: wrap;
     }
@@ -399,5 +394,4 @@ select {
         border-radius: 35px;
         box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
     }
-
 }
