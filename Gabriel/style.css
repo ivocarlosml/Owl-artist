@@ -20,7 +20,15 @@ header {
     z-index: +2;
     
 }
+.detalhesPerfil{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
 
+}
+#nome{
+    font-size: 20px;
+}
 ::-webkit-scrollbar{
     background-color: #000000;
 }
@@ -224,6 +232,7 @@ footer{
 }
 .contato{
     margin-top: 50px;
+    margin-left: 100px;
     display: flex;
     flex-direction: column;
     height: 200px;
@@ -237,24 +246,24 @@ footer{
 }
 
 .logoOwl{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius:50%;
     object-fit: cover;
     margin-bottom: 15px;
 }
 .detalhesFooter{
-    margin-left:50px;
+    margin-left:200px;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 .detalhesFooter h3{
     margin-top: 0;
-    padding: 2px;
+    padding: 10px;
     margin-bottom: 0;
     color:#fff;    
-    font-size: 27px;
+    font-size: 20px;
 }
 .topo{
     margin-top: 50px;
@@ -465,8 +474,15 @@ margin-top: 30px;
     object-fit: cover;
 
 }
+.apoioLateral{
+    display: flex;
+    margin-bottom: 30px;
+}
+
 .apoioLateral span{
     margin-bottom: 50px;
+    margin-left: 50px;
+
 }
 
 #triangulo-para-direita{
@@ -475,4 +491,10 @@ margin-top: 30px;
 position: relative;
 left: 0;
 
+}
+#emailLogo{
+    margin-left: 14px;
+    height: 50px;
+    width:50px;
+    border-radius: 0;
 }
