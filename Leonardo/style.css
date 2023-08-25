@@ -53,7 +53,7 @@ body{
 }
 
 .content-box .formulario h2{
- 	color:black; 
+    color:black; 
     font-weight: 600;
     font-size: 2em;
     text-transform: uppercase;
@@ -66,10 +66,10 @@ body{
 }
 
 .content-box .formulario .input-box input{
- 	 width: 100%;
+     width: 100%;
      padding: 10px;
-  	 outline: none;
-  	 font-weight: 400;
+     outline: none;
+     font-weight: 400;
      border: none;
      font-size: 17px;
      color: #32324f;
@@ -78,7 +78,7 @@ body{
 }
 
 .content-box .formulario .input-box span{
- 	 font-size: 16px;
+     font-size: 16px;
      margin-bottom: 5px;
      display:inline-block;
      color: #32324f;
@@ -91,7 +91,7 @@ body{
 }
 
 .content-box .formulario .input-box input[type=submit]{
- 	background: #4aa4ee;
+    background: #4aa4ee;
     color:#fff;
     outline: none;
     border: none;
@@ -106,8 +106,8 @@ body{
 }
 
 .content-box .formulario .remember{
- 	 margin-bottom: 20px;
-  	 color: #32324f;
+     margin-bottom: 20px;
+     color: #32324f;
      font-weight: 400;
      font-size: 14p#4169E1x;
      cursor: pointer;
@@ -117,7 +117,7 @@ body{
 }
 
 .content-box .formulario .remember a{
- 	text-decoration: none; 
+    text-decoration: none; 
     color: #4aa4ee;
 }
 
@@ -134,7 +134,7 @@ body{
 }
 
 .content-box .formulario .input-box p a:hover{
-	color: #3286ca;
+	 color: #3286ca;
 }
 
 .content-box .formulario h3{
