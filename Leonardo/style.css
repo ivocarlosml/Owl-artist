@@ -87,7 +87,7 @@ body{
 }
 
 .content-box .formulario .input-box input::placeholder{
- 	color: #9adb6;
+ 	color: #9adb;
 }
 
 .content-box .formulario .input-box input[type=submit]{
@@ -109,7 +109,7 @@ body{
      margin-bottom: 20px;
      color: #32324f;
      font-weight: 400;
-     font-size: 14p#4169E1x;
+     font-size: 14px #4169E1;
      cursor: pointer;
      display:flex;
      justify-content: space-between;
@@ -126,7 +126,7 @@ body{
 }
 
 .content-box .formulario .input-box p{
- 	 color: #323224f;
+ 	 color: #323224;
 }
 
 .content-box .formulario .input-box p a{
