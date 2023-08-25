@@ -1,0 +1,20 @@
+.trasintionSuave{
+    position: relative !important;
+    transition:  all ease-in-out 0.5s;
+    
+    animation: infinite 0.9;
+}
+.imagem1:hover>.conteudo{
+   
+    animation-name: trasitionColor;
+}
+@keyframes trasitionColor {
+    from{
+    
+        background: linear-gradient(90deg, #000000, #0020ab);
+    }
+    to{
+       object-fit: fill; 
+        background: linear-gradient(180deg, #1e09ff, #ab007d);
+    }
+}

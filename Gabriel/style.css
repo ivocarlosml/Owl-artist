@@ -20,6 +20,9 @@ header {
     z-index: +2;
     
 }
+a{
+    text-decoration: none;
+}
 .detalhesPerfil{
     display: flex;
     flex-direction: column;
@@ -61,6 +64,7 @@ header {
 
 /* Estilos para a barra de pesquisa */
 .search-bar input {
+    
     margin-left: 10px;
     border: none;
     border-radius: 20px;
@@ -131,6 +135,7 @@ main{
   grid-row-gap: 15px;
 
 }
+
 .conteudo{
     display: flex;
     align-items: center;
@@ -138,9 +143,25 @@ main{
     background: linear-gradient(90deg, #000000, #0020ab);
     width: 100%;
     height: 100%;
+
+    transition: 1s ease-in-out;
+    animation:  3s  ease-in-out ;
+}
+.usuarioIndentificador{
+    margin-top: 10px;
+    display: flex;
+}
+.usuarioIndentificador span{
+    margin-left: 10px;
+    margin-top:25px ;
+    height: 100%;
 }
 .fotoMin{
     margin-top: 10px;
+    border-radius: 50px;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
 }
 .detalhes{
     width: 400px;

@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Exemplo de Cabeçalho</title>
+    <link rel="stylesheet" href="efects.css">
+    <title>OWl - Artes</title>
 </head>
-<body>
+<body >
     <header>
-        <div id="divisor">
+        <div class="trasintionSuave"id="divisor">
         <div class="user-profile">
             <img classe ="iconInicial"src="download.jpg" alt="Perfil do Usuário">
             <div class="detalhesPerfil">
@@ -29,13 +30,13 @@
         </div>
         
     </header>
-    <div class="image-container">
+    <div  class="image-container trasintionSuave">
         <img id="postP"src="R.jpg" alt="Imagem de Fundo">
         <div id="description" class="image-description">
             Sua descrição aqui
         </div>
     </div>
-    <main>
+    <main class="">
         <div class="imagem1">
             <div class="conteudo"style="overflow-y:scroll"  >
                 <h1>O<h1></h1>
@@ -50,7 +51,11 @@
                        
                        
                     </div>
-                    <img class="fotoMin" alt="publiUser" srcset="">
+                    <div class="usuarioIndentificador">
+                        <img src="download.jpg" class="fotoMin" alt="publiUser" srcset="">
+                        <span>Isabela Campos</span>
+                    </div>
+                    
                 </div>
                 
             </div>
@@ -101,7 +106,10 @@
                        
                        
                     </div>
-                    <img class="fotoMin" alt="publiUser" srcset="">
+                    <div class="usuarioIndentificador">
+                        <img src="download.jpg" class="fotoMin" alt="publiUser" srcset="">
+                        <span>Isabela Campos</span>
+                    </div>
                 </div>
                 
             </div>
@@ -136,7 +144,10 @@
                        
                        
                     </div>
-                    <img class="fotoMin" alt="publiUser" srcset="">
+                    <div class="usuarioIndentificador">
+                        <img src="download.jpg" class="fotoMin" alt="publiUser" srcset="">
+                        <span>Isabela Campos</span>
+                    </div>
                 </div>
                 
             </div>
@@ -157,7 +168,10 @@
                        
                        
                     </div>
-                    <img class="fotoMin" alt="publiUser" srcset="">
+                    <div class="usuarioIndentificador">
+                        <img src="download.jpg" class="fotoMin" alt="publiUser" srcset="">
+                        <span>Isabela Campos</span>
+                    </div>
                 </div>
                 
             </div>
@@ -197,18 +211,24 @@
         <h3>Leonardo</h3>
     </div>
     <div class="contato">
+        <a href="#">
         <div class="apoioLateral">
             <img alt="" src="instaLogo.png"class="logoOwl">
         <span>Instagram</span>
         </div>
+        </a>
+        <a href="#">
         <div class="apoioLateral">
             <img alt="" src="githubLogo.png"class="logoOwl">
         <span>Github</span>
         </div>
+        </a>
+        <a href="#">
         <div class="apoioLateral">
             <img id="emailLogo"alt="" src="emailLogo.png"class="logoOwl">
         <span>Email</span>
         </div>
+        </a>
         
     </div>
     <img src="detalheLateralFooter.png" id="triangulo-para-direita">
