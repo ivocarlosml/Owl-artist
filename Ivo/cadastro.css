@@ -12,47 +12,60 @@ body {
   min-height: 100vh;
   justify-content: space-around;
 }
-header {
+/* ESTILOS DO TOPO */ 
+#topo {
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   background-color: #000000;
   display: flex;
-  justify-content: start;
-  margin-bottom:1.25rem;
+  margin-bottom:2rem;
+  justify-content: space-around;
+  align-items: center;
 }
-.topo {
-  width: 100%;
-  height:15vh;
+.barra-pesquisa{
+  margin-right:2rem;
+  width: 90%;
   display: flex;
-  background-color: #1e9ef4;
-  margin: 0 auto;
+  justify-content: start;
+  align-items: center;
 }
-.topo img {
-  width: 30px;
-  height: 30px;
+.bg-pesquisa {
+  padding: 0.2rem;
+  height: auto;
+  width: 5%;
 }
-.topo form {
-  width: 60%;
-
-}
-.topo input {
-  width: 100%;
-  height: 4vh;
+.bg-pesquisa img{
   border-radius: 20px;
 }
+.timg {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+.barra-pesquisa form {
+  width: 90%;
+  justify-content: center;
+}
+.barra-pesquisa input {
+  width: 100%;
+  height: 5vh;
+  border-radius: 15px;
+  padding-left: 30px;
+}
+/*        ÁREA DE CADASTRO   */
+
 .container-cadastro {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 35%;
+  width: 45%;
   padding: 20px;
   box-sizing: border-box;
   min-height: 100vh;
   border-radius: 2rem;
 }
-.container img {
+.logocad {
   max-width: 100px;
   max-height: 100px;
   border-radius: 50px;
@@ -61,6 +74,29 @@ header {
 .container-cadastro h1 {
   text-align: center;
   font-size: 2rem;
+}
+.redes{
+  display: flex;
+  width: 100%;
+  justify-content:center;
+  align-items:center;
+}
+.redes img{
+    width: 30px;
+    height:40px;
+    border-radius: 20px;
+}
+.gg{
+  width: 30%;
+  height:40px;
+  background-color: #000000;
+  margin-right: 2rem;
+}
+.ff{
+  width: 30%;
+  height:40px;
+  background-color: #0239B0;
+  padding-left:1rem;
 }
 .container-cadastro form {
   display: flex;
@@ -85,39 +121,48 @@ header {
 .termos label{
     font-size: 0.8rem;
     font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
-@media screen and (max-width: 768px) {
-  .container-cadastro {
-    width: 80%;
-    background-color: #001449;
-  }
-}
+
 button {
+    color:#fff;
+    font-size: 1.2rem;
     width: 50%;
-    height: 8vh;
+    height: 9vh;
     border-radius: 30px;
     margin:2rem auto 1rem auto;
      background: linear-gradient(90deg, #1e9ef4 0%, #022677 50%, #001449 100%);
+     border-color:none;
   }
+  hr{
+    background-color: #000000;
+    width: 100%;
+    height:4px;
+  }
+/*        ESTILO DO RODAPÉ            */
 
   footer {
     display: flex;
     margin-top: 5rem;
-    height: 70vh;
     width: 100%;
     background-color: #000000;
     color: #fff;
     justify-content: space-between;
     box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.9);
   }
-  
+  .topo-footer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+
+}
   .contato {
     display: flex;
     flex-direction: column;
-    height: 200px;
-    padding-top: 20px;
+    height:30vh;
+    padding-top:3rem;
+    width:30%;
   }
-  
   #containerDeapoio {
     position: relative;
     display: flex;
@@ -130,8 +175,7 @@ button {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
+    object-fit: cover;  
   }
   
   .detalhesFooter {
@@ -139,6 +183,8 @@ button {
     flex-direction: column;
     height: 100%;
     margin-left: 20px;
+    margin-top: 20px;
+    width: 25%;
   }
   
   .detalhesFooter h3 {
@@ -147,14 +193,38 @@ button {
     color: #fff;
     font-size: 20px;
   }
-  
-  .topo {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  .detalhesFooter span{
+    margin-bottom: 10px;
   }
-  
+  .apoioLateral{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.apoioLateral span{
+    margin-bottom: 50px;
+    margin-left: 50px;
+
+}
+.img-lateral{
+  width: 40%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+#triangulo-para-direita{
+    width: 80%;
+    height: 300px;
+    left: 0;
+}
+#emailLogo{
+    margin-left: 14px;
+    height: 50px;
+    width:50px;
+    border-radius: 0;
+}
   footer span {
     margin-top: 30px;
     margin-left: 10px;
@@ -162,29 +232,24 @@ button {
     width: 80px;
     color: #fff;
   }
-  
 
 
+  @media screen and (max-width: 768px) {
+    body{
+      background: linear-gradient(90deg, #1e9ef4 0%, #022677 50%, #001449 100%);
+    }
+    #topo{
+      display: none;
+    }
+    .container-cadastro {
+      margin: 3rem;
+      width: 90%;
+    }
+    button {
+      font-size: 0.8rem;
+    }
+    footer{
+      display:none;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-  /*
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #000000;
-  color: #fff;
-  height: 20vh;
-  width: 100%;
-  margin-top: 5rem;
-}*/
+  }
