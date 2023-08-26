@@ -6,7 +6,7 @@
 }
 
 body{
- background-color:#F0FFFF; 
+ background-color:#2F4F4F; 
 }
 
 .content-box{   
@@ -65,7 +65,7 @@ body{
  	margin-bottom:20px;
 }
 
-.content-box .formulario .input-box input{
+header .content-box .formulario .input-box input{
      width: 100%;
      padding: 10px;
      outline: none;
@@ -73,7 +73,7 @@ body{
      border: none;
      font-size: 17px;
      color: #32324f;
-     background-color: #ecf2f7;
+     background-color:#708090;
      border-radius:5px;
 }
 
@@ -87,11 +87,11 @@ body{
 }
 
 .content-box .formulario .input-box input::placeholder{
- 	color: #9adb;
+ 	color: black;
 }
 
 .content-box .formulario .input-box input[type=submit]{
-    background: #4aa4ee;
+    background: #00008B;
     color:#fff;
     outline: none;
     border: none;
@@ -161,4 +161,9 @@ body{
  	margin: 30px 0 10px;
 }
 
-
+.content-box .formulario .input-box{
+  background-color:#2F4F4F; 
+  padding:10px;
+  margin:25px;
+}
+          
