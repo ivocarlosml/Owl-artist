@@ -6,7 +6,11 @@
 }
 
 body{
- background-color:#2F4F4F; 
+ background-color:black; 
+}
+
+.content-box h2{
+    color:white;
 }
 
 .content-box{   
@@ -165,5 +169,6 @@ header .content-box .formulario .input-box input{
   background-color:#2F4F4F; 
   padding:10px;
   margin:25px;
+  background-color:black;
 }
           
