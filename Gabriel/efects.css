@@ -6,15 +6,32 @@
 }
 .imagem1:hover>.conteudo{
    
-    animation-name: trasitionColor;
+    background: linear-gradient(180deg, #1e09ff, #ab007d);
 }
-@keyframes trasitionColor {
-    from{
+
+.imagem2:hover{
+    object-fit: contain;
+}
+.imagem3:hover{
+    object-fit: contain;
+}
+.imagem4:hover{
+    object-fit: contain;
+}
+.imagem5:hover{
+    object-fit: contain;
+}
+.imagem6:hover{
+    object-fit: contain;
+}
+.imagem7:hover{
+    object-fit: contain;
     
-        background: linear-gradient(90deg, #000000, #0020ab);
-    }
-    to{
-       object-fit: fill; 
-        background: linear-gradient(180deg, #1e09ff, #ab007d);
-    }
+}
+.imagem8:hover{
+    
+    object-fit: contain; 
+}
+.imagem9:hover{
+    object-fit: contain;
 }
