@@ -7,7 +7,7 @@
 </head>
 <body>
     <header>
-        <h1>OWL</h1>
+        <h1>OWL 🦉🎨✨</h1>
         <h2>"A nossa arte é compartilhar a sua!"</h2>
     </header>
     <div>
