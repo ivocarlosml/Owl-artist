@@ -4,12 +4,26 @@
     
     animation: infinite 0.9;
 }
-.imagem1:hover>.conteudo{
+.conteudo:hover{
    
-    background: linear-gradient(180deg, #1e09ff, #ab007d);
+    background: linear-gradient(90deg, #1e09ff, #ab007d);
 }
-
+#postP{
+    transition: transform 2s ease-in-out ;
+}
+.opacityAnimation{
+    animation: opacidade 2s ease-in-out  ;
+}
+@keyframes opacidade {
+    0%{
+        opacity: 1;
+    }100%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+}
 .imagem2:hover{
+    transition:  all ease-in-out 0.5s;
     object-fit: contain;
 }
 .imagem3:hover{
