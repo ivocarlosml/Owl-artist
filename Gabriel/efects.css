@@ -7,12 +7,19 @@
 .conteudo:hover{
    
     background: linear-gradient(90deg, #1e09ff, #ab007d);
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    width: 110%;
+    height: 110%;
 }
 #postP{
     transition: transform 2s ease-in-out ;
 }
 .opacityAnimation{
-    animation: opacidade 2s ease-in-out  ;
+    animation: opacidade 2s ease-in-out;
 }
 @keyframes opacidade {
     0%{
@@ -22,30 +29,86 @@
         transform: translateX(-100px);
     }
 }
+
 .imagem2:hover{
-    transition:  all ease-in-out 0.5s;
-    object-fit: contain;
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    width: 110%;
+    height: 110%;
 }
 .imagem3:hover{
-    object-fit: contain;
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    width: 110%;
+    height: 110%;
 }
 .imagem4:hover{
-    object-fit: contain;
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    width: 110%;
+    height: 110%;
 }
 .imagem5:hover{
-    object-fit: contain;
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    width: 110%;
+    height: 110%;
 }
 .imagem6:hover{
-    object-fit: contain;
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    width: 110%;
+    height: 110%;
 }
 .imagem7:hover{
-    object-fit: contain;
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    width: 110%;
+    height: 110%;
     
 }
 .imagem8:hover{
-    
-    object-fit: contain; 
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -20px;
+    width: 110%;
+    height: 110%; 
 }
 .imagem9:hover{
-    object-fit: contain;
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -300px;
+    width: 110%;
+    height: 110%;
+}
+.imagem10:hover{
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -300px;
+    width: 110%;
+    height: 110%;
 }
