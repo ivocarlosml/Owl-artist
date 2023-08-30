@@ -12,6 +12,9 @@
         display:flex;
         flex-direction: column;
         background-color: #1E1E1E;
+        margin-right: 6%;
+        justify-content:center;
+        align-items:center; 
        
     }
 
@@ -21,6 +24,12 @@
 {
    aside
    {
-    display: none;
+        display: none;
    }
+
+   section
+   {
+        margin-top: 15%;
+   }
+
 }
