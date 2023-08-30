@@ -143,10 +143,10 @@ body {
       height: 9vh;
       border-radius: 30px;
       margin:2rem auto 1rem auto;
-       background: linear-gradient(90deg, #1e9ef4 0%, #022677 50%, #001449 100%);
-       border-color:none;
-       cursor:pointer;
-       transition: 0.3s; 
+      background: linear-gradient(90deg, #1e9ef4 0%, #022677 50%, #001449 100%);
+      border-color:none;
+      cursor:pointer;
+      transition: 0.3s; 
     }
 
     hr{
@@ -248,8 +248,7 @@ body {
       width: 80px;
       color: #fff;
     }
-  
-  
+    
     @media screen and (max-width: 768px) {
       body{
         background: linear-gradient(90deg, #1e9ef4 0%, #022677 50%, #001449 100%);
