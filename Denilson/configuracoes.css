@@ -1,0 +1,165 @@
+/*HEADER */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+body{
+    background:linear-gradient(45deg,black,#2E2E2E);
+}
+#titulo{
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.user{
+    color:white;
+.divTopico{
+    margin-top: 2%;
+}
+}
+.topicos{
+    color:rgb(0, 247, 255);
+    margin-top: 5%;
+}
+p{
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.linkPonte{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    
+    
+}
+.pontes{
+   
+    margin-top: 5%;
+   
+}
+.opcPersonalizadas{
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+   
+}
+
+.titulosMain{
+    color:rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ 
+header{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    justify-content:space-between;
+    align-items:center; 
+    background-color: black;
+   
+}
+.interna{
+    
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    margin-left: 1%;
+    padding-right: 5%;
+    justify-content:space-between;
+    align-items:center; 
+    
+
+}
+.logos{
+   height: 5vh;
+   
+}
+
+#logoEngrenagem{
+    margin-right: 5%;
+}
+.linkCasa{
+    margin-right: 3%;
+}
+.divisao{
+    border-color: 4px solid red;
+}
+/*ASIDE */
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 2%;
+}
+
+.division{
+    display: flex;
+    padding-bottom:2%;
+
+}
+
+#fotoUser{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 4%;
+}
+.parteUsuario{
+    display: flex;
+    background-color: #1E1E1E;
+    height: 11%;
+    margin-top: 5%;
+    align-items: center;
+    padding: 2%;
+}
+.infoUser{
+    margin-left: 4%;
+    
+}
+
+.barraVertical{
+    border: 1px solid rgb(0, 247, 255);
+    margin-right: 4%;
+
+}
+
+.barraHorizontal{
+    border: 1px solid rgb(0, 247, 255);
+    margin-top: 7%;
+
+}
+
+/*MAIN */
+section{
+    margin-top: 20%;
+}
+
+input{
+    margin-top: 10%;
+}
+.secPremium{
+    display:flex;
+    align-items: center;
+    
+}
+
+.fotoSelo{
+    height: 30px;
+    width: 30px;
+    margin-left: 2%;
+}
+
+.botaoPremium{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 8px 35px;
+    border-radius:20px;
+    cursor: pointer;
+    margin-top: 2%;
+}

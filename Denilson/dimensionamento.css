@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@media  (max-width: 1088px)
+{
+
+    .infoUser
+    {
+        display:none;
+    }
+    .parteUsuario
+    {
+        display:flex;
+        flex-direction: column;
+        background-color: #1E1E1E;
+       
+    }
+
+}
+
+@media  (max-width: 660px)
+{
+   aside
+   {
+    display: none;
+   }
+}
