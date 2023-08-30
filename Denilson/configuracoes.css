@@ -7,7 +7,7 @@
 }
 
 body{
-    background:linear-gradient(45deg,black,#2E2E2E);
+    background:linear-gradient(45deg,black,#3c3c3c);
 }
 #titulo{
     color:rgb(255, 255, 255);
@@ -49,6 +49,7 @@ p{
 .titulosMain{
     color:rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3%;
 }
 a{
     text-decoration: none;
@@ -100,7 +101,7 @@ aside{
 
 .division{
     display: flex;
-    padding-bottom:2%;
+    
 
 }
 
@@ -126,6 +127,7 @@ aside{
 .barraVertical{
     border: 1px solid rgb(0, 247, 255);
     margin-right: 4%;
+
 
 }
 
@@ -162,4 +164,9 @@ input{
     border-radius:20px;
     cursor: pointer;
     margin-top: 2%;
+}
+
+.ultimaSection{
+ 
+    padding-bottom: 20%;
 }

@@ -32,4 +32,9 @@
         margin-top: 15%;
    }
 
+   body
+   {
+        background:linear-gradient(45deg,black,#272626);
+   }
+
 }
