@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #2E2E2E;
+    background:linear-gradient(45deg,black,#3c3c3c);
 }
 #titulo{
     color:rgb(255, 255, 255);
@@ -32,6 +32,7 @@ p{
     text-decoration: none;
     color:rgb(255, 255, 255);
     
+    
 }
 .pontes{
    
@@ -48,6 +49,7 @@ p{
 .titulosMain{
     color:rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 3%;
 }
 a{
     text-decoration: none;
@@ -99,7 +101,7 @@ aside{
 
 .division{
     display: flex;
-    padding-bottom:2%;
+    
 
 }
 
@@ -123,13 +125,14 @@ aside{
 }
 
 .barraVertical{
-    border: 1px solid black;
+    border: 1px solid rgb(0, 247, 255);
     margin-right: 4%;
+
 
 }
 
 .barraHorizontal{
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 247, 255);
     margin-top: 7%;
 
 }
@@ -161,4 +164,9 @@ input{
     border-radius:20px;
     cursor: pointer;
     margin-top: 2%;
+}
+
+.ultimaSection{
+ 
+    padding-bottom: 20%;
 }

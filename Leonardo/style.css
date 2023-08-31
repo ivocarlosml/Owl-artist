@@ -1,270 +1,269 @@
-*{ 
+body {
+    background-color: #2e2e2e;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif; 
   }
-  
-  body{
-   background-color:black; 
-  }
-  
-  .content-box h2{
-      color: #32324f;
-      height:50px;
-      padding:20px;
-  }
-  
-  .content-box{   
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    width: 100%; 
-    height: 10%; 
-  }
-  
-  .content-box .input-box{ 
-    width: 50%; 
-  }
-  
-  .content-box .input-box .ul{ 
+  .container {
     display: flex;
-    justify-content: center;
-    align-items: center; 
-  }
-  
-  .content-box .input-box .ul li{ 
-    list-style: none;
-    width:60px;
-    height:60px;
-    display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    border-radius:50%;
-    margin: 0 7px;
-    cursor:pointer;
-    transition: 0.3s; 
-  }
-  
-  .content-box .formulario .ul li:hover{
-       background:black; 
-  }
-  
- .input-box .ul li img{
-    width:10px; 
-    height:10px;
-  }
-  
-  .content-box .formulario .ul img2{
-    width:50px; 
-    height:50px;
-  }
-  
-  .content-box .formulario h2{
-      color: #a3a3c2; 
-      font-weight: 600;
-      font-size: 2em;
-      text-transform: uppercase;
-      margin-bottom:15px;
-      text-align:center;
-  }
-  
-  .content-box .input-box{
-       margin-bottom:20px;
-  }
-  
-  header .content-box .formulario .input-box input{
-       width: 95%;
-       padding: 10px;
-       outline: none;
-       font-weight: 400;
-       border: none;
-       font-size: 17px;
-       color: #32324f;
-       background-color:white;
-       border-radius:5px;
-       text-align:center;
-  }
-  
-  .content-box .formulario .input-box span{
-       font-size: 16px;
-       margin-bottom: 5px;
-       display:inline-block;
-       color: #32324f;
-       font-weight: 400;
-       color:#808080;
-       width:100px;
-       margin-left:44%;
-  }
-  
-  .content-box .formulario .input-box input::placeholder{
-       color: black;
-       margin-left:-20px;
-  }
-  
-  .content-box .formulario .input-box input[type=submit]{
-      background: #00008B;
-      color:#fff;
-      outline: none;
-      border: none;
-      font-weight: 500;
-      cursor: pointer;
-      font-size: 20px;
-      transition: 0.3s;
-  }
-  
-  .content-box .formulario .input-box input[type=submit]:hover{
-       background: #3286ca;
-  }
-  
-  .content-box .formulario .remember{
-       margin-bottom: 20px;
-       color: #32324f;
-       font-weight: 400;
-       font-size: 14px #4169E1;
-       cursor: pointer;
-       display:flex;
-       justify-content:space-around;
-       width:690px;
-       color:#4169E1;
-  }
-  
-  .content-box .formulario .remember a{
-      text-decoration: none; 
-      color: #4aa4ee;
-  }
-  
-  .content-box .formulario .remember a:hover{
-       color: #3286ca;	
-  }
-  
-  .content-box .formulario .input-box p{
-        color: #323224;
-        text-align:center;
-  }
-  
-  .content-box .formulario .input-box p a{
-        color: #3286ca;	
-  }
-  
-  .content-box .formulario .input-box p a:hover{
-       color: #3286ca;
-  }
-  
-  .content-box .formulario h3{
-       color: #607d8b;
-       text-decoration: none;
-       margin: 40px 0 15px;
-       font-weight: 500;
-       text-align: center;
-       font-size: 22px;
-  }
-  
-  .content-box .formulario{
-       width: 50%;
-  }
-  
-  .content-box .formulario .input-box{
-       width:100%;
-        padding: 30px;
-      background:white;
-      margin: 15px;
-  }
-  
-  .content-box .formulario .input-box h3{
-       margin: 30px 0 10px;
-  }
-  
-  .content-box .formulario .input-box{
-    background-color:#2F4F4F; 
-    padding:10px;
-    margin:25px;
-    background-color:black;
+    min-height: 100vh;
+    justify-content: space-around;
   }
 
-  footer{
+  /* ESTILOS DO TOPO */ 
 
-    display: flex;
-    margin-top: 10px;
-    width: 100px;
-    height: 23px;
+  #topo {
+    width: 100%;
+    height: 10vh;
     background-color: #000000;
-    justify-content:space-between ;
-    box-shadow: 0px -55px 98px rgba(0, 0, 0, 0.9)
-}
-
-.contato{
-    margin-top: 50px;
-    margin-left: 100px;
     display: flex;
-    flex-direction: column;
-    height: 200px;
-}
-#containerDeapoio{
-    position: relative;
+    margin-bottom:2rem;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .barra-pesquisa{
+    margin-right:2rem;
+    width: 90%;
     display: flex;
-    align-items: start;
+    justify-content: start;
+    align-items: center;
+  }
+  .bg-pesquisa {
+    padding: 0.2rem;
+    height: auto;
+    width: 5%;
+  }
+  .bg-pesquisa img{
+    border-radius: 20px;
+  }
+  .timg {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  .barra-pesquisa form {
+    width: 90%;
     justify-content: center;
-    width: 90px;
-}
+  }
+  .barra-pesquisa input {
+    width: 100%;
+    height: 5vh;
+    border-radius: 15px;
+    padding-left: 30px;
+  }
 
-.logoOwl{
-    width: 80px;
-    height: 80px;
-    border-radius:50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-.detalhesFooter{
-    margin-left:200px;
+  /*   ÁREA DE LOGIN   */
+  
+  .container-cadastro {
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    height: 100%;
-}
-.detalhesFooter h3{
-    margin-top: 0;
-    padding: 10px;
-    margin-bottom: 0;
-    color:#fff;    
-    font-size: 20px;
-}
-.topo{
-    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    border-radius: 2rem;
+  }
+  .logocad {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50px;
+    border: 1px solid #000000;
+  }
+  .container-cadastro h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .redes{
     display: flex;
-    flex-direction: row;
+    width: 100%;
+    justify-content:center;
+    align-items:center;
+  }
+  .redes img{
+      width: 30px;
+      height:40px;
+      border-radius: 20px;
+  }
+  .gg{
+    width: 26%;
+    height:40px;
+    margin-right: 2rem;
+  }
+  .ff{
+    width: 4%;
+    height:40px;
+    padding-left:1rem;
+  }
+  .container-cadastro form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  .container-cadastro label {
+    margin-top: 1.2rem;
+  }
+  .container-cadastro input {
+    padding: 0.5rem;
+    background-color: #6e6e6e;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0.8rem;
+    background: #fff;
+  }
+  .container-cadastro input::placeholder {
+    color: #6e6e6e;
+  }
+  .termos label{
+      font-size: 0.8rem;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+  }
+
+  .termos a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    display:flex;
+    justify-content:end;
+    color: #232388;
+    transform: translateY(-100%);
+    margin: 2px;
+}
+  
+  button {
+      color:#fff;
+      font-size: 1.2rem;
+      width: 50%;
+      height: 9vh;
+      border-radius: 30px;
+      margin:2rem auto 1rem auto;
+      background: linear-gradient(90deg, #1e9ef4 0%, #022677 50%, #001449 100%);
+      border-color:none;
+      cursor:pointer;
+      transition: 0.3s; 
+    }
+
+    hr{
+      background-color: #000000;
+      width: 100%;
+      height:4px;
+    }
+
+  /*        ESTILO DO RODAPÉ            */
+  
+    footer {
+      display: flex;
+      margin-top: 5rem;
+      width: 100%;
+      background-color: #000000;
+      color: #fff;
+      justify-content: space-between;
+      box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.9);
+    }
+    .topo-footer{
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+  
+  }
+    .contato {
+      display: flex;
+      flex-direction: column;
+      height:30vh;
+      padding-top:3rem;
+      width:30%;
+    }
+    #containerDeapoio {
+      position: relative;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      width: 90px;
+    }
     
-
-}
-footer span{
-    margin-top: 30px;
-    margin-left: 10px;
-    height: 10px;
-    width:80px;
-    color: #fff;
-}
-
-.apoioLateral{
+    .logoOwl {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;  
+    }
+    
+    .detalhesFooter {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin-left: 20px;
+      margin-top: 20px;
+      width: 25%;
+    }
+    
+    .detalhesFooter h3 {
+      margin: 0;
+      padding: 10px;
+      color: #fff;
+      font-size: 20px;
+    }
+    .detalhesFooter span{
+      margin-bottom: 10px;
+    }
+    .apoioLateral{
+      display: flex;
+      margin-bottom: 30px;
+      justify-content: center;
+  }
+  
+  .apoioLateral span{
+      margin-bottom: 50px;
+      margin-left: 50px;
+  
+  }
+  .img-lateral{
+    width: 40%;
     display: flex;
-    margin-bottom: 30px;
-}
-
-.apoioLateral span{
-    margin-bottom: 50px;
-    margin-left: 50px;
-
-}
-
-#triangulo-para-direita{
-    width: 272px;
-    height: 251px;
-    position: relative;
-    left: 0;
-}
-
-#emailLogo{
-    margin-left: 14px;
-    height: 50px;
-    width:50px;
-    border-radius: 0;
-}
-            
+    justify-content: end;
+    align-items: end;
+  }
+  
+  #triangulo-para-direita{
+      width: 80%;
+      height: 300px;
+      left: 0;
+  }
+  #emailLogo{
+      margin-left: 14px;
+      height: 50px;
+      width:50px;
+      border-radius: 0;
+  }
+    footer span {
+      margin-top: 30px;
+      margin-left: 10px;
+      height: 10px;
+      width: 80px;
+      color: #fff;
+    }
+    
+    @media screen and (max-width: 768px) {
+      body{
+        background: linear-gradient(90deg, #1e9ef4 0%, #022677 50%, #001449 100%);
+      }
+      #topo{
+        display: none;
+      }
+      .container-cadastro {
+        margin: 3rem;
+        width: 90%;
+      }
+      button {
+        font-size: 0.8rem;
+      }
+      footer{
+        display:none;
+      } 
+    }

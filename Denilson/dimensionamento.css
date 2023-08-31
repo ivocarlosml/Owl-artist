@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+@media  (max-width: 1088px)
+{
+
+    .infoUser
+    {
+        display:none;
+    }
+    .parteUsuario
+    {
+        display:flex;
+        flex-direction: column;
+        background-color: #1E1E1E;
+        margin-right: 6%;
+        justify-content:center;
+        align-items:center; 
+       
+    }
+
+}
+
+@media  (max-width: 660px)
+{
+   aside
+   {
+        display: none;
+   }
+
+   section
+   {
+        margin-top: 15%;
+   }
+
+   body
+   {
+        background:linear-gradient(45deg,black,#272626);
+   }
+
+}
