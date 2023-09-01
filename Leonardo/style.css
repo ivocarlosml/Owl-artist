@@ -90,12 +90,12 @@ body {
       border-radius: 20px;
   }
   .gg{
-    width: 26%;
-    height:40px;
+    width: 50%;
+    height:20px;
     margin-right: 2rem;
   }
   .ff{
-    width: 4%;
+    width: 50%;
     height:40px;
     padding-left:1rem;
   }
@@ -143,10 +143,10 @@ body {
       height: 9vh;
       border-radius: 30px;
       margin:2rem auto 1rem auto;
-      background: linear-gradient(90deg, #1e9ef4 0%, #022677 50%, #001449 100%);
-      border-color:none;
-      cursor:pointer;
-      transition: 0.3s; 
+       background: linear-gradient(90deg, #1e9ef4 0%, #022677 50%, #001449 100%);
+       border-color:none;
+       cursor:pointer;
+       transition: 0.3s; 
     }
 
     hr{
@@ -154,7 +154,6 @@ body {
       width: 100%;
       height:4px;
     }
-
   /*        ESTILO DO RODAPÉ            */
   
     footer {
@@ -248,8 +247,30 @@ body {
       width: 80px;
       color: #fff;
     }
-    
+  
+    /*    TELAS PARA TABLET, COMPUTADOR E CELULAR   */
+  
     @media screen and (max-width: 768px) {
+      body{
+        background: linear-gradient(65deg, #1e9ef4 0%, #022677 50%, #001449 100%);
+      }
+      #topo{
+        display: none;
+      }
+      .container-cadastro {
+        margin: 1.5rem;
+        width: 90%;
+      }
+      button {
+        font-size: 0.8rem;
+      }
+      footer{
+        display:none;
+      }
+  
+    }
+
+    @media screen and (max-width: 900px){
       body{
         background: linear-gradient(90deg, #1e9ef4 0%, #022677 50%, #001449 100%);
       }
@@ -258,6 +279,26 @@ body {
       }
       .container-cadastro {
         margin: 3rem;
+        width: 100%;
+      }
+      button {
+        font-size: 0.8rem;
+      }
+      footer{
+        display:none;
+      }
+  
+    }
+
+    @media screen and (max-width: 600px){
+      body{
+        background: linear-gradient(45deg, #1e9ef4 0%, #022677 50%, #001449 100%);
+      }
+      #topo{
+        display: none;
+      }
+      .container-cadastro {
+        margin: 1rem;
         width: 90%;
       }
       button {
@@ -265,5 +306,8 @@ body {
       }
       footer{
         display:none;
-      } 
+      }
+  
     }
+
+    
