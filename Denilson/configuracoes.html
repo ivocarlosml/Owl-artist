@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="configuracoes.css" rel="stylesheet" >
     <link href="dimensionamento.css" rel="stylesheet" >
+    <script defer src="setting.js"></script>
+
     <title>Own Artist - settings</title>
 </head>
 <body>
@@ -14,13 +16,22 @@
                 <img src="engBrancaFormated.png" class="logos" id="logoEngrenagem">
                 <h2 id="titulo">Ajustes</h2>
         </a>
-        <a href="" class="linkCasa">
-            <img src="casaBrancaFormated.png" class="logos">
-        </a>
 
+        <div class="iconesDireita">
+                <a href="" id="menuLink">
+                    <img src="menuBrancoFormated.png" class="logos" id="menu">
+                </a>
+
+             <div class="itens">
+                <a href="" class="linkCasa" id="casa" >
+                    <img src="casaBrancaFormated.png" class="logos">
+                </a>
+            </div>
+
+        </div >
     </header>
 <div class="division">
-    <aside>
+    <aside id="menuAside">
         <div class="parteUsuario">
             <img src="mulher.png" id="fotoUser">
             <div class="infoUser">
@@ -108,5 +119,6 @@
 
         </main>
     </div>
+
 </body>
 </html>

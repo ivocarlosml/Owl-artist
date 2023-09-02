@@ -15,10 +15,18 @@ body{
 }
 .user{
     color:white;
+}
 .divTopico{
     margin-top: 2%;
 }
+#menuLink{
+    display: none;
 }
+.linkCasa:hover{
+    padding-top:60%;
+    background-color:rgb(102, 105, 105);
+}
+
 .topicos{
     color:rgb(0, 247, 255);
     margin-top: 5%;
@@ -61,9 +69,10 @@ header{
     height: 10vh;
     justify-content:space-between;
     align-items:center; 
-    background-color: black;
+    background-color: rgb(0, 0, 0);
    
 }
+
 .interna{
     
     display: flex;
@@ -84,17 +93,14 @@ header{
 #logoEngrenagem{
     margin-right: 5%;
 }
-.linkCasa{
+
+.iconesDireita{
     margin-right: 3%;
-}
-.divisao{
-    border-color: 4px solid red;
 }
 /*ASIDE */
 
-aside{
-    display: flex;
-    flex-direction: column;
+#menuAside{
+    display: block;
     width: 30%;
     margin-left: 2%;
 }
