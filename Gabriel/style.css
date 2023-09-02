@@ -543,6 +543,7 @@ left: 0;
 .idParaMidia{
     position:absolute;
     margin-bottom: 10px;
-    
-
+}
+#btnTurnMode{
+    background-color: #0020ab;
 }
