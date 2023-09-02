@@ -107,6 +107,7 @@ header{
 
 .division{
     display: flex;
+    height: 100%;
     
 
 }
