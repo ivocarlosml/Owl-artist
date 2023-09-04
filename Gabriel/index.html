@@ -8,7 +8,7 @@
     <title>OWl - Artes</title>
 </head>
 <body >
-    <header>
+    <header id="header">
         <div class="trasintionSuave"id="divisor">
         <div class="user-profile">
             <img classe ="iconInicial"src="download.jpg" alt="Perfil do Usuário">
@@ -25,15 +25,16 @@
         <div class="icon-group">
             <a href=""><img class="icon" src="suporte.png" alt="Ícone 1"></a>
             <a href=""><img class="icon" src="criar.png" alt="Ícone 2"></a>
-            <a href=""><img class="icon" src="config.png" alt="Ícone 3"></a>
+            <a href="../Denilson/configuracoes.html"><img class="icon" src="config.png" alt="Ícone 3"></a>
             <a href=""><img class="icon"src="perfil.png" alt="Ícone 4"></a>
+            <button onclick="turnColorPage()"id="btnTurnMode"type="button"></button>
         </div>
         
     </header>
     <div  class="image-container trasintionSuave">
-        <img id="postP"src="R.jpg" alt="Imagem de Fundo">
+        <img id="postP" class =" " src="R.jpg" alt="Imagem de Fundo">
         <div id="description" class="image-description">
-            Sua descrição aqui
+        </strong>Owl, a nossa arte é divulgar a sua!</strong>
         </div>
     </div>
     <main class="">
@@ -60,9 +61,13 @@
                 
             </div>
         </div>
-
+        <div class="campoDeAuxilioExibicao">
         <img class="imagem2"src="https://th.bing.com/th/id/OIP.Jw-inHgeU_yMijt3VAIDFQHaFj?pid=ImgDet&rs=1" alt="Ícone 1">
-
+        <div class="usuarioIndentificador">
+            <img src="download.jpg" class="fotoMin idParaMidia" alt="publiUser" srcset="">
+            <span>Isabela Campos</span>
+        </div>
+    </div>
         <img class="imagem3"src="https://th.bing.com/th/id/R.b56452a038b3eb94585901a7f7c9cfe3?rik=R527hwHf%2fhNf9A&pid=ImgRaw&r=0" alt="Ícone 3">
         
         <img class="imagem4"src="https://th.bing.com/th/id/R.008e6fd7f5eff97c9ab2a1ee51d13b56?rik=wBBGmvUAdSe7%2bw&pid=ImgRaw&r=0" alt="Ícone 1">
@@ -84,8 +89,9 @@
           <!-- Aqui serão exibidos os perfis -->
         </div>
         <div class="arrows">
-          <div class="arrow left"></div>
-          <div class="arrow right"></div>
+          <img src="seta.png" class="arrow left">
+          <img src="seta.png" class="arrow right">
+          
         </div>
       </div>
     <div class="infobar bottom">
@@ -193,6 +199,19 @@
         <img src="https://th.bing.com/th/id/R.bcce8f892d52f2bb58f27d9b34cb406a?rik=8zWDLgFd91M%2fuQ&pid=ImgRaw&r=0" alt="" class="imagem18">
         
     </section>
+    <section class="iniciantes">
+
+        <img src="https://th.bing.com/th/id/OIP.pIfR0kcbEOff-qcmdTWTHQHaE8?pid=ImgDet&rs=1" alt="" class="imagem14">
+
+        <img src="https://th.bing.com/th/id/OIP.L15_RIHJ-z74y5GwpogiBgHaHa?pid=ImgDet&rs=1 alt="class="imagem15">
+
+        <img src="https://i.pinimg.com/originals/fd/73/c9/fd73c9de79e323dec741fa7e7da08e94.jpg" alt="" class="imagem16">
+
+        <img src="https://4.bp.blogspot.com/-2aj4EYnGDZg/UWxR2tD-PdI/AAAAAAAABXM/rrP2vUUkP88/s1600/10021_462326107171313_1815432970_n.jpg" alt="" class="imagem17">
+
+        <img src="https://th.bing.com/th/id/R.bcce8f892d52f2bb58f27d9b34cb406a?rik=8zWDLgFd91M%2fuQ&pid=ImgRaw&r=0" alt="" class="imagem18">
+        
+    </section>
     
     <footer>
         
@@ -237,5 +256,6 @@
     </footer>
     <script src="script2.js"></script>
     <script src="script.js"></script>
+    <script src="themeBW.js"></script>
 </body>
 </html>

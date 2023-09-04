@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@media  (max-width: 1088px)
+{
+
+    .infoUser
+    {
+        display:none;
+    }
+    .parteUsuario
+    {
+        display:flex;
+        flex-direction: column;
+        background-color: #1E1E1E;
+        margin-right: 6%;
+        justify-content:center;
+        align-items:center; 
+       
+    }
+
+}
+
+@media  (max-width: 660px)
+{
+ #menuLink{
+        display: flex; 
+        color:#ffffff;
+   }
+
+   #menu{
+        height: 4vh;
+   }
+   #menuLink{
+        padding: 6%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 4vw;
+       
+   }
+
+   }
+   #menuLink:hover{
+        background-color:rgb(102, 105, 105);
+   }
+
+   .iconesDireita{
+        display: flex;
+        align-items: center;
+        padding-left: 10%;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 7vw;
+   
+    }
+   #casa{
+         margin-left: 10%;
+   }
+   .linkCasa{
+    padding-top:60%;
+ 
+
+}
+   .linkCasa:hover{
+    padding-top:60%;
+        background-color:rgb(102, 105, 105);
+
+   }
+
+    #menuAside{
+        display: none;
+        background:linear-gradient(45deg,black,#3c3c3c);
+        height: 100%;
+        
+        
+    }
+
+    section{
+         margin-top: 15%;
+    }
+
+    body{
+        background:linear-gradient(45deg,black,#272626);
+    
+    }
+
