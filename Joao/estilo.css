@@ -77,6 +77,12 @@ select {
     align-items: center;
 }
 
+.imgConfig {
+    padding: 15px 20px 0 0;
+    display: flex;
+    justify-content: end;
+}
+
 /*----------------PERFIL------------------*/
 
 #perfil {
@@ -130,7 +136,8 @@ select {
     padding-bottom: 50px;
     width: 330px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .atributos-perfil h4:hover,
@@ -327,7 +334,13 @@ select {
 
 @media screen and (max-width: 768px) {
     #topo {
-        flex-wrap: wrap;
+        display: none;
+    }
+
+    #perfil {
+        height: 400px;
+        padding: 0;
+        justify-content: center;
     }
 
     .secao-direita {
@@ -340,6 +353,37 @@ select {
 
     footer {
         display: none;
+    }
+
+    .secao-centro {
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+
+    .secao-centro img {
+        width: 200px;
+        border: 5px solid white;
+        border-radius: 100%;
+    }
+
+    .secao-centro h1 {
+        font-size: 1.5rem;
+    }
+
+    .atributos-perfil {
+        padding-bottom: 0;
+        font-size: .9rem;
+    }
+
+    .atributos-perfil-artes {
+        width: 280px;
+        font-size: .8rem;
+    }
+
+    .atributos-perfil-artes h4 div {
+        font-size: .8rem;
+        width: 20px;
+        height: 20px;
     }
 
     input[type="text"],
