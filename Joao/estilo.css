@@ -77,6 +77,12 @@ select {
     align-items: center;
 }
 
+.imgConfig {
+    padding: 15px 20px 0 0;
+    display: flex;
+    justify-content: end;
+}
+
 /*----------------PERFIL------------------*/
 
 #perfil {
@@ -130,7 +136,8 @@ select {
     padding-bottom: 50px;
     width: 330px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .atributos-perfil h4:hover,
@@ -167,8 +174,7 @@ select {
 }
 
 .atributos-perfil-artes h4:hover {
-    background-color: white;
-    color: black;
+    background-color: rgba(255, 255, 255, 0.158);
     cursor: pointer;
     transition: 400ms;
 }
@@ -321,59 +327,63 @@ select {
 
 /*------------------RODAPÉ-------------------*/
 
-#rodapé {
-    background-color: black;
-    font-size: 12px;
-    margin-top: 20vh;
-    padding: 30px 40px;
-    height: 40vh;
-    display: flex;
-    column-gap: 10%;
-}
 
-.parte1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.parte1 div {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    column-gap: 15px;
-}
-
-.parte1 img {
-    width: 70px;
-    border-radius: 100%;
-}
-
-.parte2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.parte2 div {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 15px;
-}
-
-.parte2 img {
-    width: 30px;
-    border-radius: 100%;
-}
 
 /*-----------MEDIA SCREEN-------------*/
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 768px) {
     #topo {
-        flex-wrap: wrap;
+        display: none;
+    }
+
+    #perfil {
+        height: 350px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .secao-direita {
+        display: none;
+    }
+
+    .secao-esquerda {
+        display: none;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .secao-centro {
+        height: 350px;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    .secao-centro img {
+        width: 200px;
+        border: 5px solid white;
+        border-radius: 100%;
+    }
+
+    .secao-centro h1 {
+        font-size: 1.5rem;
+    }
+
+    .atributos-perfil {
+        padding-bottom: 0;
+        font-size: .9rem;
+    }
+
+    .atributos-perfil-artes {
+        width: 280px;
+        font-size: .8rem;
+    }
+
+    .atributos-perfil-artes h4 div {
+        font-size: .8rem;
+        width: 20px;
+        height: 20px;
     }
 
     input[type="text"],
