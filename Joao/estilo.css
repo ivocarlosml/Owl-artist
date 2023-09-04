@@ -174,8 +174,7 @@ select {
 }
 
 .atributos-perfil-artes h4:hover {
-    background-color: white;
-    color: black;
+    background-color: rgba(255, 255, 255, 0.158);
     cursor: pointer;
     transition: 400ms;
 }
@@ -338,7 +337,7 @@ select {
     }
 
     #perfil {
-        height: 400px;
+        height: 350px;
         padding: 0;
         justify-content: center;
     }
@@ -356,8 +355,9 @@ select {
     }
 
     .secao-centro {
+        height: 350px;
         padding-top: 0;
-        padding-bottom: 30px;
+        padding-bottom: 20px;
     }
 
     .secao-centro img {
