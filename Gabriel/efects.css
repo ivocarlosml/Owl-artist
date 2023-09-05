@@ -123,3 +123,21 @@
     width: 110%;
     height: 110%;
 }
+.imagem11:hover{
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -300px;
+    width: 110%;
+    height: 110%;
+}
+.imagem12:hover{
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -300px;
+    width: 110%;
+    height: 110%;
+}
