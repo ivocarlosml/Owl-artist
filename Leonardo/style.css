@@ -93,7 +93,7 @@ body {
   width: 70%;
   height:40px;
   margin-right: 2rem;
-  background:gray;
+  background:black;
   transform: translateY(28%);
   color:white;
   text-align:center;
@@ -103,15 +103,16 @@ body {
   height:40px;
   padding-left:0rem;
   transform: translateY(24%);
-  background:blue;
+  background:#0000CD;
   text-align:center;
 }
 h5{
     display:inline-flex;
     flex-direction: row;
     justify-content:space-between;
-    font-size: 12px;
+    font-size: 75%;
     transform: translateY(-100%);
+    color:white;
 }
 .container-cadastro form {
   display: flex;
@@ -128,7 +129,7 @@ h5{
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-top: 0.8rem;
-  background: #fff;
+  background: #D3D3D3;
 }
 .container-cadastro input::placeholder {
   color: #6e6e6e;
