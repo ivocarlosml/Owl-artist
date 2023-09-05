@@ -29,7 +29,13 @@
         transform: translateX(-100px);
     }
 }
-
+@keyframes efectUserIcon {
+    0%{
+        transform: rotateX('0');
+    }100%{
+        transform: rotateX('160');
+    }
+}
 .imagem2:hover{
     z-index: 2; 
     margin-top: -20px;
@@ -38,6 +44,11 @@
     margin-bottom: -20px;
     width: 110%;
     height: 110%;
+}
+.content:hover .idParaMidia {
+    
+    display: flex;
+    
 }
 .imagem3:hover{
     z-index: 2; 
