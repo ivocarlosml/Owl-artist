@@ -90,19 +90,19 @@ body {
     border-radius: 20px;
 }
 .gg{
-  width: 70%;
+  width: 120px;
   height:40px;
   margin-right: 2rem;
   background:black;
-  transform: translateY(28%);
+  transform: translateY(-10%);
   color:white;
   text-align:center;
 }
 .ff{
-  width: 76%;
+  width: 120px;
   height:40px;
   padding-left:0rem;
-  transform: translateY(24%);
+  transform: translateY(-10%);
   background:#0000CD;
   text-align:center;
 }
@@ -110,7 +110,7 @@ h5{
     display:inline-flex;
     flex-direction: row;
     justify-content:space-between;
-    font-size: 75%;
+    font-size: 32px;
     transform: translateY(-100%);
     color:white;
 }
@@ -209,11 +209,20 @@ button {
     width: 90px;
   }
   
+  #containerDeapoio span{
+      transform: translateY(150%);
+  }
+  
   .logoOwl {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     object-fit: cover;  
+  }
+  
+  .logoOwl span{
+      transform: translateX(100%);
+}
   }
   
   .detalhesFooter {
@@ -238,6 +247,7 @@ button {
     display: flex;
     margin-bottom: 30px;
     justify-content: center;
+    margin-left:100px;
 }
 
 .apoioLateral span{
@@ -258,10 +268,26 @@ button {
     left: 0;
 }
 #emailLogo{
-    margin-left: 14px;
+    margin-left: 100%;
     height: 50px;
     width:50px;
     border-radius: 0;
+}
+
+#instalogo{
+    margin-left: 120%;
+    height: 80px;
+    width:100px;
+    border-radius: 0;
+}
+
+#githublogo{
+    margin-left: 108%;
+    height: 80px;
+    width:100px;
+    border-radius: 0;
+}
+
 }
   footer span {
     margin-top: 30px;
