@@ -18,6 +18,7 @@ header {
     flex-wrap: wrap;
     position: fixed;
     z-index: +6;
+    transition: all ease-in-out 0.5s;  
     
 }
 a{
@@ -138,6 +139,7 @@ main{
     grid-template-rows: repeat(6,16.66666666666667%);
     grid-column-gap: 1%;
   grid-row-gap: 15px;
+  transition: all ease-in-out 0.5s;  
 
 }
 
@@ -148,6 +150,10 @@ main{
     background: linear-gradient(90deg, #000000, #0020ab);
     width: 100%;
     height: 100%;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    
+    transition-property: background-color;
     transition:  0.5s ease;
     
 }
@@ -185,17 +191,7 @@ main{
     font-size: 30px;
     color: #fff;
 }
-.imagem1{
-    grid-column: 1/4;
-    grid-row: 1/3;
-    width:100%;
-    height: 100%;
-    transition-property: background-color;
-    
 
-    
-    
-}
 .imagem2{
    width:100%;
     height: 100%;
@@ -377,7 +373,7 @@ margin-top: 40px;
 .container {
     margin:auto ;
     border-radius: 25px;
-    background-color: black;
+    background-color: #0d0b0bdb;
     width: 95%;
     margin-bottom: 0px;
     height: 450px;
@@ -540,11 +536,18 @@ margin-top: 40px;
   
 }
 .imagem14{
-    grid-row: 1/3;
-    grid-column: 1/2;
+    
     width:100%;
     height: 100%;
     object-fit: cover;
+    transition: all ease-in-out 0.5s; 
+
+}
+.campoDeAuxilioExibicao14{
+    display: flex;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    
 
 }
 .imagem15{
@@ -553,31 +556,51 @@ margin-top: 40px;
     width:100%;
     height: 100%;
     object-fit: cover;
+    transition: all ease-in-out 0.5s; 
+
+}
+.campoDeAuxilioExibicao15{
+    display: flex;
+    grid-row: 1/3;
+    grid-column: 2/4;
 
 }
 .imagem16{
+    
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 0.5s; 
+}
+.campoDeAuxilioExibicao16{
+    display: flex;
     grid-row: 1/3;
     grid-column: 4/7;
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-
 }
 .imagem17{
+    
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out 0.5s; 
+}
+.campoDeAuxilioExibicao17{
+    display: flex;
     grid-row: 3/5;
     grid-column: 1/4;
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-
 }
 .imagem18{
-    grid-row: 3/5;
-    grid-column: 4/7;
+    
     width:100%;
     height: 100%;
     object-fit: cover;
+    transition: all ease-in-out 0.5s; 
 
+}
+.campoDeAuxilioExibicao18{
+    display: flex;
+    grid-row: 3/5;
+    grid-column: 4/7;
 }
 .apoioLateral{
     display: flex;
@@ -624,4 +647,7 @@ left: 0;
 }
 #btnTurnMode{
     background-color: #0020ab;
+}
+.toper{
+    margin-top: 150px;
 }
