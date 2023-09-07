@@ -1,11 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  
+}
 body {
   background-color: #2e2e2e;
   font-family: Arial, sans-serif;
   font-weight: bold;
-  margin: 0;
-background-image: url("https://raw.githubusercontent.com/ivocarlosml/Owl-artist/main/Gabriel/R.jpg");
 }
-
+#postP{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(7px);
+}
 .trasintionSuave{
     position: relative !important;
     transition:  all ease-in-out 0.5s;
@@ -16,7 +28,8 @@ background-image: url("https://raw.githubusercontent.com/ivocarlosml/Owl-artist/
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+height: 100%;
+position: relative;
   justify-content: space-around;
 }
 
@@ -27,7 +40,7 @@ background-image: url("https://raw.githubusercontent.com/ivocarlosml/Owl-artist/
   height: 10vh;
   background-color: #000000;
   display: flex;
-  margin-bottom:2rem;
+ 
   justify-content: space-around;
   align-items: center;
 }
@@ -73,7 +86,8 @@ background-image: url("https://raw.githubusercontent.com/ivocarlosml/Owl-artist/
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 40%;
+  margin: 60px;
   padding: 20px;
   box-sizing: border-box;
   min-height: 100vh;
@@ -88,40 +102,56 @@ background-image: url("https://raw.githubusercontent.com/ivocarlosml/Owl-artist/
 .container-cadastro h1 {
   text-align: center;
   font-size: 2rem;
+  margin-bottom:40px ;
 }
 .redes{
   display: flex;
   width: 100%;
   justify-content:center;
   align-items:center;
+  padding: 10px;
 }
 .redes img{
-    width: 30px;
+  margin-top:3px;
+    width: 40px;
     height:40px;
     border-radius: 20px;
+    object-fit: cover;
+
+}
+h4{
+  margin-top: 10px;
 }
 .gg{
-  width: 140px;
-  height:40px;
-  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height:44px;
+  margin-right: 1rem;
   background:black;
   transform: translateY(-10%);
   color:white;
   text-align:center;
 }
 .ff{
-  width: 140px;
-  height:40px;
-  padding-left:0rem;
+  width: 200px;
+  height:44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transform: translateY(-10%);
   background:#0000CD;
   text-align:center;
+  
 }
 h5{
     display:inline-flex;
     flex-direction: row;
     justify-content:space-between;
     font-size: 15px;
+    margin-top: auto;
+    margin-left: 5px;
     transform: translateY(-85%);
     color:white;
 }
@@ -192,7 +222,7 @@ button {
 
   footer {
     display: flex;
-    margin-top: 5rem;
+    
     width: 100%;
     background-color: #000000;
     color: #fff;
@@ -234,7 +264,7 @@ button {
   .logoOwl span{
       transform: translateX(100%);
 }
-  }
+  
   
   .detalhesFooter {
     display: flex;
@@ -299,7 +329,7 @@ button {
     border-radius: 0;
 }
 
-}
+
   footer span {
     margin-top: 30px;
     margin-left: 10px;
