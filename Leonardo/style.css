@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   font-weight: bold;
   margin: 0;
-background-image: url("https://raw.githubusercontent.com/ivocarlosml/Owl-artist/main/Gabriel/R.jpg");
+  background-image: url("https://raw.githubusercontent.com/ivocarlosml/Owl-artist/main/Gabriel/R.jpg");
 }
 #postP{
   position: absolute;
@@ -112,7 +112,7 @@ background-image: url("https://raw.githubusercontent.com/ivocarlosml/Owl-artist/
   height:42px;
   margin-right: 2rem;
   background:black;
-  transform: translateY(-10%);
+  transform: translateY(80%);
   color:white;
   text-align:center;
 }
@@ -120,7 +120,7 @@ background-image: url("https://raw.githubusercontent.com/ivocarlosml/Owl-artist/
   width: 180px;
   height:42px;
   padding-left:0rem;
-  transform: translateY(-10%);
+  transform: translateY(80%);
   background:#0000CD;
   text-align:center;
 }
