@@ -20,13 +20,16 @@
 }
 .opacityAnimation{
     animation: opacidade 3s ease-in-out;
+    
 }
 @keyframes opacidade {
     0%{
         opacity: 1;
+        
     }100%{
         opacity: 0;
         transform: translateX(-100px);
+        box-shadow: 0 0 0 transparent;
     }
 }
 @keyframes efectUserIcon {
