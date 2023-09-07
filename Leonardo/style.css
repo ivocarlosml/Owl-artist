@@ -3,7 +3,14 @@ body {
   font-family: Arial, sans-serif;
   font-weight: bold;
   margin: 0;
-  padding: 0;
+background-image: url("https://raw.githubusercontent.com/ivocarlosml/Owl-artist/main/Gabriel/R.jpg");
+}
+
+.trasintionSuave{
+    position: relative !important;
+    transition:  all ease-in-out 0.5s;
+    
+    animation: infinite 0.9;
 }
 .container {
   display: flex;
@@ -54,6 +61,10 @@ body {
   padding-left: 30px;
 }
 
+#busca{
+    margin-left:25px;   
+}
+
 /*   ÁREA DE LOGIN   */
 
 .container-cadastro {
@@ -62,7 +73,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 45%;
+  width: 50%;
   padding: 20px;
   box-sizing: border-box;
   min-height: 100vh;
@@ -90,7 +101,7 @@ body {
     border-radius: 20px;
 }
 .gg{
-  width: 120px;
+  width: 140px;
   height:40px;
   margin-right: 2rem;
   background:black;
@@ -99,7 +110,7 @@ body {
   text-align:center;
 }
 .ff{
-  width: 120px;
+  width: 140px;
   height:40px;
   padding-left:0rem;
   transform: translateY(-10%);
@@ -110,8 +121,8 @@ h5{
     display:inline-flex;
     flex-direction: row;
     justify-content:space-between;
-    font-size: 32px;
-    transform: translateY(-100%);
+    font-size: 15px;
+    transform: translateY(-85%);
     color:white;
 }
 .container-cadastro form {
@@ -253,7 +264,7 @@ button {
 .apoioLateral span{
     margin-bottom: 50px;
     margin-left: 50px;
-
+    transform: translateY(100%);
 }
 .img-lateral{
   width: 40%;
