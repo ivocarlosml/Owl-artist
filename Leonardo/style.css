@@ -88,7 +88,10 @@ position: relative;
   justify-content: center;
   width: 40%;
   margin: 60px;
-  padding: 20px;
+  padding: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+
   box-sizing: border-box;
   min-height: 100vh;
   border-radius: 2rem;
