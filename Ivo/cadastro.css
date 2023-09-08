@@ -51,15 +51,21 @@ header img:hover{
 }
 .barra-pesquisa input {
   width: 100%;
-  height: 5vh;
+  height: 4vh;
   border-radius: 15px;
   padding-left: 0.7rem;
   border: 1px solid gray;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-family:  'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1px;
 }
 .barra-pesquisa input:focus{
   outline: none;
   background-color: #fffdfd;
+  color: #000000;
+}
+.barra-pesquisa form input:hover{
+  background-color: #c9c9ca;
 }
 
 /*----------------------------ESTILOS DO MENU--------------------------*/
@@ -100,50 +106,67 @@ header img:hover{
 .container-cadastro h1 {
   text-align: center;
   font-size: 2rem;
-}
+  letter-spacing: 2px;
+  font-family: ;
+}/*-------------PARTE SUPERIOR CADASTRO---------*/
 .redes-cadastro{
-  display: flex;
-  width: 100%;
-  justify-content:center;
+  display:flex;
+  width: 70%;
+  justify-content:space-around;
   align-items:center;
-  background-color: #1e9ef4;
-  height: 30vh;
+  max-height:10vh;
 }
 .redes-cadastro img{
-    border-radius: 20px;
+    border-radius: 1rem;
     object-fit: cover;
     width: 30px;
     height:30px;
+    margin-left: 0.6rem;
 }
 .gf-cadastro {
-  background-color: #000000;
-  margin-right: 2rem;
-  height: 2vh;
-  width: 50%;
+  height: 7vh;
+  width: 40%;
+  align-items:center;
+  display: flex;
 }
+.gf-cadastro h5{
+  padding-left: 0.5rem;
+  color: white;
+  font-size: 1rem;
+}
+#gg{
+  background: black;
+}
+#ff{
+  background:#0000CD;
+}
+
+/*----------------------PARTE DO FORMULÁRIO--------------------*/
 
 .container-cadastro form {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
+
 }
 .container-cadastro label {
   margin-top: 0.7rem;
 }
 .container-cadastro input {
   padding: 0.5rem;
-  background-color: #6e6e6e;
+  background-color: #cfd3da;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-top: 0.8rem;
-  background: #fff;
+  font-size: 1rem;
 }
-.container-cadastro input::placeholder {
-  color: #6e6e6e;
+.container-cadastro input:focus {
+  background-color: #7e7e7e;
+  color: white;
 }
 .termos label{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
