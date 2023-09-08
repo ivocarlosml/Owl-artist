@@ -93,13 +93,13 @@ a{
 }
 
 .icon {
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     margin-right: 20px;
-    border-radius: 50%;
     
-    padding: 0.4rem;
-    object-fit:cover;
+    
+    padding: 0.3rem;
+    object-fit:contain;
 }
 /* Estilos para o container da imagem */
 .image-container {
