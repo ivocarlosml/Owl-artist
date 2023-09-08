@@ -1,9 +1,16 @@
+*{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: #2e2e2e;
   font-family: Arial, sans-serif;
   font-weight: bold;
   margin: 0;
-  background-image: url("https://raw.githubusercontent.com/ivocarlosml/Owl-artist/main/Gabriel/R.jpg");
+  
+  /*background-image: url("https://raw.githubusercontent.com/ivocarlosml/Owl-artist/main/Gabriel/R.jpg");*/
 }
 #postP{
   position: absolute;
@@ -20,10 +27,11 @@ body {
     animation: infinite 0.9;
 }
 .container {
-  display: flex;
+  display: flex;;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  height: 100%;
+  position: relative;
   justify-content: space-around;
 }
 
@@ -34,7 +42,7 @@ body {
   height: 10vh;
   background-color: #000000;
   display: flex;
-  margin-bottom:2rem;
+  
   justify-content: space-around;
   align-items: center;
 }
@@ -51,6 +59,7 @@ body {
   width: 5%;
 }
 .bg-pesquisa img{
+  object-fit: cover;
   border-radius: 20px;
 }
 .timg {
@@ -80,13 +89,18 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  padding: 20px;
+  width: 35%;
+  margin: 60px;
+  padding: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+position: relative;
   box-sizing: border-box;
   min-height: 100vh;
   border-radius: 2rem;
 }
 .logocad {
+  margin-top: 0;
   max-width: 100px;
   max-height: 100px;
   border-radius: 50px;
@@ -103,14 +117,15 @@ body {
   align-items:center;
 }
 .redes img{
-    width: 30px;
+  object-fit: cover;
+    width: 40px;
     height:40px;
     border-radius: 20px;
 }
 .gg{
   width: 180px;
   height:42px;
-  margin-right: 2rem;
+  margin-right: 1rem;
   background:black;
   transform: translateY(80%);
   color:white;
@@ -163,6 +178,7 @@ h5{
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
   display:flex;
+  flex-wrap: wrap;
   justify-content:end;
   color: #232388;
   transform: translateY(-100%);
@@ -199,7 +215,7 @@ button {
 
   footer {
     display: flex;
-    margin-top: 5rem;
+
     width: 100%;
     background-color: #000000;
     color: #fff;
