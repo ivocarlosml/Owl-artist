@@ -4,10 +4,10 @@
     
     animation: infinite 0.9;
 }
-.conteudo:hover{
+.conteudo:hover {
    
     background: linear-gradient(90deg, #1e09ff, #ab007d);
-    z-index: 9; 
+    z-index: 2; 
     margin-top: -20px;
     margin-left: -20px;
     margin-right: -20px;
@@ -20,16 +20,25 @@
 }
 .opacityAnimation{
     animation: opacidade 3s ease-in-out;
+    
 }
 @keyframes opacidade {
     0%{
         opacity: 1;
+        
     }100%{
         opacity: 0;
         transform: translateX(-100px);
+        box-shadow: 0 0 0 transparent;
     }
 }
-
+@keyframes efectUserIcon {
+    0%{
+        transform: rotateX('0');
+    }100%{
+        transform: rotateX('160');
+    }
+}
 .imagem2:hover{
     z-index: 2; 
     margin-top: -20px;
@@ -38,6 +47,13 @@
     margin-bottom: -20px;
     width: 110%;
     height: 110%;
+    filter: blur(3px);
+}
+.content:hover .idParaMidia {
+    
+    display: flex;
+   background-color: #ab007d;
+    
 }
 .imagem3:hover{
     z-index: 2; 
@@ -47,6 +63,7 @@
     margin-bottom: -20px;
     width: 110%;
     height: 110%;
+    filter: blur(3px);
 }
 .imagem4:hover{
     z-index: 2; 
@@ -56,6 +73,7 @@
     margin-bottom: -20px;
     width: 110%;
     height: 110%;
+    filter: blur(3px);
 }
 .imagem5:hover{
     z-index: 2; 
@@ -65,6 +83,7 @@
     margin-bottom: -20px;
     width: 110%;
     height: 110%;
+    filter: blur(3px);
 }
 .imagem6:hover{
     z-index: 2; 
@@ -74,6 +93,7 @@
     margin-bottom: -20px;
     width: 110%;
     height: 110%;
+    filter: blur(3px);
 }
 .imagem7:hover{
     z-index: 2; 
@@ -83,6 +103,7 @@
     margin-bottom: -20px;
     width: 110%;
     height: 110%;
+    filter: blur(3px);
     
 }
 .imagem8:hover{
@@ -93,6 +114,7 @@
     margin-bottom: -20px;
     width: 110%;
     height: 110%; 
+    filter: blur(3px);
 }
 .imagem9:hover{
     z-index: 2; 
@@ -102,6 +124,7 @@
     margin-bottom: -300px;
     width: 110%;
     height: 110%;
+    filter: blur(3px);
 }
 .imagem10:hover{
     z-index: 2; 
@@ -111,4 +134,85 @@
     margin-bottom: -300px;
     width: 110%;
     height: 110%;
+  
+}
+.imagem11:hover{
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -300px;
+    width: 110%;
+    height: 110%;
+    filter: blur(3px);
+}
+.imagem12:hover{
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -300px;
+    width: 110%;
+    height: 110%;
+    filter: blur(3px);
+}
+.imagem13:hover{
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -300px;
+    width: 110%;
+    height: 110%;
+    /*filter: blur(3px); texto...*/
+}
+.imagem14:hover{
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -300px;
+    width: 110%;
+    height: 110%;
+    filter: blur(3px);
+}
+.imagem15:hover{
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -300px;
+    width: 110%;
+    height: 110%;
+    filter: blur(3px);
+}
+.imagem16:hover{
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -300px;
+    width: 110%;
+    height: 110%;
+    filter: blur(3px);
+}
+.imagem17:hover{
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -300px;
+    width: 110%;
+    height: 110%;
+    filter: blur(3px);
+}
+.imagem18:hover{
+    z-index: 2; 
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: -300px;
+    width: 110%;
+    height: 110%;
+    filter: blur(3px);
 }
