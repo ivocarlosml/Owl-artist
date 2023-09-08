@@ -8,11 +8,11 @@ let control = 0;
 function turnColorPage(){
     
     if(control == 0){
-    document.body.style.backgroundColor="#eef6ff";
+    document.body.style.backgroundColor="#f2f2f2";
     //document.footer.style.backgroundColor="#eef6ff";
-    header.style.backgroundColor="white";
-    nomeUser.style.Color="black";
-    footer.style.backgroundColor="white";
+    header.style.backgroundColor="#f2f2f2";
+    nomeUser.style.Color="#f2f2f2";
+    footer.style.backgroundColor="#f2f2f2";
     //header.div.style.color="black";
     //posterP.style.boxShadow="0 30px 0px rgb(108 107 107)";
     control = 1;
