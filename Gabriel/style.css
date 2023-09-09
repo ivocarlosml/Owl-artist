@@ -305,7 +305,7 @@ main{
 footer{
 
     display: flex;
-    margin-top: 400px;
+    margin-top: 350px;
     width: 100%;
     height: 500px;
     background-color: #000000;
@@ -534,7 +534,7 @@ margin-top: 40px;
     margin-left: 20px;
 }
 .smallParte .conteudo h2 {
-    width: 20px;
+    width: 100%;
     height: 100%;
     margin-bottom: 5;
 }
@@ -669,4 +669,10 @@ left: 0;
 .toper{
     margin-top: 150px;
     margin-bottom: 150px;
+}
+.ajustesDivBottom{
+    margin-top: 200px;
+}
+.ajustesLargeDivs{
+    margin-top: 400px;
 }
