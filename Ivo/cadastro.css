@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all ease-in-out 0.5s;
+}
+
 body {
   background-image:linear-gradient(45deg,#101010 10%,#2e2e2e 60%,#5e5e60 80%) ;
   font-family: Arial, sans-serif;
@@ -8,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  max-width: 100%;
   justify-content: space-around;
 }
 img {
@@ -30,7 +37,7 @@ header img{
   height: 2.3rem;
 }
 header img:hover{
-  opacity: 0.7;
+  opacity: 0.8;
 }
 /*--------------------- ESTILOS DA BARRA DE PESQUISA--------------------*/
 .barra-pesquisa{
@@ -82,18 +89,52 @@ header img:hover{
   margin-left: 4rem;
 }
 
-/*--------------------Area Slide de Imagens-----------------------*/
-.image-container {
-  min-width: 100%;
-  height: 100vh; /* Altura da imagem de fundo */
-  overflow: hidden;
-  z-index: 1;
-}
-.postP{
-  height: 100vh;
+
+
+
+
+
+
+
+
+/*---------------------------------Área do Contéudo--------------------*/
+.conteudo{
   width: 100%;
+  height: 160vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #0000CD;
+  overflow: hidden;
 }
 
+ /*--------------------Area Slide de Imagens-----------------------*/
+
+  .image-container {
+    width: 100%;
+    height: 160vh; /* Calcula a altura para ocupar toda a tela, exceto o header */
+    z-index: 1;
+  }
+  
+  .postP {
+    width: 100%;
+    height: 100vh;
+  }
+  .trasintionSuave{
+    position: relative !important;
+    transition:  all ease-in-out 0.5s;
+    
+    animation: infinite 0.9;
+  }
+  /*.conteudo:hover {
+    z-index: 1; 
+    width: 100%;
+    height: 100vh;
+  }*/
+  #postP{
+    transition: transform 2s ease-in-out ;
+  }
 
 /*--------------------------- ÁREA DE CADASTRO------------------------- */
 
@@ -106,11 +147,14 @@ header img:hover{
   width: 40%;
   padding: 20px;
   box-sizing: border-box;
-  min-height: 100vh;
+  height: 130vh;
   border-radius: 2rem;
   margin-top:20vh;
   z-index: 2;
+  position: relative; /* Adiciona posicionamento relativo */
+  bottom: 120vh;
 }
+
 .logocad {
   max-width: 100px;
   max-height: 100px;
@@ -122,13 +166,16 @@ header img:hover{
   font-size: 2rem;
   letter-spacing: 2px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}/*-------------PARTE SUPERIOR CADASTRO---------*/
+}
+/*-------------PARTE SUPERIOR CADASTRO---------*/
 .redes-cadastro{
   display:flex;
   width: 70%;
   justify-content:space-around;
   align-items:center;
   max-height:10vh;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 .redes-cadastro img{
     border-radius: 1rem;
@@ -166,21 +213,28 @@ header img:hover{
 }
 .container-cadastro label {
   margin-top: 0.7rem;
+
 }
 .container-cadastro input {
   padding: 0.5rem;
-  background-color: #cfd3da;
+  background-color: #7e7e7e;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-top: 0.8rem;
   font-size: 1rem;
 }
+.container-cadastro input::placeholder{
+  color: #000000;
+  font-weight: 400;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .container-cadastro input:focus {
-  background-color: #7e7e7e;
-  color: white;
+  background-color: #cfd3da;
+  color: rgb(1, 1, 1);
 }
 .termos label{
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -200,11 +254,18 @@ button {
     width: 100%;
     height:4px;
   }
+
+
+
+
+
+
+  
+
 /*        ESTILO DO RODAPÉ            */
 
   footer {
     display: flex;
-    margin-top: 3rem;
     width: 100%;
     background-color: #000000;
     color: #fff;
