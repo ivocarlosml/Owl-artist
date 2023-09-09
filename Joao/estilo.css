@@ -44,11 +44,19 @@ form {
     column-gap: 17px;
 }
 
-.bg-pesquisa {
-    background-color: #f7f7f7;
-    padding: 3px;
-    height: 30px;
+.icon-search {
+    background-color: white;
+    width: 32px;
+    height: 32px;
     border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-search img{
+    width: 22px;
+    height: 22px;
 }
 
 input[type="text"],
@@ -124,6 +132,12 @@ select {
     cursor: pointer;
 }
 
+.arte-do-dia {
+    width: 25px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
 .secao-centro {
     padding: 20px 0;
     display: flex;
@@ -135,7 +149,7 @@ select {
 .atributos-perfil {
     padding: 10px;
     padding-bottom: 30px;
-    width: 330px;
+    width: 360px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -184,6 +198,7 @@ select {
     width: 300px;
     border: 5px solid white;
     border-radius: 100%;
+    object-fit: cover;
 }
 
 .secao-direita {
@@ -210,8 +225,10 @@ select {
 }
 
 .inspiracoes div img {
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 100%;
+    object-fit: cover;
 }
 
 .criar {
