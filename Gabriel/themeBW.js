@@ -11,7 +11,10 @@ let addIcon = document.getElementsByTagName("img")[2];
 let ajudaIcon = document.getElementsByTagName("img")[3];
 let homeIcon = document.getElementsByTagName("img")[4];
 
-let infoBar = document.getElementsByClassName(".infoBar");
+//let infoBar = document.getElementById("infoBar");
+let infoBar = document.getElementsByClassName("infoBar");
+
+let scrollbar = document.documentElement.style;
 let control = 0;
 function turnColorPage(){
     
@@ -29,16 +32,27 @@ function turnColorPage(){
    ajudaIcon.src ="configB.png";
    homeIcon.src ="homeB.png";
 
-   infoBar.style.backgroundColor="#f2f2f2";
+   scrollbar.setProperty("--scrollbar-color", "red");
+  scrollbar.setProperty("--scrollbar-thumb-color", "blue");
+        
+   /*infoBar.style.backgroundColor="#f2f2f2";
+   infoBar.style.color="black";*/
     control = 1;
     }else if(control == 1){
-    document.body.style.backgroundColor="black";
-    nomeUser.style.Color="black";
-    //document.footer.style.backgroundColor="#eef6ff";
-    header.style.backgroundColor="black";
-    footer.style.backgroundColor="black";
-    //header.div.style.color="white";
-    //posterP.style.boxShadow="0 30px 0px rgb(108 107 107)";
+        document.body.style.backgroundColor="black";
+        header.style.backgroundColor="black";
+        nomeUser.style.color="#f2f2f2";
+        tipoArte.style.color="#f2f2f2";
+        textoComSombra.style.background = "radial-gradient(black,transparent)";
+        textoComSombra.style.color = "#f2f2f2";
+        footer.style.backgroundColor="black";
+        footer.style.color="#f2f2f2";
+       suporteIcon.src ="suporte.png";
+       addIcon.src ="criar.png";
+       ajudaIcon.src ="config.png";
+       homeIcon.src ="menu.png";
+       /*infoBar.style.backgroundColor="black";
+       infoBar.style.color="white";*/
     control = 0;
     }
 
