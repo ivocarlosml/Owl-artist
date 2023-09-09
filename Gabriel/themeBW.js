@@ -23,6 +23,7 @@ function turnColorPage(){
     textoComSombra.style.background = "radial-gradient(white,transparent)";
     textoComSombra.style.color = "black";
     footer.style.backgroundColor="#f2f2f2";
+    footer.style.color="black";
    suporteIcon.src ="suporteB.png";
    addIcon.src ="criarB.png";
    ajudaIcon.src ="configB.png";
