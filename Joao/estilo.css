@@ -85,6 +85,15 @@ select {
     align-items: center;
 }
 
+.menu a {
+    display: flex;
+    align-items: center;
+}
+
+.menu img {
+    width: 30px;
+}
+
 /*----------------PERFIL------------------*/
 
 .container {
