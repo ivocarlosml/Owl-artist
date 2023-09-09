@@ -6,7 +6,7 @@
 }
 .conteudo:hover {
    
-    background: linear-gradient(90deg, #1d09ffe2, #8028fb);
+    background: linear-gradient(90deg, #1d09ff, #8028fb);
     z-index: 2; 
     margin-top: -20px;
     margin-left: -20px;
