@@ -22,6 +22,7 @@ img {
   display: flex;
   position: fixed;
   top:0;
+  z-index: 3;
 }
 header img{
   border-radius: 20px;
@@ -81,6 +82,18 @@ header img:hover{
   margin-left: 4rem;
 }
 
+/*--------------------Area Slide de Imagens-----------------------*/
+.image-container {
+  min-width: 100%;
+  height: 100vh; /* Altura da imagem de fundo */
+  overflow: hidden;
+  z-index: 1;
+}
+.postP{
+  height: 100vh;
+  width: 100%;
+}
+
 
 /*--------------------------- ÁREA DE CADASTRO------------------------- */
 
@@ -96,6 +109,7 @@ header img:hover{
   min-height: 100vh;
   border-radius: 2rem;
   margin-top:20vh;
+  z-index: 2;
 }
 .logocad {
   max-width: 100px;
@@ -107,7 +121,7 @@ header img:hover{
   text-align: center;
   font-size: 2rem;
   letter-spacing: 2px;
-  font-family: ;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }/*-------------PARTE SUPERIOR CADASTRO---------*/
 .redes-cadastro{
   display:flex;
@@ -292,7 +306,7 @@ button {
       width: 90%;
     }
     button {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
     footer{
       display:none;
