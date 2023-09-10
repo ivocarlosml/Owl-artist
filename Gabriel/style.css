@@ -697,7 +697,8 @@ left: 0;
     width: 100%;
     padding-top: 100px;
     height: 900px; /* 75% do campo de visão (viewport height) */
-    overflow: hidden;
+    margin-bottom: 200px;
+
 }
 #MPcoments{
     margin-top:0;
@@ -734,18 +735,18 @@ left: 0;
 #MPpost-image{
 
     width: 100%;
-    
-    height: 80%;
+    height: 100%;
     display: flex;
     justify-content: space-around; 
     align-items: center;  
     flex-wrap: wrap;
 }
 #MPpost{
-    width: 40%;
+    width: 50%;
     height: 100%;
     border-radius: 2vw;
-    object-fit: cover;
+
+    object-fit:contain;
 }
 #MPperfil{
     margin-top: 50px;
@@ -766,16 +767,19 @@ left: 0;
     color:white;
 }
 #MPicones{
-    justify-content: center;
+    justify-content: space-between;
     display: flex;
     border-radius: 0;
-    width: 45vw;
-    margin-top: 1.2vw;
+    width: 50%;
+    position: relative;
+    top:-50px;
+    z-index: 4;
+    margin-left: 93px;
 }
 .MPicones{
-    width: 3vw;
-    height: 3vw;
-    padding-left: 3vw;
+    width: 80px;
+    height: 80px;
+    
 }
 
 .divs {
@@ -783,9 +787,10 @@ left: 0;
     height: auto;
   }
 #MPcomem {
+    
     background-color: black;
     color: white;
-    
+    height: 40px;
     margin-left: 5px;
     margin-right: 5px;
     border: none;
@@ -794,8 +799,23 @@ left: 0;
     padding: 0.5rem;
     width: 97%;
 }
+#inserirComente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white ;
+    border-radius: 25px;
+    width: 95%;
+    height: 80px;
+    display: flex;
+    position: relative;
+    bottom:80px;
+    
+}
 #MpapoioComent{
     overflow-y: scroll;
+    width: 100%;
+    height: 100%;
 }
 #MPrelacionados{
     position: relative;
