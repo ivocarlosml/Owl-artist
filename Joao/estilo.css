@@ -39,7 +39,7 @@ form {
 
 .barra-pesquisa {
     margin-right: 30px;
-    width: 510px;
+    width: 550px;
     display: flex;
     justify-content: start;
     column-gap: 30px;
@@ -70,7 +70,7 @@ select {
     border: none;
     background-color: #f7f7f7;
     padding: 10px;
-    width: 440px;
+    width: 450px;
     height: 30px;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
@@ -105,7 +105,6 @@ select {
 #perfil {
     max-width: 1920px;
     width: 100%;
-    height: 580px;
     padding: 20px;
     padding-top: 70px;
     display: flex;
@@ -152,6 +151,10 @@ select {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.secao-centro h1 {
+    padding: 20px;
 }
 
 .atributos-perfil {
@@ -204,7 +207,7 @@ select {
 
 .secao-centro img {
     width: 300px;
-    border: 10px solid black;
+    border: 5px solid black;
     border-radius: 100%;
     object-fit: cover;
 }
@@ -631,10 +634,21 @@ footer span {
 /*-----------MEDIA SCREEN-------------*/
 
 @media screen and (max-width: 600px) {
+    #triangulo-topo {
+        transform: rotate(180deg);
+        width: 240px;
+        height: 200px;
+        position: relative;
+        right: 0;
+    }
+
     .imgConfig {
-        padding: 15px 20px 0 0;
         display: flex;
         justify-content: end;
+    }
+
+    .imgConfig img {
+        padding: 15px 20px 0 0;
     }
 
     #topo {
@@ -973,6 +987,10 @@ footer span {
 }
 
 @media screen and (min-width: 600px) {
+    #triangulo-topo {
+        display: none;
+    }
+
     .criar {
         display: none;
     }
