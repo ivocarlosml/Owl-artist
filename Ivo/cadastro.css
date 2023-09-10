@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all ease-in-out 0.5s;
+}
+
 body {
   background-image:linear-gradient(45deg,#101010 10%,#2e2e2e 60%,#5e5e60 80%) ;
   font-family: Arial, sans-serif;
@@ -8,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  max-width: 100%;
   justify-content: space-around;
 }
 img {
@@ -22,6 +29,7 @@ img {
   display: flex;
   position: fixed;
   top:0;
+  z-index: 3;
 }
 header img{
   border-radius: 20px;
@@ -29,7 +37,7 @@ header img{
   height: 2.3rem;
 }
 header img:hover{
-  opacity: 0.7;
+  opacity: 0.8;
 }
 /*--------------------- ESTILOS DA BARRA DE PESQUISA--------------------*/
 .barra-pesquisa{
@@ -51,15 +59,21 @@ header img:hover{
 }
 .barra-pesquisa input {
   width: 100%;
-  height: 5vh;
+  height: 4vh;
   border-radius: 15px;
   padding-left: 0.7rem;
   border: 1px solid gray;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-family:  'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1px;
 }
 .barra-pesquisa input:focus{
   outline: none;
   background-color: #fffdfd;
+  color: #000000;
+}
+.barra-pesquisa form input:hover{
+  background-color: #c9c9ca;
 }
 
 /*----------------------------ESTILOS DO MENU--------------------------*/
@@ -76,6 +90,52 @@ header img:hover{
 }
 
 
+
+
+
+
+
+
+
+/*---------------------------------Área do Contéudo--------------------*/
+.conteudo{
+  width: 100%;
+  height: 160vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #0000CD;
+  overflow: hidden;
+}
+
+ /*--------------------Area Slide de Imagens-----------------------*/
+
+  .image-container {
+    width: 100%;
+    height: 160vh; /* Calcula a altura para ocupar toda a tela, exceto o header */
+    z-index: 1;
+  }
+  
+  .postP {
+    width: 100%;
+    height: 100vh;
+  }
+  .trasintionSuave{
+    position: relative !important;
+    transition:  all ease-in-out 0.5s;
+    
+    animation: infinite 0.9;
+  }
+  /*.conteudo:hover {
+    z-index: 1; 
+    width: 100%;
+    height: 100vh;
+  }*/
+  #postP{
+    transition: transform 2s ease-in-out ;
+  }
+
 /*--------------------------- ÁREA DE CADASTRO------------------------- */
 
 .container-cadastro {
@@ -87,10 +147,14 @@ header img:hover{
   width: 40%;
   padding: 20px;
   box-sizing: border-box;
-  min-height: 100vh;
+  height: 130vh;
   border-radius: 2rem;
   margin-top:20vh;
+  z-index: 2;
+  position: relative; /* Adiciona posicionamento relativo */
+  bottom: 120vh;
 }
+
 .logocad {
   max-width: 100px;
   max-height: 100px;
@@ -100,50 +164,77 @@ header img:hover{
 .container-cadastro h1 {
   text-align: center;
   font-size: 2rem;
+  letter-spacing: 2px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+/*-------------PARTE SUPERIOR CADASTRO---------*/
 .redes-cadastro{
-  display: flex;
-  width: 100%;
-  justify-content:center;
+  display:flex;
+  width: 70%;
+  justify-content:space-around;
   align-items:center;
-  background-color: #1e9ef4;
-  height: 30vh;
+  max-height:10vh;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 .redes-cadastro img{
-    border-radius: 20px;
+    border-radius: 1rem;
     object-fit: cover;
     width: 30px;
     height:30px;
+    margin-left: 0.6rem;
 }
 .gf-cadastro {
-  background-color: #000000;
-  margin-right: 2rem;
-  height: 2vh;
-  width: 50%;
+  height: 7vh;
+  width: 40%;
+  align-items:center;
+  display: flex;
 }
+.gf-cadastro h5{
+  padding-left: 0.5rem;
+  color: white;
+  font-size: 1rem;
+}
+#gg{
+  background: black;
+}
+#ff{
+  background:#0000CD;
+}
+
+/*----------------------PARTE DO FORMULÁRIO--------------------*/
 
 .container-cadastro form {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
+
 }
 .container-cadastro label {
   margin-top: 0.7rem;
+
 }
 .container-cadastro input {
   padding: 0.5rem;
-  background-color: #6e6e6e;
+  background-color: #7e7e7e;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-top: 0.8rem;
-  background: #fff;
+  font-size: 1rem;
 }
-.container-cadastro input::placeholder {
-  color: #6e6e6e;
+.container-cadastro input::placeholder{
+  color: #000000;
+  font-weight: 400;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-cadastro input:focus {
+  background-color: #cfd3da;
+  color: rgb(1, 1, 1);
 }
 .termos label{
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -163,11 +254,18 @@ button {
     width: 100%;
     height:4px;
   }
+
+
+
+
+
+
+  
+
 /*        ESTILO DO RODAPÉ            */
 
   footer {
     display: flex;
-    margin-top: 3rem;
     width: 100%;
     background-color: #000000;
     color: #fff;
@@ -269,7 +367,7 @@ button {
       width: 90%;
     }
     button {
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
     footer{
       display:none;

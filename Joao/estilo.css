@@ -29,6 +29,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 form {
@@ -38,17 +39,25 @@ form {
 
 .barra-pesquisa {
     margin-right: 30px;
-    width: 490px;
+    width: 550px;
     display: flex;
     justify-content: start;
-    column-gap: 17px;
+    column-gap: 30px;
 }
 
-.bg-pesquisa {
-    background-color: #f7f7f7;
-    padding: 3px;
-    height: 30px;
+.icon-search {
+    background-color: white;
+    width: 32px;
+    height: 32px;
     border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-search img {
+    width: 22px;
+    height: 22px;
 }
 
 input[type="text"],
@@ -61,7 +70,7 @@ select {
     border: none;
     background-color: #f7f7f7;
     padding: 10px;
-    width: 440px;
+    width: 450px;
     height: 30px;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
@@ -77,18 +86,27 @@ select {
     align-items: center;
 }
 
-.imgConfig {
-    padding: 15px 20px 0 0;
+.menu a {
     display: flex;
-    justify-content: end;
+    align-items: center;
+}
+
+.menu img {
+    width: 30px;
 }
 
 /*----------------PERFIL------------------*/
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 #perfil {
-    height: 620px;
+    max-width: 1920px;
+    width: 100%;
     padding: 20px;
-    padding-top: 90px;
+    padding-top: 70px;
     display: flex;
     justify-content: space-between;
 }
@@ -103,7 +121,7 @@ select {
     margin-bottom: 40px;
     margin-top: 5px;
     background-color: black;
-    width: 220px;
+    width: 230px;
     padding: 20px 10px;
 }
 
@@ -123,6 +141,10 @@ select {
     cursor: pointer;
 }
 
+.secao-esquerda h4 {
+    font-size: .9rem;
+}
+
 .secao-centro {
     padding: 20px 0;
     display: flex;
@@ -131,12 +153,33 @@ select {
     align-items: center;
 }
 
+.fotoPerfil {
+    width: 300px;
+    border: 5px solid black;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+/*
+.selo {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    bottom: 90px;
+    left: 100px;
+}
+*/
+
+.secao-centro h1 {
+    padding: 20px;
+}
+
 .atributos-perfil {
     padding: 10px;
-    padding-bottom: 50px;
-    width: 330px;
+    padding-bottom: 30px;
+    width: 350px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -179,12 +222,6 @@ select {
     transition: 400ms;
 }
 
-.secao-centro img {
-    width: 300px;
-    border: 5px solid white;
-    border-radius: 100%;
-}
-
 .secao-direita {
     padding: 20px 0;
     width: 280px;
@@ -204,13 +241,19 @@ select {
     display: flex;
     justify-content: start;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 15px;
     border-radius: 15px;
 }
 
 .inspiracoes div img {
-    height: 40px;
+    width: 45px;
+    height: 45px;
     border-radius: 100%;
+    object-fit: cover;
+}
+
+.inspiracoes p {
+    font-size: 1.2rem;
 }
 
 .criar {
@@ -223,18 +266,18 @@ select {
     position: fixed;
     top: 90vh;
     width: 55px;
-    object-fit:cover;
+    object-fit: cover;
 }
 
-/*-------------ARTES DO PERFIL---------------*/
+/*-------------EXIBIÇÃO DE ARTES DO PERFIL---------------*/
 
 #artes-perfil {
     padding: 0 20px;
-    display: grid;
+    padding-bottom: 10px;
     width: 100%;
-    height: 1700px;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(13, 100px);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(32, 100px);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 }
@@ -243,121 +286,381 @@ select {
     width: 100%;
     height: 100%;
     grid-column: 1/3;
-    grid-row: 1/5;
-    object-fit:cover;
+    grid-row: 1/4;
+    object-fit: cover;
 }
 
 .imagem2 {
     width: 100%;
     height: 100%;
-    grid-column: 3/5;
-    grid-row: 1/3;
-    object-fit:cover;
+    grid-column: 3/6;
+    grid-row: 1/4;
+    object-fit: cover;
 }
 
 .imagem3 {
     width: 100%;
     height: 100%;
-    grid-column: 5/7;
+    grid-column: 6/8;
     grid-row: 1/4;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 .imagem4 {
     width: 100%;
     height: 100%;
-    grid-column: 1/2;
-    grid-row: 5/7;
-    object-fit:cover;
+    grid-column: 1/4;
+    grid-row: 4/8;
+    object-fit: cover;
 }
 
 .imagem5 {
     width: 100%;
     height: 100%;
-    grid-column: 2/3;
-    grid-row: 5/8;
-    object-fit:cover;
+    grid-column: 4/6;
+    grid-row: 4/7;
+    object-fit: cover;
 }
 
 .imagem6 {
     width: 100%;
     height: 100%;
-    grid-column: 3/5;
-    grid-row: 3/7;
-    object-fit:cover;
+    grid-column: 6/8;
+    grid-row: 4/8;
+    object-fit: cover;
 }
 
 .imagem7 {
     width: 100%;
     height: 100%;
-    grid-column: 5/7;
-    grid-row: 4/7;
-    object-fit:cover;
+    grid-column: 1/4;
+    grid-row: 8/11;
+    object-fit: cover;
 }
 
 .imagem8 {
     width: 100%;
     height: 100%;
-    grid-column: 1/2;
+    grid-column: 4/6;
     grid-row: 7/10;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 .imagem9 {
     width: 100%;
     height: 100%;
-    grid-column: 2/3;
+    grid-column: 6/8;
     grid-row: 8/10;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 .imagem10 {
     width: 100%;
     height: 100%;
-    grid-column: 3/6;
-    grid-row: 7/10;
-    object-fit:cover;
+    grid-column: 1/3;
+    grid-row: 11/13;
+    object-fit: cover;
 }
 
 .imagem11 {
     width: 100%;
     height: 100%;
-    grid-column: 6/7;
-    grid-row: 7/10;
-    object-fit:cover;
+    grid-column: 3/4;
+    grid-row: 11/13;
+    object-fit: cover;
 }
 
 .imagem12 {
     width: 100%;
     height: 100%;
-    grid-column: 1/4;
+    grid-column: 4/8;
     grid-row: 10/13;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 .imagem13 {
     width: 100%;
     height: 100%;
-    grid-column: 4/5;
-    grid-row: 10/13;
-    object-fit:cover;
+    grid-column: 1/5;
+    grid-row: 13/17;
+    object-fit: cover;
 }
 
 .imagem14 {
     width: 100%;
     height: 100%;
-    grid-column: 5/7;
-    grid-row: 10/13;
-    object-fit:cover;
+    grid-column: 5/6;
+    grid-row: 13/16;
+    object-fit: cover;
+}
+
+.imagem15 {
+    width: 100%;
+    height: 100%;
+    grid-column: 6/8;
+    grid-row: 13/16;
+    object-fit: cover;
+}
+
+.imagem16 {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 17/20;
+    object-fit: cover;
+}
+
+.imagem17 {
+    width: 100%;
+    height: 100%;
+    grid-column: 3/5;
+    grid-row: 17/19;
+    object-fit: cover;
+}
+
+.imagem18 {
+    width: 100%;
+    height: 100%;
+    grid-column: 5/8;
+    grid-row: 16/19;
+    object-fit: cover;
+}
+
+.imagem19 {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 20/22;
+    object-fit: cover;
+}
+
+.imagem20 {
+    width: 100%;
+    height: 100%;
+    grid-column: 3/6;
+    grid-row: 19/22;
+    object-fit: cover;
+}
+
+.imagem21 {
+    width: 100%;
+    height: 100%;
+    grid-column: 6/8;
+    grid-row: 19/23;
+    object-fit: cover;
+}
+
+.imagem22 {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 22/24;
+    object-fit: cover;
+}
+
+.imagem23 {
+    width: 100%;
+    height: 100%;
+    grid-column: 3/6;
+    grid-row: 22/25;
+    object-fit: cover;
+}
+
+.imagem24 {
+    width: 100%;
+    height: 100%;
+    grid-column: 6/8;
+    grid-row: 23/25;
+    object-fit: cover;
+}
+
+.imagem25 {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 24/27;
+    object-fit: cover;
+}
+
+.imagem26 {
+    width: 100%;
+    height: 100%;
+    grid-column: 3/5;
+    grid-row: 25/29;
+    object-fit: cover;
+}
+
+.imagem27 {
+    width: 100%;
+    height: 100%;
+    grid-column: 5/8;
+    grid-row: 25/28;
+    object-fit: cover;
+}
+
+.imagem28 {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 27/30;
+    object-fit: cover;
+}
+
+.imagem29 {
+    width: 100%;
+    height: 100%;
+    grid-column: 3/5;
+    grid-row: 29/31;
+    object-fit: cover;
+}
+
+.imagem30 {
+    width: 100%;
+    height: 100%;
+    grid-column: 5/8;
+    grid-row: 28/31;
+    object-fit: cover;
+}
+
+.imagem31 {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/3;
+    grid-row: 30/33;
+    object-fit: cover;
+}
+
+.imagem32 {
+    width: 100%;
+    height: 100%;
+    grid-column: 3/5;
+    grid-row: 31/33;
+    object-fit: cover;
+}
+
+.imagem33 {
+    width: 100%;
+    height: 100%;
+    grid-column: 5/8;
+    grid-row: 31/33;
+    object-fit: cover;
 }
 
 /*------------------RODAPÉ-------------------*/
 
+footer {
+    display: flex;
+    margin-top: 200px;
+    width: 100%;
+    height: 500px;
+    background-color: #000000;
+    justify-content: space-between;
+    box-shadow: 0px -55px 150px rgba(0, 0, 0, 0.9);
+    transition: all ease-in-out 0.5s;
+}
+
+.contato {
+    margin-top: 50px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.contato a {
+    text-decoration: none;
+}
+
+#containerDeapoio {
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 90px;
+}
+
+.logoOwl {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.detalhesFooter {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.detalhesFooter h3 {
+    margin-top: 0;
+    padding: 10px;
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+footer .topo {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer span {
+    margin-top: 30px;
+    margin-left: 10px;
+    height: 10px;
+    width: 80px;
+    color: #fff;
+}
+
+.apoioLateral {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.apoioLateral span {
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+#triangulo-para-direita {
+    width: 600px;
+    height: 499px;
+    position: relative;
+    left: 0;
+}
+
+#emailLogo {
+    margin-left: 14px;
+    height: 50px;
+    width: 50px;
+    border-radius: 0;
+}
 
 
 /*-----------MEDIA SCREEN-------------*/
 
 @media screen and (max-width: 600px) {
+    #triangulo-topo {
+        transform: rotate(180deg);
+        width: 240px;
+        height: 200px;
+        position: relative;
+        right: 0;
+    }
+
+    .imgConfig {
+        display: flex;
+        justify-content: end;
+    }
+
+    .imgConfig img {
+        padding: 15px 20px 0 0;
+    }
+
     #topo {
         display: none;
     }
@@ -386,17 +689,26 @@ select {
         padding-bottom: 20px;
     }
 
-    .secao-centro img {
+    .fotoPerfil {
         width: 200px;
         border: 5px solid white;
         border-radius: 100%;
     }
+
+    /*
+    .selo {
+        width: 60px;
+        bottom: 70px;
+        left: 80px;
+    }
+    */
 
     .secao-centro h1 {
         font-size: 1.5rem;
     }
 
     .atributos-perfil {
+        width: 280px;
         padding-bottom: 0;
         font-size: .9rem;
     }
@@ -411,9 +723,292 @@ select {
         width: 20px;
         height: 20px;
     }
+
+    /*GRID Artes*/
+
+    #artes-perfil {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(60, 50px);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    .imagem1 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/5;
+        grid-row: 1/5;
+        object-fit: cover;
+    }
+
+    .imagem2 {
+        width: 100%;
+        height: 100%;
+        grid-column: 5/7;
+        grid-row: 1/4;
+        object-fit: cover;
+    }
+
+    .imagem3 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/5;
+        grid-row: 5/8;
+        object-fit: cover;
+    }
+
+    .imagem4 {
+        width: 100%;
+        height: 100%;
+        grid-column: 5/7;
+        grid-row: 4/7;
+        object-fit: cover;
+    }
+
+    .imagem5 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/5;
+        grid-row: 8/11;
+        object-fit: cover;
+    }
+
+    .imagem6 {
+        width: 100%;
+        height: 100%;
+        grid-column: 5/7;
+        grid-row: 7/11;
+        object-fit: cover;
+    }
+
+    .imagem7 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/3;
+        grid-row: 11/14;
+        object-fit: cover;
+    }
+
+    .imagem8 {
+        width: 100%;
+        height: 100%;
+        grid-column: 3/7;
+        grid-row: 11/15;
+        object-fit: cover;
+    }
+
+    .imagem9 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/3;
+        grid-row: 14/17;
+        object-fit: cover;
+    }
+
+    .imagem10 {
+        width: 100%;
+        height: 100%;
+        grid-column: 3/7;
+        grid-row: 15/17;
+        object-fit: cover;
+    }
+
+    .imagem11 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/4;
+        grid-row: 17/21;
+        object-fit: cover;
+    }
+
+    .imagem12 {
+        width: 100%;
+        height: 100%;
+        grid-column: 4/7;
+        grid-row: 17/20;
+        object-fit: cover;
+    }
+
+    .imagem13 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/4;
+        grid-row: 21/24;
+        object-fit: cover;
+    }
+
+    .imagem14 {
+        width: 100%;
+        height: 100%;
+        grid-column: 4/7;
+        grid-row: 20/25;
+        object-fit: cover;
+    }
+
+    .imagem15 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/4;
+        grid-row: 24/28;
+        object-fit: cover;
+    }
+
+    .imagem16 {
+        width: 100%;
+        height: 100%;
+        grid-column: 4/7;
+        grid-row: 25/28;
+        object-fit: cover;
+    }
+
+    .imagem17 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/5;
+        grid-row: 28/32;
+        object-fit: cover;
+    }
+
+    .imagem18 {
+        width: 100%;
+        height: 100%;
+        grid-column: 5/7;
+        grid-row: 28/32;
+        object-fit: cover;
+    }
+
+    .imagem19 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/4;
+        grid-row: 32/35;
+        object-fit: cover;
+    }
+
+    .imagem20 {
+        width: 100%;
+        height: 100%;
+        grid-column: 4/7;
+        grid-row: 32/36;
+        object-fit: cover;
+    }
+
+    .imagem21 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/4;
+        grid-row: 35/40;
+        object-fit: cover;
+    }
+
+    .imagem22 {
+        width: 100%;
+        height: 100%;
+        grid-column: 4/7;
+        grid-row: 36/39;
+        object-fit: cover;
+    }
+
+    .imagem23 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/4;
+        grid-row: 40/43;
+        object-fit: cover;
+    }
+
+    .imagem24 {
+        width: 100%;
+        height: 100%;
+        grid-column: 4/7;
+        grid-row: 39/42;
+        object-fit: cover;
+    }
+
+    .imagem25 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/4;
+        grid-row: 43/47;
+        object-fit: cover;
+    }
+
+    .imagem26 {
+        width: 100%;
+        height: 100%;
+        grid-column: 4/7;
+        grid-row: 42/47;
+        object-fit: cover;
+    }
+
+    .imagem27 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/5;
+        grid-row: 47/52;
+        object-fit: cover;
+    }
+
+    .imagem28 {
+        width: 100%;
+        height: 100%;
+        grid-column: 5/7;
+        grid-row: 47/51;
+        object-fit: cover;
+    }
+
+    .imagem29 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/5;
+        grid-row: 52/56;
+        object-fit: cover;
+    }
+
+    .imagem30 {
+        width: 100%;
+        height: 100%;
+        grid-column: 5/7;
+        grid-row: 51/56;
+        object-fit: cover;
+    }
+
+    .imagem31 {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/3;
+        grid-row: 56/60;
+        object-fit: cover;
+    }
+
+    .imagem32 {
+        width: 100%;
+        height: 100%;
+        grid-column: 3/5;
+        grid-row: 56/60;
+        object-fit: cover;
+    }
+
+    .imagem33 {
+        width: 100%;
+        height: 100%;
+        grid-column: 5/7;
+        grid-row: 56/60;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .secao-direita {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 600px) {
+    #triangulo-topo {
+        display: none;
+    }
+
     .criar {
         display: none;
     }
