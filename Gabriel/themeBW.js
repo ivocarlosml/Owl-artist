@@ -35,7 +35,6 @@ function turnColorPage(){
    addIcon.src ="criarB.png";
    ajudaIcon.src ="configB.png";
    homeIcon.src ="homeB.png";
-
    scrollbar.setProperty("--scrollbar-color", "red");
   scrollbar.setProperty("--scrollbar-thumb-color", "blue");
 
