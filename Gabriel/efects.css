@@ -4,6 +4,11 @@
     
     animation: infinite 0.9;
 }
+.arrow:hover{
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    filter: invert(100%);
+}
 .conteudo:hover {
    
     background: linear-gradient(90deg, #1d09ff, #8028fb);
@@ -29,6 +34,7 @@
     }100%{
         opacity: 0;
         transform: translateX(-100px);
+        filter: blur(15px);
         box-shadow: 0 0 0 transparent;
     }
 }
