@@ -698,6 +698,13 @@ left: 0;
 .ajustesLargeDivs{
     margin-top: 400px;
 }
+#nameSlide{
+    width:60px;
+    height: 30px;
+    position: relative;
+    background-color: red;
+    
+}
 /*CONFIGURAÇÃO CSS PARA A TELA DE VIZUALIZAÇÃO*/
 #MPmain{
     display: flex;
