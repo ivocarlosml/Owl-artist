@@ -656,6 +656,7 @@ left: 0;
 .content{
     border-radius: 15px;
     display: flex;
+    cursor: pointer;
 
 }
 .idParaMidia{
