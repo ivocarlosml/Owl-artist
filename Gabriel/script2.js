@@ -74,19 +74,29 @@ const profiles = [
       if (i >= profiles.length) break;
       const profile = profiles[i];
       const profileElement = document.createElement('img');
-      //const nameCamp = document.createElement('span');
+      let divArtist = document.createElement('div');
+      const nameCamp = document.createElement('span');
+      let nameAutor = document.createElement('p');
+      divArtist.className = "divArtist"; 
       profileElement.className = 'profile';
-      profileElement.src = profiles[i]["foto"];
+      nameCamp.className = 'nameAutor';
       
-      nameCamp.style.color="red";
-      profileElement.innerHTML = profile.name;
+      profileElement.src = profiles[i]["foto"];
+      nameAutor.innerHTML="<a>"+profiles[i]["name"]+"</a>";
+      
+      
       if (profile.verified) {
         const verifiedIcon = document.createElement('div');
         verifiedIcon.className = 'verified';
         profileElement.appendChild(verifiedIcon);
       }
-      carousel.appendChild(profileElement);
-      profileElement.appendChild(nameCamp);
+      
+      
+      
+      nameCamp.appendChild(nameAutor);
+      divArtist.appendChild(profileElement);
+      divArtist.appendChild(nameCamp);
+      carousel.appendChild(divArtist);
     }
   }
 

@@ -61,6 +61,7 @@ a{
     height: 45px;
     border-radius:50% ;
     object-fit: cover;
+    cursor: pointer;
    
 }
 .user-profile{
@@ -406,12 +407,17 @@ margin-top: 40px;
     margin-right: 112.5px;
     display: flex;
     overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+
   }
   
   .profile {
     width: 350px;
     height: 350px;
-    
+    cursor: pointer;
+    z-index: 1;
     border-radius: 50%;
     margin: auto;
     display: flex;
@@ -698,13 +704,23 @@ left: 0;
 .ajustesLargeDivs{
     margin-top: 400px;
 }
-#nameSlide{
-    width:60px;
-    height: 30px;
-    position: relative;
-    background-color: red;
+.nameAutor{
+    width:100px;
+    height: 3%;
+    color: #fff;
+    
+    
+    /*background-color: red;*/
+    z-index: 89;
     
 }
+.divArtist{
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
 /*CONFIGURAÇÃO CSS PARA A TELA DE VIZUALIZAÇÃO*/
 #MPmain{
     display: flex;
