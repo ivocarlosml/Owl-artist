@@ -779,7 +779,7 @@ justify-content: center;
     flex-wrap: wrap;
 }
 #MPpost{
-    width: 50%;
+    width: 70%;
     height: 100%;
     border-radius: 2vw;
 
@@ -811,7 +811,7 @@ justify-content: center;
     position: relative;
     top:-50px;
     z-index: 4;
-    margin-left: 93px;
+    margin-left: 7.6rem;
 }
 .MPicones{
     width: 108px;
@@ -845,7 +845,7 @@ justify-content: center;
     justify-content: center;
     background-color:white ;
     border-radius: 25px;
-    width: 95%;
+    width: 93%;
     height: 80px;
     display: flex;
     position: relative;
