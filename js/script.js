@@ -20,18 +20,14 @@ setInterval(function(){
     
     if(i == (listaDeposts.length-1)){
         
-        postsPrincipais.classList.add('opacityAnimation');
+        
         postsPrincipais.src= listaDeposts[i] ;
         i = 0;
         
         
-        
+    postsPrincipais.classList.toggle('opacityAnimation'); 
     }else{
-        if(i % 2==0){
-            postsPrincipais.classList.add('opacityAnimation'); 
-        }
-        
-        postsPrincipais.classList.add('opacityAnimation'); 
+         
         postsPrincipais.src= listaDeposts[i] ;
 
         i++;
