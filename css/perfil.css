@@ -25,7 +25,7 @@ body {
     background-color: #000000;
     padding: 0 20px;
     width: 100%;
-    height: 80px;
+    height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,7 +80,7 @@ select {
 }
 
 .menu {
-    width: 260px;
+    width: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,7 +92,8 @@ select {
 }
 
 .menu img {
-    width: 30px;
+    width: 100%;
+    height: 6vh;
 }
 
 /*----------------PERFIL------------------*/
@@ -103,10 +104,11 @@ select {
 }
 
 #perfil {
+    margin-top: 12vh;
     max-width: 1920px;
     width: 100%;
+    height: 80vh;
     padding: 20px;
-    padding-top: 70px;
     display: flex;
     justify-content: space-between;
 }
@@ -269,7 +271,7 @@ select {
     object-fit: cover;
 }
 
-/*-------------EXIBIÇÃO DE ARTES DO PERFIL---------------*/
+/*------------- EXIBIÇÃO DE ARTES DO PERFIL---------------*/
 
 #artes-perfil {
     padding: 0 20px;
@@ -658,6 +660,7 @@ footer span {
     }
 
     .imgConfig img {
+        width: 80px;
         padding: 15px 20px 0 0;
     }
 
@@ -667,6 +670,7 @@ footer span {
 
     #perfil {
         height: 350px;
+        margin-top: 0;
         padding: 0;
         justify-content: center;
     }
@@ -1006,6 +1010,10 @@ footer span {
 
 @media screen and (min-width: 600px) {
     #triangulo-topo {
+        display: none;
+    }
+
+    .imgConfig {
         display: none;
     }
 
