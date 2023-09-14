@@ -1,7 +1,7 @@
 .trasintionSuave{
     position: relative !important;
-    transition:  all ease-in-out ;
-    animation-duration:3.8s;
+    transition:  all ease-in-out 1s;
+    animation-duration:4s;
     
     
     

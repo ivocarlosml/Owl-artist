@@ -20,22 +20,24 @@ setInterval(function(){
     
     if(i == (listaDeposts.length-1)){
         
-        postsPrincipais.classList.toggle('opacityAnimation');
+        postsPrincipais.classList.add('opacityAnimation');
         postsPrincipais.src= listaDeposts[i] ;
         i = 0;
         
         
         
     }else{
+        if(i % 2==0){
+            postsPrincipais.classList.add('opacityAnimation'); 
+        }
         
-        
-        postsPrincipais.classList.toggle('opacityAnimation');
+        postsPrincipais.classList.add('opacityAnimation'); 
         postsPrincipais.src= listaDeposts[i] ;
 
         i++;
         console.log("mecheu no 1 ou demais...");
         
     }
-    
+    postsPrincipais.classList.toggle('opacityAnimation'); 
 },3000);
 
