@@ -646,12 +646,17 @@ footer span {
 /*-----------MEDIA SCREEN-------------*/
 
 @media screen and (max-width: 600px) {
+    body {
+        position: relative;
+    }
+
     #triangulo-topo {
         transform: rotate(180deg);
-        width: 240px;
+        width: 300px;
         height: 200px;
-        position: relative;
-        right: 0;
+        position: absolute;
+        left: 0;
+        z-index: 1;
     }
 
     .imgConfig {
@@ -673,6 +678,7 @@ footer span {
         margin-top: 0;
         padding: 0;
         justify-content: center;
+        z-index: 2;
     }
 
     .secao-direita {
