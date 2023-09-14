@@ -1,8 +1,10 @@
 .trasintionSuave{
     position: relative !important;
-    transition:  all ease-in-out 0.5s;
+    transition:  all ease-in-out ;
+    animation-duration:3.8s;
     
-    animation: infinite 0.9;
+    
+    
 }
 .arrow:hover{
     border-radius: 50%;

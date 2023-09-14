@@ -5,7 +5,7 @@ let i = 0;
 setInterval(function(){
     
     let listaDeposts = [
-        "R.jpg",
+        "assets/R.jpg",
         
         "https://wallpapercave.com/wp/wp9376389.jpg",
 
@@ -19,20 +19,23 @@ setInterval(function(){
     ];
     
     if(i == (listaDeposts.length-1)){
-        postsPrincipais.classList.toggle('opacityAnimation');
         
+        postsPrincipais.classList.toggle('opacityAnimation');
         postsPrincipais.src= listaDeposts[i] ;
         i = 0;
         
         
+        
     }else{
+        
+        
         postsPrincipais.classList.toggle('opacityAnimation');
-        
-        
         postsPrincipais.src= listaDeposts[i] ;
+
         i++;
+        console.log("mecheu no 1 ou demais...");
         
     }
-
+    
 },3000);
 
