@@ -31,10 +31,10 @@ function turnColorPage(){
     textoComSombra.style.color = "black";
     footer.style.backgroundColor="#f2f2f2";
     footer.style.color="black";
-   suporteIcon.src ="suporteB.png";
-   addIcon.src ="criarB.png";
-   ajudaIcon.src ="configB.png";
-   homeIcon.src ="homeB.png";
+   suporteIcon.src ="assets/suporteB.png";
+   addIcon.src ="assets/criarB.png";
+   ajudaIcon.src ="assets/configB.png";
+   homeIcon.src ="assets/homeB.png";
    scrollbar.setProperty("--scrollbar-color", "red");
   scrollbar.setProperty("--scrollbar-thumb-color", "blue");
 
@@ -63,12 +63,12 @@ function turnColorPage(){
         tipoArte.style.color="#f2f2f2";
         textoComSombra.style.background = "radial-gradient(black,transparent)";
         textoComSombra.style.color = "#f2f2f2";
-        footer.style.backgroundColor="black";
-        footer.style.color="#f2f2f2";
-       suporteIcon.src ="suporte.png";
-       addIcon.src ="criar.png";
-       ajudaIcon.src ="config.png";
-       homeIcon.src ="menu.png";
+        //footer.style.backgroundColor="black";
+        //footer.style.color="#f2f2f2";
+       suporteIcon.src ="assets/suporte.png";
+       addIcon.src ="assets/criar.png";
+       ajudaIcon.src ="assets/config.png";
+       homeIcon.src ="assets/menu.png";
        /*infoBar.style.backgroundColor="black";
        infoBar.style.color="white";*/
     control = 0;
