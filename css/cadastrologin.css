@@ -9,6 +9,7 @@
 body {
   background-color: #2e2e2e;
   font-family: Arial, sans-serif;
+  height: 100%;
 }
 img {
   object-fit: cover;
@@ -44,6 +45,7 @@ img {
   flex-direction: column;
   align-items: center;
   height: 100%;
+  min-height: 100vh;
   position: relative;
   justify-content: space-around;
 }
@@ -188,14 +190,15 @@ img {
 }
 .but #ce {
   width: 60%;
-  background: linear-gradient(90deg, #1e9ef4 0%, #022677 50%, #001449 100%);
+  background-color:#022677 ;
+  /*background: linear-gradient(90deg, #1e9ef4 0%, #022677 50%, #001449 100%);*/
 }
 .but #v {
   width: 30%;
   background-color: #1e9ef4;
 }
 .but #ce:hover {
-  background: linear-gradient(90deg, #7ac3f3 0%, #52648d 50%, #5871b5 100%);
+  background-color: #52648d ;
 }
 .but #v:hover {
   background-color: #88d0ff;
@@ -209,6 +212,7 @@ hr{
 #esqueceu{
     font-size: 0.9rem;
  }
+
 
 @media screen and (max-width: 1200px) {
     .container-logcad{
