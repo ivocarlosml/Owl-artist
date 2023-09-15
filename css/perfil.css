@@ -753,7 +753,7 @@ footer span {
 
     #artes-perfil {
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(60, 50px);
+        grid-template-rows: repeat(59, 50px);
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
