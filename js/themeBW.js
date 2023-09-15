@@ -60,8 +60,8 @@ function turnColorPage(){
         tipoArte.style.color="#f2f2f2";
         textoComSombra.style.background = "radial-gradient(black,transparent)";
         textoComSombra.style.color = "#f2f2f2";
-        //footer.style.backgroundColor="black";
-        //footer.style.color="#f2f2f2";
+        footer.style.backgroundColor="black";
+        footer.style.color="#f2f2f2";
        suporteIcon.src ="assets/suporte.png";
        addIcon.src ="assets/criar.png";
        ajudaIcon.src ="assets/config.png";
@@ -77,7 +77,7 @@ function turnColorPage(){
     
        infoBar3.style.backgroundColor="black";
        infoBar3.style.color="white";
-       
+       footer.style.color="white";
        
        
     control = 0;
