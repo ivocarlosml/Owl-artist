@@ -76,14 +76,18 @@ const profiles = [
       const profileElement = document.createElement('img');
       let divArtist = document.createElement('div');
       const nameCamp = document.createElement('span');
-      let nameAutor = document.createElement('p');
+      let nameAutor = document.createElement('a');
       divArtist.className = "divArtist"; 
       profileElement.className = 'profile';
       nameCamp.className = 'nameAutor';
+      nameCamp.name = 'nameAutor';
       
       profileElement.src = profiles[i]["foto"];
-      nameAutor.innerHTML="<a>"+profiles[i]["name"]+"</a>";
-      
+      nameAutor.innerHTML=profiles[i]["name"];
+      nameAutor.href="perfil.html";
+      nameAutor.style.textDecoration="none";
+      nameAutor.style.color="white";
+       
       
       if (profile.verified) {
         const verifiedIcon = document.createElement('div');
