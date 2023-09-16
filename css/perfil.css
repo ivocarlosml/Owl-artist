@@ -95,6 +95,7 @@ select {
 .menu img {
     width: 100%;
     height: 5vh;
+    object-fit: cover;
 }
 
 /*----------------PERFIL------------------*/
@@ -155,7 +156,7 @@ select {
 .secao-centro {
     padding: 20px 0;
     display: flex;
-    width:550px;
+    width: 550px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -169,24 +170,15 @@ select {
     object-fit: cover;
 }
 
-/*
-.selo {
-    position: relative;
-    width: 90px;
-    height: 90px;
-    bottom: 90px;
-    left: 100px;
-}
-*/
-
 .secao-centro h1 {
     padding: 20px 0;
+    font-size: 3rem;
 }
 
 .atributos-perfil {
-    padding: 10px 0;
-    padding-bottom: 30px;
-    width: 350px;
+    margin: 15px 0;
+    font-size: 1.2rem;
+    width: 360px;
     display: flex;
     justify-content: space-between;
     align-items: center;
