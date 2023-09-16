@@ -268,7 +268,19 @@ select {
     position: fixed;
     top: 90vh;
     width: 55px;
+    height: 55px;
     object-fit: cover;
+    z-index: 4;
+}
+
+.criar img:hover {
+    transform: scale(1.1);
+    transition: 200ms;
+}
+
+.criar img:not(:hover) {
+    transform: scale(1);
+    transition: 200ms ease;
 }
 
 /*------------- EXIBIÇÃO DE ARTES DO PERFIL---------------*/
@@ -286,11 +298,13 @@ select {
 
 .border-radius {
     border-radius: 25px;
+    z-index: 1;
 }
 
 .border-radius:hover {
     transition: all ease-in-out 0.5s;
     transform: scale(1.1);
+    z-index: 2;
 }
 
 .border-radius:not(:hover) {

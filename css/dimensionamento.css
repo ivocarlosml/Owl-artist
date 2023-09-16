@@ -2,7 +2,9 @@
 
 @media  (max-width: 1099px)
 {
-
+    .division{
+        display: flex;
+    }
   
     .infoUser
     {
@@ -92,4 +94,9 @@
         background:linear-gradient(45deg,black,#272626);
     
     }
+    .linkPonte
+    {
+        margin-left: 10%;
+    }
 }
+
