@@ -175,9 +175,11 @@ select {
 
 .secao-centro h1 {
     padding: 20px 0;
+    font-size: 2.5rem;
 }
 
 .atributos-perfil {
+    font-size: 1rem;
     padding: 10px 0;
     padding-bottom: 30px;
     width: 350px;
@@ -292,6 +294,11 @@ select {
 
 .border-radius {
     border-radius: 25px;
+}
+
+.border-radius:hover {
+    transition: ease-in-out 500ms;
+    transform: scale(1.1);
 }
 
 .imagem1 {
