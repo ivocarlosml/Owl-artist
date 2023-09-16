@@ -175,6 +175,7 @@ main{
     transition:  0.5s ease;
     
 }
+
 .usuarioIndentificador{
     margin-top: 10px;
     display: flex;
@@ -688,9 +689,7 @@ left: 0;
     color:#000000;
     
 }
-#btnTurnMode{
-    background-color: #0020ab;
-}
+
 .toper{
     margin-top: 150px;
     margin-bottom: 150px;
@@ -732,8 +731,8 @@ justify-content: center;
     flex-direction: column;
     position: relative;
     width: 100%;
-    padding-top: 100px;
-    height: 900px; /* 75% do campo de visão (viewport height) */
+    padding-top: 73px;
+    height: 950px; /* 75% do campo de visão (viewport height) */
     margin-bottom: 200px;
 
 }
@@ -759,6 +758,7 @@ justify-content: center;
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+    object-fit: cover;
   }
 
   .MPcomment-content {
@@ -768,6 +768,7 @@ justify-content: center;
   .MPtimestamp {
     color: #999;
     font-size: 12px;
+    margin-right: 20px;
   }
 #MPpost-image{
 
@@ -779,8 +780,8 @@ justify-content: center;
     flex-wrap: wrap;
 }
 #MPpost{
-    width: 70%;
-    height: 100%;
+    width: 100%;
+    height: 80%;
     border-radius: 2vw;
 
     object-fit:contain;
@@ -792,7 +793,7 @@ justify-content: center;
     align-items: center;
 }
 #MPperfil img{
-    margin-left: 10%;
+    margin-left: 5%;
     
     width: 60px;
     height: 60px;
@@ -804,20 +805,20 @@ justify-content: center;
     color:white;
 }
 #MPicones{
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     border-radius: 0;
-    width: 50%;
+    width: 100%;
     position: relative;
-    top:-50px;
+    margin-top: 50px;
     z-index: 4;
-    margin-left: 7.6rem;
+    
 }
 .MPicones{
-    width: 108px;
-    height: 61px;
+    width: 123px;
+    height: 76px;
     cursor: pointer;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 .MPicones.hidden {
     opacity: 0;
@@ -834,9 +835,11 @@ justify-content: center;
     margin-left: 5px;
     margin-right: 5px;
     border: none;
+    margin-bottom: 5px;
+    margin-top: 10px;
     border-radius: 25px;
     position:relative;
-    padding: 0.5rem;
+    padding: 0.6rem;
     width: 97%;
 }
 #inserirComente{
@@ -844,13 +847,23 @@ justify-content: center;
     align-items: center;
     justify-content: center;
     background-color:white ;
+    flex-direction: column;
     border-radius: 25px;
     width: 93%;
-    height: 80px;
+    height: 140px;
     display: flex;
     position: relative;
-    bottom:80px;
+    bottom:140px;
     
+}
+.idsDebusca{
+    width: 100%;
+    align-items: flex-start;
+    padding: 5px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 #MpapoioComent{
     overflow-y: scroll;
@@ -869,4 +882,31 @@ justify-content: center;
     grid-template-rows: repeat(6,16.66666666666667%);
     grid-column-gap: 1%;
     grid-row-gap: 15px;
+}
+.apoioDivImg_icones{
+    width: 70%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.comentarioTxt{
+    margin-top: 7px;
+    
+}
+.apoioResponder{
+display: flex;
+cursor: pointer;
+
+}
+#carregarMaisRespostas{
+    margin-top:10px ;
+    margin-bottom: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    
 }

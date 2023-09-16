@@ -18,7 +18,9 @@ let infoBar4 = document.getElementById("infoBar4");
 let carrosel = document.getElementById("carrosel");
 //let infoBar = document.getElementsByClassName("infoBar");
 
-let scrollbar = document.documentElement.style;
+let aTag = document.querySelector("nameAutor");
+
+
 let control = 0;
 function turnColorPage(){
     
@@ -35,8 +37,7 @@ function turnColorPage(){
    addIcon.src ="assets/criarB.png";
    ajudaIcon.src ="assets/configB.png";
    homeIcon.src ="assets/homeB.png";
-   scrollbar.setProperty("--scrollbar-color", "red");
-  scrollbar.setProperty("--scrollbar-thumb-color", "blue");
+
 
   carrosel.style.backgroundColor="#d9d3d3";
         
@@ -48,11 +49,7 @@ function turnColorPage(){
 
    infoBar3.style.backgroundColor="#f2f2f2";
    infoBar3.style.color="black";
-
-   infoBar4.style.backgroundColor="#f2f2f2";
-   infoBar4.style.color="black";
-
-   
+   footer.style.color="black";
     control = 1;
 
 
@@ -63,14 +60,26 @@ function turnColorPage(){
         tipoArte.style.color="#f2f2f2";
         textoComSombra.style.background = "radial-gradient(black,transparent)";
         textoComSombra.style.color = "#f2f2f2";
-        //footer.style.backgroundColor="black";
-        //footer.style.color="#f2f2f2";
+        footer.style.backgroundColor="black";
+        footer.style.color="#f2f2f2";
        suporteIcon.src ="assets/suporte.png";
        addIcon.src ="assets/criar.png";
        ajudaIcon.src ="assets/config.png";
        homeIcon.src ="assets/menu.png";
-       /*infoBar.style.backgroundColor="black";
-       infoBar.style.color="white";*/
+       
+       carrosel.style.backgroundColor="black";
+        
+       infoBar.style.backgroundColor="black";
+       infoBar.style.color="white";
+    
+       infoBar2.style.backgroundColor="black";
+       infoBar2.style.color="white";
+    
+       infoBar3.style.backgroundColor="black";
+       infoBar3.style.color="white";
+       footer.style.color="white";
+       
+       
     control = 0;
     }
 

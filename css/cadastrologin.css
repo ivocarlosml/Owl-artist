@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&family=Diplomata+SC&family=K2D:wght@100;200;300&family=Open+Sans:wght@600&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@
 body {
   background-color: #2e2e2e;
   font-family: Arial, sans-serif;
+  height: 100%;
 }
 img {
   object-fit: cover;
@@ -36,84 +38,22 @@ img {
   animation: infinite 0.9;
 }
 
-/*---------------------ESTILOS GERAIS DO TOPO-----------------------*/ 
-#topo {
-  width: 100%;
-  height:12vh;
-  background-color:#000000;
-  display: flex;
-  position: fixed;
-  z-index: 5;
-}
-header img{
-  border-radius: 20px;
-  width: 2.3rem;
-  height: 2.3rem;
-}
-header img:hover{
-  opacity: 0.8;
-}
-/*--------------------- ESTILOS DA BARRA DE PESQUISA--------------------*/
-.barra-pesquisa{
-  margin:0 2rem 0 2rem;
-  width: 70%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-.barra-pesquisa form {
-  margin-left:2.3rem;
-  width: 80%;
-  height:5vh;
-  justify-content: center;
-  border: none;
-  color: #000000;
-}
-.barra-pesquisa input {
-  width: 100%;
-  height: 5vh;
-  border-radius: 1rem;
-  padding-left: 0.7rem;
-  border: 1px solid gray;
-  font-size: 1rem;
-  font-family:  'Arial Narrow Bold', sans-serif;
-  letter-spacing: 1px;
-}
-.barra-pesquisa input:focus{
-  outline: none;
-  background-color: #fffdfd;
-  color: #000000;
-}
-.barra-pesquisa form input:hover{
-  background-color: #c9c9ca;
-}
 
-/*----------------------------ESTILOS DO MENU--------------------------*/
-.menu{
-  display: flex;
-  width:40%;
-  align-items: center;
-  justify-content: end;
-  padding: 0 2rem 0 2rem;
-
-}
-.menu a{
-  margin-left: 20%;
-}
 /* Estilos do container  */
 .container {
   display: flex;;
   flex-direction: column;
   align-items: center;
   height: 100%;
+  min-height: 100vh;
   position: relative;
   justify-content: space-around;
 }
 
 /*--------------------------- ÁREA DE CADASTRO------------------------- */
 
-.container-cadastro {
-  background-color: rgb(255, 255, 255);
+.container-logcad {
+  background-color:#ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,50 +63,49 @@ header img:hover{
   box-sizing: border-box;
   height: auto;
   border-radius: 2rem;
-  margin-top:20vh;
-  margin-bottom: 8vh;
+  margin:8vh 0;
   z-index:4;
   position: relative;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.logocad {
-  max-width: 6.25rem;
-  max-height: 6.25rem;
+.logcad {
+  width: 6rem;
+  height: 6rem;
   border-radius: 3.2rem;
   border: 1px solid #000000;
 }
-.container-cadastro h1 {
+.container-logcad h1 {
   text-align: center;
   font-size: 2rem;
   letter-spacing: 2px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-/*-------------PARTE SUPERIOR CADASTRO---------*/
-.redes-cadastro{
+.redes-logcad{
   display:flex;
-  width: 100%;
+  width: 80%;
   justify-content:space-around;
   align-items:center;
-  min-height:10vh;
-  margin-top: 2vh;
-  margin-bottom: 1rem;
+  height:auto;
+  margin:1rem;
+  cursor: pointer;
 }
-.redes-cadastro img{
+.redes-logcad img{
     border-radius: 1rem;
-    object-fit: cover;
-    width: 1.8rem;
-    height:1.8rem;
-    margin-left: 0.6rem;
+    width:2rem;
+    height:2rem;
+    margin-left: 0.3rem;
 }
-.gf-cadastro {
+.gf-logcad {
   height: 7vh;
   width: 40%;
   align-items:center;
+  justify-content: center;
   display: flex;
+  padding: 1rem;
 }
-.gf-cadastro h5{
-  padding-left: 0.5rem;
+.gf-logcad h5{
+  padding-left: 0.6rem;
   color: white;
   font-size: 1rem;
 }
@@ -176,174 +115,144 @@ header img:hover{
 #ff{
   background:#0000CD;
 }
-
-/*----------------------PARTE DO FORMULÁRIO--------------------*/
-
-.container-cadastro form {
+.container h4{
+  margin: 0.2rem auto;
+}
+.container-logcad form {
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: center;
 
 }
-.container-cadastro label {
+.container-logcad label {
   margin-top: 0.7rem;
 
 }
-.container-cadastro input {
+.container-logcad input {
   padding: 0.5rem;
-  background-color: #cfd3da;
-  border: 1px solid #ccc;
+  background-color: #edecec;
+  border: 1px solid #ebeaea;
   border-radius: 0.34rem;
   margin-top: 0.8rem;
   font-size: 1rem;
-}
-.container-cadastro input::placeholder{
   color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+.container-logcad input::placeholder{
+  color: #777676;
   font-weight: 400;
+  font-style: italic;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border:none;
 }
 
-.container-cadastro input:focus {
-  background-color: #cfd3da;
-  color: rgb(1, 1, 1);
+.container-logcad input:focus {
+  background-color: #cfcdcd;
+  /*border:none;*/
+  font-size: 1rem;
+  border:none;
 }
-.termos label{
-    font-size: 1rem;
+.termos{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  word-wrap: break-word;
+}
+.termos a{
+    font-size: 0.9rem;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
 }
-
-button {
-    color:#fff;
-    font-size: 1.2rem;
-    width: 40%;
-    height: 7vh;
-    border-radius: 1.8rem;
-    margin:2rem auto 1rem auto;
-     background: linear-gradient(90deg, #1e9ef4 0%, #022677 50%, #001449 100%);
-     border-color:none;
-  }
-  hr{
-    background-color: #000000;
-    width: 100%;
-    height:4px;
-  }
-
-
-  
-
-/*        ESTILO DO RODAPÉ            */
-
-  footer {
-    display: flex;
-    width: 100%;
-    background-color: #000000;
-    color: #fff;
-    justify-content: space-between;
-    box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.9);
-  }
-  .topo-footer{
-    margin-top: 1.8rem;
-    display: flex;
-    flex-direction: row;
-
+.term{
+  width: 50%;
 }
-.contato {
-    display: flex;
-    flex-direction: column;
-    height:30vh;
-    padding-top:3rem;
-    width:30%;
-}
-#containerDeapoio {
-    position: relative;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    width: 90px;
-}
-#containerDeapoio span{
-  transform: translateY(150%);
-}
-.logoOwl {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;  
-}
-
-.detalhesFooter {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin-left: 20px;
-    margin-top: 50px;
-    width: 25%;
-}
-  
-.detalhesFooter h3 {
-    margin-left: 87px;
-    padding: 10px;
-    color: #fff;
-    font-size: 20px;
-}
-.detalhesFooter span{
-    margin-bottom: 10px;
-}
-.apoioLateral{
-    display: flex;
-    margin-bottom: 30px;
-    justify-content: center;
-}
-.apoioLateral span{
-    margin-bottom: 50px;
-    margin-left: 50px;
-
-}
-.img-lateral{
-  width: 40%;
+.but {
   display: flex;
-  justify-content: end;
-  align-items: end;
+  width: 100%;
+  height: 6vh;
+  justify-content:space-around;
+  align-items: center;
+  margin:1.5rem 1rem 1rem 1rem;
+  padding-left: 10%;
+}
+.but button {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 1rem;
+  height:100%;
+  border: none;
+  cursor: pointer;
+}
+.but #ce {
+  width: 60%;
+  background-color:#022677 ;
+  /*background: linear-gradient(90deg, #1e9ef4 0%, #022677 50%, #001449 100%);*/
+}
+.but #v {
+  width: 30%;
+  background-color: #1e9ef4;
+}
+.but #ce:hover {
+  background-color: #52648d ;
+}
+.but #v:hover {
+  background-color: #88d0ff;
+}
+hr{
+  background-color: #000000;
+  width: 100%;
+  height:6px;
 }
 
-#triangulo-para-direita{
-    width: 80%;
-    height: 300px;
-    left: 0;
-}
-#emailLogo{
-    margin-left: 14px;
-    height: 50px;
-    width:50px;
-    border-radius: 0;
-}
-  footer span {
-    margin-top: 30px;
-    margin-left: 10px;
-    height: 10px;
-    width: 80px;
-    color: #fff;
-  }
+#esqueceu{
+    font-size: 0.9rem;
+ }
 
 
-  @media screen and (max-width: 768px) {
-    body{
-      background: linear-gradient(90deg, #1e9ef4 0%, #022677 50%, #001449 100%);
+@media screen and (max-width: 1200px) {
+    .container-logcad{
+    width:50%;
+}
+@media screen and (max-width: 1000px) {
+      .container-logcad{
+      width:55%;
     }
-    #topo{
-      display: none;
+}
+@media screen and (max-width: 850px) {
+      .container-logcad{
+      width:60%;
+      }
+}
+@media screen and (max-width: 768px) {
+    .container-logcad {
+    width: 65%;
     }
-    .container-cadastro {
-      margin: 3rem;
-      width: 90%;
+    .but{
+      margin: 0.5rem;
     }
-    button {
+    .but button{
       font-size: 0.7rem;
     }
-    footer{
-      display:none;
-    }
-
   }
+@media screen and (max-width: 650px) {
+    .container-logcad{
+    width:70%;
+  }
+}
+@media screen and (max-width: 550px) {
+      .container-logcad{
+        width:80%;
+    }
+}
+@media screen and (max-width:400px) {
+  .container-logcad{
+   width:95%;
+  }
+};
+
+        

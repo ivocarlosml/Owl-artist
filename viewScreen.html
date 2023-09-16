@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/efects.css">
+    <link rel="stylesheet" href="css/botaoThemeBw.css">
     <title>OWl - Artes</title>
 </head>
 <body >
@@ -12,9 +13,9 @@
        
         <div class="trasintionSuave"id="divisor">
         <div class="user-profile">
-            <img classe ="iconInicial"src="assets/download.jpg" alt="Perfil do Usuário">
+            <a href="perfil.html"><img classe ="iconInicial"src="assets/download.jpg" alt="Perfil do Usuário"></a>
             <div class="detalhesPerfil">
-                <div id="nome"><p>Juliana Floss</p></div>
+                <a href="perfil.html"><div id="nome"><p>Juliana Floss</p></div></a>
                 <div id="tipoDeArte"><p>Arte de rua</p></div>
             </div>
             
@@ -24,11 +25,13 @@
         </div>
         </div>
         <div class="icon-group">
+            <input type="checkbox" 
+            class="toggle"onclick="turnColorPage()"id="btnTurnMode"type="button">
             <a href=""><img class="icon" src="assets/suporte.png" alt="Ícone 1"></a>
             <a href=""><img class="icon" src="assets/criar.png" alt="Ícone 2"></a>
-            <a href="../Denilson/configuracoes.html"><img class="icon" src="assets/config.png" alt="Ícone 3"></a>
+            <a href="configuracoes.html"><img class="icon" src="assets/config.png" alt="Ícone 3"></a>
             <a href=""><img class="icon"src="assets/menu.png" alt="Ícone 4"></a>
-            <button onclick="turnColorPage()"id="btnTurnMode"type="button"></button>
+
         </div>
         
     </header>
@@ -39,134 +42,246 @@
 
         </div>
         <div id="MPpost-image"> 
+            <div class="apoioDivImg_icones">
+                <img id="MPpost" src="https://th.bing.com/th/id/R.08b34e304a480e706dff3684065f39dc?rik=Bq2xegdiYE3a0g&riu=http%3a%2f%2fpm1.narvii.com%2f7336%2f08c2b05d2936028bdc48f957aeec3fa435796542r1-2048-1286v2_uhq.jpg&ehk=6%2bA9AytMYlJ9uhn36rqhAPKBkVLVldRmIKgrK1Gw41k%3d&risl=&pid=ImgRaw&r=0" alt="Arte">
+                <div id="MPicones">
+                    <img src="assets/compartilharBranco.png" alt="Simbolo de compartilhar" class="MPicones">
+                    <img src="assets/coracaoBranco.png" alt="Coração" class="MPicones" id="coracao">
+                    <img src="assets/salvarBranco.png" alt="Simbolo de salvar-instagram" class="MPicones">
+                </div>
+            </div>
             
-            <img id="MPpost" src="https://wallpapercave.com/wp/wp2613426.jpg" alt="Arte">
             <div id="MPcoments">
                 <div id="MpapoioComent">
                 <div class="MPcomment">
-                    <img class="MPprofile-pic" src="assets/imagens/perfil.jpg" alt="Foto de Perfil 1">
+                    <img class="MPprofile-pic" src="https://www.wefashiontrends.com/wp-content/uploads/2019/03/pose-para-fotos-de-perfil.jpg" alt="Foto de Perfil 1">
                     <div class="MPcomment-content">
-                    <p>Conteúdo do Comentário 1</p>
-                    <p class="MPtimestamp">Há 2 horas</p>
+                    <p>Marta Ferreira Pastoso</p>
+                    <div class="comentarioTxt">
+                        Gostei muito mano, parabéns!
                     </div>
-                </div>
-                  
-                <div class="MPcomment">
-                    <img class="MPprofile-pic" src="assets/imagens/perfil.jpg" alt="Foto de Perfil 1">
-                    <div class="MPcomment-content">
-                      <p>Conteúdo do Comentário 1</p>
-                      <p class="MPtimestamp">Há 2 horas</p>
+                    <div class="apoioResponder">
+                        <p class="MPtimestamp">Há 2 horas</p>
+                    <p class="MPtimestamp">responder</p>
                     </div>
-                </div>
-    
-                <div class="MPcomment">
                     
-                    <img class="MPprofile-pic" src="assets/imagens/perfil.jpg" alt="Foto de Perfil 1">
-                    <div class="MPcomment-content">
-                      <p>Conteúdo do Comentário 1</p>
-                      <p class="MPtimestamp">Há 2 horas</p>
-                    </div>
-                </div>
-    
-                <div class="MPcomment">
-                    <img class="MPprofile-pic" src="assets/imagens/perfil.jpg" alt="Foto de Perfil 1">
-                    <div class="MPcomment-content">
-                      <p>Conteúdo do Comentário 1</p>
-                      <p class="MPtimestamp">Há 2 horas</p>
-                    </div>
-                </div>
-    
-                <div class="MPcomment">
-                    <img class="MPprofile-pic" src="assets/imagens/perfil.jpg" alt="Foto de Perfil 1">
-                    <div class="MPcomment-content">
-                      <p>Conteúdo do Comentário 1</p>
-                      <p class="MPtimestamp">Há 2 horas</p>
                     </div>
                 </div>
                 <div class="MPcomment">
-                    <img class="MPprofile-pic" src="assets/imagens/perfil.jpg" alt="Foto de Perfil 1">
+                    <img class="MPprofile-pic" src="https://bestprofilepictures.com/wp-content/uploads/2021/08/Amazing-Profile-Picture.jpg" alt="Foto de Perfil 1">
                     <div class="MPcomment-content">
-                      <p>Conteúdo do Comentário 1</p>
-                      <p class="MPtimestamp">Há 2 horas</p>
+                    <p>Agno Meira Campos</p>
+                    <div class="comentarioTxt">
+                        Apresenta seu desenho no seminário dos heróis doido, ta muito massa
                     </div>
-                </div>
-
-                <div class="MPcomment">
-                    <img class="MPprofile-pic" src="assets/imagens/perfil.jpg" alt="Foto de Perfil 1">
-                    <div class="MPcomment-content">
-                      <p>Conteúdo do Comentário 1</p>
-                      <p class="MPtimestamp">Há 2 horas</p>
+                    <div class="apoioResponder">
+                        <p class="MPtimestamp">Há 2 horas</p>
+                    <p class="MPtimestamp">responder</p>
                     </div>
-                </div>
-    
-                <div class="MPcomment">
-                    <img class="MPprofile-pic" src="assets/imagens/perfil.jpg" alt="Foto de Perfil 1">
-                    <div class="MPcomment-content">
-                      <p>Conteúdo do Comentário 1</p>
-                      <p class="MPtimestamp">Há 2 horas</p>
+                    
                     </div>
                 </div>
                 <div class="MPcomment">
-                    <img class="MPprofile-pic" src="assets/imagens/perfil.jpg" alt="Foto de Perfil 1">
+                    <img class="MPprofile-pic" src="https://th.bing.com/th/id/OIP.5PwbmXfL7k00Y477E_ulhQHaI_?pid=ImgDet&rs=1" alt="Foto de Perfil 1">
                     <div class="MPcomment-content">
-                      <p>Conteúdo do Comentário 1</p>
-                      <p class="MPtimestamp">Há 2 horas</p>
+                    <p>Luis Phelipe</p>
+                    <div class="comentarioTxt">
+                        rickzera aprendeu com o pai!!😎
+                    </div>
+                    <div class="apoioResponder">
+                        <p class="MPtimestamp">Há 2 horas</p>
+                    <p class="MPtimestamp">responder</p>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="MPcomment">
+                    <img class="MPprofile-pic" src="https://th.bing.com/th/id/OIP.T9n3HcQSJUAsBBUV4syBmwHaFj?pid=ImgDet&rs=1" alt="Foto de Perfil 1">
+                    <div class="MPcomment-content">
+                    <p>Urubu do pix</p>
+                    <div class="comentarioTxt">
+                        top doido
+                    </div>
+                    <div class="apoioResponder">
+                        <p class="MPtimestamp">Há 2 horas</p>
+                    <p class="MPtimestamp">responder</p>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="MPcomment">
+                    <img class="MPprofile-pic" src="https://i0.wp.com/wipy.tv/wp-content/uploads/2020/08/five-umbrella-academy.jpg?w=1000&ssl=1" alt="Foto de Perfil 1">
+                    <div class="MPcomment-content">
+                    <p>Gabiror</p>
+                    <div class="comentarioTxt">
+                        Tangerina tem a testa maior que a de beluga vey!!
+                    </div>
+                    <div class="apoioResponder">
+                        <p class="MPtimestamp">Há 2 horas</p>
+                    <p class="MPtimestamp">responder</p>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="MPcomment">
+                    <img class="MPprofile-pic" src="http://edition.channel5belize.com/wp-content/uploads/2014/10/Lionel-Messi-300x225.jpg" alt="Foto de Perfil 1">
+                    <div class="MPcomment-content">
+                    <p>Alisson_x_x</p>
+                    <div class="comentarioTxt">
+                        muito bom mano....
+                    </div>
+                    <div class="apoioResponder">
+                        <p class="MPtimestamp">Há 2 horas</p>
+                    <p class="MPtimestamp">responder</p>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="MPcomment">
+                    <img class="MPprofile-pic" src="https://th.bing.com/th/id/OIP.0_UApzFHn2SZmSRvOXDrJgHaLI?pid=ImgDet&rs=1" alt="Foto de Perfil 1">
+                    <div class="MPcomment-content">
+                    <p>Andrey Bonfim</p>
+                    <div class="comentarioTxt">
+                        vito fez um desenho igualzin, riquelme
+                    </div>
+                    <div class="apoioResponder">
+                        <p class="MPtimestamp">Há 2 horas</p>
+                    <p class="MPtimestamp">responder</p>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="MPcomment">
+                    <img class="MPprofile-pic" src="https://th.bing.com/th/id/R.b4732a2bec7eaa6e2b766df8f9253619?rik=iR3tHcVQaKQBHA&pid=ImgRaw&r=0" alt="Foto de Perfil 1">
+                    <div class="MPcomment-content">
+                    <p>Raissaoo1362 </p>
+                    <div class="comentarioTxt">
+                        dizem que a temp 4 ta muito boa!!
+                    </div>
+                    <div class="apoioResponder">
+                        <p class="MPtimestamp">Há 2 horas</p>
+                    <p class="MPtimestamp">responder</p>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="MPcomment">
+                    <img class="MPprofile-pic" src="https://th.bing.com/th/id/OIP.Rdp3zNKCbRGEx0rWDJG0QQHaGj?pid=ImgDet&rs=1" alt="Foto de Perfil 1">
+                    <div class="MPcomment-content">
+                    <p>Beluguetes_FanClubeOficial</p>
+                    <div class="comentarioTxt">
+                        "a baleia é amiga da sereia...olha o que ela faaaz olha oq ela faaaz"
+                    </div>
+                    <div class="apoioResponder">
+                        <p class="MPtimestamp">Há 2 horas</p>
+                    <p class="MPtimestamp">responder</p>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="MPcomment">
+                    <img class="MPprofile-pic" src="https://th.bing.com/th/id/OIP.rMUPX083kKCxbwxtHC05KAHaEK?pid=ImgDet&rs=1" alt="Foto de Perfil 1">
+                    <div class="MPcomment-content">
+                    <p>Galera_doTruco6969</p>
+                    <div class="comentarioTxt">
+                        🖕🫵🫵
+                    </div>
+                    <div class="apoioResponder">
+                        <p class="MPtimestamp">Há 2 horas</p>
+                    <p class="MPtimestamp">responder</p>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="MPcomment">
+                    <img class="MPprofile-pic" src="https://th.bing.com/th/id/R.84d6477dee0951b856694c1daea9d191?rik=C8%2bq16%2bI9Oc7Tg&pid=ImgRaw&r=0" alt="Foto de Perfil 1">
+                    <div class="MPcomment-content">
+                    <p>VeiDaLancha </p>
+                    <div class="comentarioTxt">
+                        Alguem aqui sabe o CPF de Luiciane nessa plataforma?
+                    </div>
+                    <div class="apoioResponder">
+                        <p class="MPtimestamp">Há 2 horas</p>
+                    <p class="MPtimestamp">responder</p>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="MPcomment">
+                    <img class="MPprofile-pic" src="https://th.bing.com/th/id/R.e1734fc9c41885359ceedc05e420dba3?rik=ehkmAhzCWagcqQ&pid=ImgRaw&r=0" alt="Foto de Perfil 1">
+                    <div class="MPcomment-content">
+                    <p>Java Prado</p>
+                    <div class="comentarioTxt">
+                        🤠 tá, mas porque você colocou aquela borda ali? nããão...Achei legal, porem tem aquela borda lá (se tivesse feito em java era melhor)👀
+                    </div>
+                    <div class="apoioResponder">
+                        <p class="MPtimestamp">Há 2 horas</p>
+                    <p class="MPtimestamp">responder</p>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="MPcomment">
+                    <img class="MPprofile-pic" src="https://th.bing.com/th/id/R.0fe3583b4cf4c9da17e34ca974b313b2?rik=0tn%2bo7T2D8Tx0w&pid=ImgRaw&r=0" alt="Foto de Perfil 1">
+                    <div class="MPcomment-content">
+                    <p>Vinicius_Dourado6</p>
+                    <div class="comentarioTxt">
+                        Tava mais bonito a folha em branco.....🤩😍🤝
+                    </div>
+                    <div class="apoioResponder">
+                        <p class="MPtimestamp">Há 13 horas</p>
+                    <p class="MPtimestamp">responder</p>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="MPcomment">
+                    <img class="MPprofile-pic" src="https://th.bing.com/th/id/OIP.in5zBVjK3qM7KdiTjdIG8QHaNL?pid=ImgDet&rs=1" alt="Foto de Perfil 1">
+                    <div class="MPcomment-content">
+                    <p>MarceloOlds06</p>
+                    <div class="comentarioTxt">
+                        matheuuxs? meu filho?
+                    </div>
+                    <div class="apoioResponder">
+                        <p class="MPtimestamp">Há 13 horas</p>
+                    <p class="MPtimestamp">responder</p>
+                    </div>
+                    
                     </div>
                 </div>
                 <div class="MPcomment">
                     <img class="MPprofile-pic" src="assets/imagens/perfil.jpg" alt="Foto de Perfil 1">
                     <div class="MPcomment-content">
-                      <p>Conteúdo do Comentário 1</p>
-                      <p class="MPtimestamp">Há 2 horas</p>
+                    <p>João Riquelme Coqueiro Oliveira</p>
+                    <div class="comentarioTxt">
+                        gente,errei o traço ali, mas vcs relevem ta..
+                    </div>
+                    <div class="apoioResponder">
+                        <p class="MPtimestamp">Há 2 horas</p>
+                    <p class="MPtimestamp">responder</p>
+                    </div>
+                    
                     </div>
                 </div>
-                <div class="MPcomment">
-                    <img class="MPprofile-pic" src="assets/imagens/perfil.jpg" alt="Foto de Perfil 1">
-                    <div class="MPcomment-content">
-                      <p>Conteúdo do Comentário 1</p>
-                      <p class="MPtimestamp">Há 2 horas</p>
-                    </div>
-                </div>
-                <div class="MPcomment">
-                    <img class="MPprofile-pic" src="assets/imagens/perfil.jpg" alt="Foto de Perfil 1">
-                    <div class="MPcomment-content">
-                      <p>Conteúdo do Comentário 1</p>
-                      <p class="MPtimestamp">Há 2 horas</p>
-                    </div>
-                </div>
-                <div class="MPcomment">
-                    <img class="MPprofile-pic" src="assets/imagens/perfil.jpg" alt="Foto de Perfil 1">
-                    <div class="MPcomment-content">
-                      <p>Conteúdo do Comentário 1</p>
-                      <p class="MPtimestamp">Há 2 horas</p>
-                    </div>
-                </div>
-                <div class="MPcomment">
-                    <img class="MPprofile-pic" src="assets/imagens/perfil.jpg" alt="Foto de Perfil 1">
-                    <div class="MPcomment-content">
-                      <p>Conteúdo do Comentário 1</p>
-                      <p class="MPtimestamp">Há 2 horas</p>
-                    </div>
-                </div>
-                <div class="MPcomment">
-                    <img class="MPprofile-pic" src="assets/imagens/perfil.jpg" alt="Foto de Perfil 1">
-                    <div class="MPcomment-content">
-                      <p>Conteúdo do Comentário 1</p>
-                      <p class="MPtimestamp">Há 2 horas</p>
-                    </div>
-                </div>
+                <div id="carregarMaisRespostas">
+                    <a href="#">carregar mais respostas +</a>
+                </div>                
+               
             </div>
               <div id="inserirComente">
+                <div class="idsDebusca">
+                    <a href="">#Arte</a><a href="">#Desenho</a><a href="">#anime</a>
+                </div>
+                <div class="idsDebusca">
+                    <a href="">#demonSlayer</a><a href="">#tangerina</a><a href="">#ds</a>
+                </div>
+                
                     <input name="comem" type="text" id="MPcomem" placeholder="Comente">
               </div>
             </div>
             
         </div>
-        <div id="MPicones">
-            <img src="assets/compartilharBranco.png" alt="Simbolo de compartilhar" class="MPicones">
-            <img src="assets/coracaoBranco.png" alt="Coração" class="MPicones" id="coracao">
-            <img src="assets/salvarBranco.png" alt="Simbolo de salvar-instagram" class="MPicones">
-        </div>
+        
         
         
     </div>
@@ -939,25 +1054,25 @@
     <div class="contato">
         <a href="#">
         <div class="apoioLateral">
-            <img alt="" src="instaLogo.png"class="logoOwl">
+            <img alt="" src="assets/instaLogo.png"class="logoOwl">
         <span>Instagram</span>
         </div>
         </a>
         <a href="#">
         <div class="apoioLateral">
-            <img alt="" src="githubLogo.png"class="logoOwl">
+            <img alt="" src="assets/githubLogo.png"class="logoOwl">
         <span>Github</span>
         </div>
         </a>
         <a href="#">
         <div class="apoioLateral">
-            <img id="emailLogo"alt="" src="emailLogo.png"class="logoOwl">
+            <img id="emailLogo"alt="" src="assets/emailLogo.png"class="logoOwl">
         <span>Email</span>
         </div>
         </a>
         
     </div>
-    <img src="detalheLateralFooter.png" id="triangulo-para-direita">
+    <img src="assets/imagens/detalheLateralFooter.png" id="triangulo-para-direita">
     </div>
     
     </footer>

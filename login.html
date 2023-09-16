@@ -4,116 +4,52 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OWL - Login</title>
-<link rel="stylesheet" href="../Ivo/cadastrologin.css">
-<link rel="stylesheet" href="../Gabriel/efects.css">
+<link rel="stylesheet" href="css/cadastrologin.css">
+<link rel="stylesheet" href="css/efects.css">
 </head>
 <body>
-    <header id="topo">
-        <div class="barra-pesquisa">
-            <a href="#">
-                <img src="../imagens/perfil.png">
-             </a>
-            <form action="../Gabriel/index.html" method="post">
-                <input type="text" id="busca" placeholder="Digite sua busca">
-            </form>
-        </div>
-
-        <div class="menu">
-                <a href="cadastro.html">
-                    <img src="../imagens/suporte.png">
-                </a>
-                <a href="cadastro.html">
-                    <img src="../imagens/criar.png">
-                </a>
-                <a href="../Gabriel/index.html">
-                    <img src="../imagens/casaBrancaFormated.png">
-                </a>
-                <a href="../Denilson/configuracoes.html">
-                <img src="../imagens/config.png" class="topo-img">
-                </a>
-        </div>
-    </header>
         <div class="container">
-            <img class="" id="postP" src="R.jpg" alt="" srcset="">
-            <div class="container-cadastro container-login">
-                <img src="../imagens/clperfil.png" alt="logo" class="logocad">
+            <img class="" id="postP" src="assets/R.jpg" alt="" srcset="">
+            <div class="container-logcad">
+                <img src="assets/imagens/clperfil.png" alt="logo" class="logcad">
                 <h1>Bem-vindo a OWL</h1>
-                <div class="redes-cadastro"> 
-                    <div class="gf-cadastro"id="gg">
-                        <img src="../imagens/clgoogle.png" alt="google">
+                <div class="redes-logcad"> 
+                    <div class="gf-logcad"id="gg">
+                        <img src="assets/imagens/google.png" alt="google">
                         <h5>Google</h5>
                     </div>
-                    <div class="gf-cadastro" id="ff">
-                        <img src="../imagens/clfacebook.webp" alt="facebook">
+                    <div class="gf-logcad" id="ff">
+                        <img src="assets/imagens/clfacebook.webp" alt="facebook">
                         <h5>Facebook</h5>
                     </div>
                 </div>
-                <hr><hr><hr>
+                <hr>
             
             <h4>Entrar</h4>
 
-            <form action="cadastro.html">
+            <form action="index.html" method="post">
                 
                 <label>E-mail:</label>
-                <input type="email" id="email" name="email" required placeholder="Digite seu E-mail">
+                <input type="email" id="email" name="email" required placeholder="Owlartists2023@gmail.com">
                 
                 <label>Senha:</label>
-                <input type="password" id="senha" name="senha" required placeholder="Digite sua Senha">
-                
-                <br><br>
-                
+                <input type="password" id="senha" name="senha" required placeholder="1234">
+        
                 <div class="termos">
-                    <input type="checkbox" id="concordo" name="concordo" required>
-                    <label>Ao clicar você concorda com os <br> termos de uso da Owl Apps</label>
-                    <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Desqueceu%2Ba%2Bsenha%26oq%3Desquceu%2Ba%2B%26aqs%3Dchrome.1.69i57j0i13i512l9.4037j0j9%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAlAAQ&hl=pt-BR&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S218608074%3A1692923971405584"> Esqueceu a senha? Clique Aqui </a>
+                    <div class="term">
+                        <input type="checkbox" id="concordo" name="concordo" required>
+                        <a>Ao clicar você concorda com os termos de uso da Owl Apps</a>
+                    </div>
+                    <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Desqueceu%2Ba%2Bsenha%26oq%3Desquceu%2Ba%2B%26aqs%3Dchrome.1.69i57j0i13i512l9.4037j0j9%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAlAAQ&hl=pt-BR&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S218608074%3A1692923971405584" id="esqueceu"> Esqueceu a senha? Clique Aqui </a>
                 </div>
-
-
-                <button>Entrar</button>
+                <div class="but">
+                    <button id="ce">Entrar</button>
+                    <button id="v">Voltar</button>
+                </div>
             </form>
         </div>
     </div>
-    <footer>
-        <div class="detalhesFooter">
-
-            <div class="topo-footer">
-                 <img src="https://4.bp.blogspot.com/-9UBNrgGg-tk/VhrDzvW7DdI/AAAAAAAATT8/-QDGNJPh_fw/s1600/2.jpg" class="logoOwl" alt="Owl logo">
-                    <div id="containerDeapoio">
-                        <span>OWL ART</span>
-                    </div>
-            </div>
-
-                <h3>Denilson</h3>
-                <h3>Gabriel</h3>
-                <h3>Ivo</h3>
-                <h3>Riquelme</h3>
-                <h3>Marcos</h3>
-                <h3>Leonardo</h3>
-        </div>
-        <div class="contato">
-
-            <div class="apoioLateral">
-                <img id="instalogo" alt="" src="../Gabriel/instaLogo.png"class="logoOwl">
-                <span>Instagram</span>
-            </div>
-
-            <div class="apoioLateral">
-                <img id="githublogo" alt="" src="../Gabriel/githubLogo.png"class="logoOwl">
-                <span>Github</span>
-            </div>
-
-            <div class="apoioLateral">
-                <img id="emailLogo"alt="" src="../Gabriel/emailLogo.png"class="logoOwl">
-                <span>Email</span>
-            </div>
-                
-            </div>
-                <div class="img-lateral">
-                    <img src="../Gabriel/detalheLateralFooter.png" id="triangulo-para-direita">
-            </div>
-        </footer>
-
-    <script src="../Gabriel/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
