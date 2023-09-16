@@ -237,6 +237,8 @@ select {
 
 .inspiracoes div {
     background-color: black;
+    font-size: 1.2rem;
+    padding: 15px;
     height: 80px;
     display: flex;
     justify-content: start;
@@ -245,31 +247,15 @@ select {
     border-radius: 15px;
 }
 
-.inspiracoes div:hover {
-    background-color: rgba(0, 0, 0, 0.253);
-    transition: 200ms;
-}
-
 .inspiracoes div img {
-    margin-left: 15px;
-    width: 3rem;
-    height: 3rem;
+    width: 45px;
+    height: 45px;
     border-radius: 100%;
     object-fit: cover;
 }
 
-.status {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
-
 .inspiracoes p {
     font-size: 1.2rem;
-}
-
-.inspiracoes h5 {
-    font-size: 1rem;
 }
 
 .criar {
@@ -283,7 +269,6 @@ select {
     top: 90vh;
     width: 55px;
     object-fit: cover;
-    z-index: 5;
 }
 
 /*------------- EXIBIÇÃO DE ARTES DO PERFIL---------------*/
@@ -681,10 +666,6 @@ footer span {
         position: relative;
     }
 
-    .criar {
-        z-index: 4;
-    }
-
     #triangulo-topo {
         transform: rotate(180deg);
         width: 300px;
@@ -1044,7 +1025,7 @@ footer span {
     }
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 860px) {
     .secao-direita {
         display: none;
     }
