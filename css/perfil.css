@@ -160,11 +160,6 @@ select {
     align-items: center;
 }
 
-.perfilSelo {
-    padding-left: 80px;
-    display: flex;
-}
-
 .fotoPerfil {
     width: 30rem;
     height: 30rem;
@@ -179,9 +174,8 @@ select {
 }
 
 .atributos-perfil {
-    font-size: 1rem;
-    padding: 10px 0;
-    padding-bottom: 30px;
+    font-size: 1.2rem;
+    margin: 15px 0;
     width: 350px;
     display: flex;
     justify-content: space-between;
@@ -297,7 +291,7 @@ select {
 }
 
 .border-radius:hover {
-    transition: ease-in-out 500ms;
+    transition: all ease-in-out 0.5s;
     transform: scale(1.1);
 }
 
@@ -722,13 +716,6 @@ footer span {
         width: 200px;
         border: 5px solid white;
         border-radius: 100%;
-    }
-
-    .selo {
-        width: 60px;
-        height: 60px;
-        right: 60px;
-        top: 130px;
     }
 
     .secao-centro h1 {
