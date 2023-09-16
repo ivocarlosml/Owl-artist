@@ -83,7 +83,7 @@ img {
 }
 .redes-logcad{
   display:flex;
-  width: 80%;
+  width: 100%;
   justify-content:space-around;
   align-items:center;
   height:auto;
@@ -179,7 +179,8 @@ img {
   margin:1.5rem 1rem 1rem 1rem;
   padding-left: 10%;
 }
-.but button {
+
+.botoes {
   color: #fff;
   font-size: 1.2rem;
   font-family: 'Open Sans', sans-serif;
@@ -187,6 +188,10 @@ img {
   height:100%;
   border: none;
   cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .but #ce {
   width: 60%;
@@ -231,6 +236,20 @@ hr{
 @media screen and (max-width: 768px) {
     .container-logcad {
     width: 65%;
+    }
+    .redes-logcad img{
+      border-radius: 1rem;
+      width:1.5rem;
+      height:1.5rem;
+      margin-left: 0.15rem;
+  }
+    .gf-logcad{
+      width: 45%;
+    }
+    .gf-logcad h5{
+      padding-left: 0.5rem;
+      color: white;
+      font-size: 0.8rem;
     }
     .but{
       margin: 0.5rem;
