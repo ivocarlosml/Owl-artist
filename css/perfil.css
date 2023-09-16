@@ -25,7 +25,7 @@ body {
     background-color: #000000;
     padding: 0 20px;
     width: 100%;
-    height: 10vh;
+    height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,11 +160,6 @@ select {
     align-items: center;
 }
 
-.perfilSelo {
-    padding-left: 80px;
-    display: flex;
-}
-
 .fotoPerfil {
     width: 30rem;
     height: 30rem;
@@ -173,22 +168,39 @@ select {
     object-fit: cover;
 }
 
+/*
+.selo {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    bottom: 90px;
+    left: 100px;
+}
+*/
+
 .secao-centro h1 {
-    padding: 20px 0;
+    font-size: 2.5rem;
+    padding: 10px 0;
+}
+
+.secao-centro p {
+    color: gray;
+    width: 80%;
+    font-size: 1.2rem; 
 }
 
 .atributos-perfil {
-    padding: 10px 0;
-    padding-bottom: 30px;
-    width: 350px;
+    padding: 1rem 0;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .atributos-perfil h4:hover,
-.menu img,
-.inspiracoes div {
+.menu img {
     cursor: pointer;
 }
 
@@ -247,10 +259,6 @@ select {
     align-items: center;
     column-gap: 15px;
     border-radius: 15px;
-}
-
-.inspiracoes div:hover {
-    background-color: rgba(0, 0, 0, 0.301);
 }
 
 .inspiracoes div img {
@@ -711,18 +719,23 @@ footer span {
         padding-bottom: 20px;
     }
 
+    .atributos-perfil {
+        margin-bottom: 5px;
+    }
+
     .fotoPerfil {
         width: 200px;
         border: 5px solid white;
         border-radius: 100%;
     }
 
+    /*
     .selo {
         width: 60px;
-        height: 60px;
-        right: 60px;
-        top: 130px;
+        bottom: 70px;
+        left: 80px;
     }
+    */
 
     .secao-centro h1 {
         font-size: 1.5rem;
@@ -749,7 +762,7 @@ footer span {
 
     #artes-perfil {
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(59, 50px);
+        grid-template-rows: repeat(60, 50px);
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
