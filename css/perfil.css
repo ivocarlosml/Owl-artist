@@ -128,6 +128,11 @@ select {
     padding: 20px 10px;
 }
 
+.artedodia {
+    width: 2rem;
+    filter: invert(100%);
+}
+
 .secao-esquerda button {
     background: linear-gradient(#00DF95, #0020AB);
     font-size: .8rem;
@@ -245,6 +250,11 @@ select {
     align-items: center;
     column-gap: 15px;
     border-radius: 15px;
+}
+
+.inspiracoes div:hover {
+    background-color: rgba(0, 0, 0, 0.226);
+    transition: 300ms;
 }
 
 .inspiracoes div img {
