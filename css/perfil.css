@@ -185,7 +185,8 @@ select {
 }
 
 .atributos-perfil h4:hover,
-.menu img {
+.menu img,
+.secao-direita div {
     cursor: pointer;
 }
 
@@ -719,16 +720,10 @@ footer span {
     }
 
     .fotoPerfil {
-        width: 200px;
+        width: 13rem;
+        height: 13rem;
         border: 5px solid white;
         border-radius: 100%;
-    }
-
-    .selo {
-        width: 60px;
-        height: 60px;
-        right: 60px;
-        top: 130px;
     }
 
     .secao-centro h1 {
