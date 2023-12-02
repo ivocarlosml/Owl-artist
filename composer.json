@@ -1,0 +1,16 @@
+{
+    "name": "gyeel/owl-artist",
+    "description": "um projeto com sistema de rede social e ecomerce",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "OwlArtist\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "owlcorp"
+        }
+    ],
+    "require": {}
+}
