@@ -31,7 +31,7 @@ Junte-se a nós na Owl e faça parte desta jornada artística incrível. Despert
 
 #OwlArte #ArteCriativa #ComunidadeArtística
 #IFBAprojects
-
+version: 0.0.1
 ->Link para o nosso site:
 <a href="https://ivocarlosml.github.io/Owl-artist/">OWL</a>
 
