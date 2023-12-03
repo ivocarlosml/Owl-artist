@@ -1,34 +1,21 @@
 <?php
 declare(strict_types = 1);
 
-use OwlArtist\Controllers\Configuracoes;
-use OwlArtist\Controllers\ErroController;
-use OwlArtist\Controllers\HomeController;
-use OwlArtist\Controllers\LoginController;
+use OwlArtist\Core\Router;
 
 require __DIR__ ."/vendor/autoload.php";
 
 const PASTA_VIEW = "./app/Views/";
+const NS_CONTROLLERS = "\\OwlArtist\\controllers\\";
 
- $url = $_GET['url']??"/";
- switch($url){
-    case"/":
-        $controller = new HomeController();
-        $controller->index();
-    break;
-    case "login":
-        $controller = new LoginController();
-        $controller-> login();
-    break;
-    case "cadastro":
-        $controller = new LoginController();
-        $controller-> criarConta();
-    break;
-    case "configuracoes":
-        $controller = new Configuracoes();
-        $controller-> config();
-    break;
-    default: 
-        $controllerError  = new ErroController();
-        $controllerError->erro404();
- }
+ $url = $_GET['url']??"";
+ 
+Router::add('/','HomeController','index');
+Router::add('/login','LoginController','login');
+Router::add('/teste','LoginController','teste');
+Router::add('/configuracoes','Configuracoes','config');
+
+
+Router::exec($url);
+
+
