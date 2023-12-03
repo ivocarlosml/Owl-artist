@@ -18,7 +18,7 @@
         <div class="trasintionSuave"id="divisor">
         <div class="user-profile">
             <a href="login.html">
-                <img classe ="iconInicial"src="assets/imagens/clperfil.png" alt="Perfil do Usuário">
+                <img classe ="iconInicial"src="http://localhost/Owl-artist/public/assets/imagens/clperfil.png" alt="Perfil do Usuário">
             </a>
             
             <div class="detalhesPerfil">
@@ -35,10 +35,10 @@
         </div>
         <div class="icon-group">
             <input type="checkbox" class="toggle"onclick="turnColorPage()"id="btnTurnMode"type="button">
-           <a href=""><img class="icon" src="assets/suporte.png" alt="Ícone 1"></a>
-            <a href=""><img class="icon" src="assets/criar.png" alt="Ícone 2"></a>
-            <a href="configuracoes.html"><img class="icon" src="assets/config.png" alt="Ícone 3"></a>
-            <a href=""><img class="icon"src="assets/menu.png" alt="Ícone 4"></a>
+           <a href=""><img class="icon" src="http://localhost/Owl-artist/public/assets/suporte.png" alt="Ícone 1"></a>
+            <a href=""><img class="icon" src="http://localhost/Owl-artist/public/assets/criar.png" alt="Ícone 2"></a>
+            <a href="configuracoes.html"><img class="icon" src="http://localhost/Owl-artist/public/assets/config.png" alt="Ícone 3"></a>
+            <a href=""><img class="icon"src="http://localhost/Owl-artist/public/assets/menu.png" alt="Ícone 4"></a>
             
             
         </div>

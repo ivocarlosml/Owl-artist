@@ -28,7 +28,7 @@ componente('topo')
                        
                     </div>
                     <div class="usuarioIndentificador">
-                        <img src="assets/download.jpg" class="fotoMin" alt="publiUser" srcset="">
+                        <img src="http://localhost/Owl-artist/public/assets/download.jpg" class="fotoMin" alt="publiUser" srcset="">
                         <span>Isabela Campos</span>
                     </div>
                     
@@ -42,7 +42,7 @@ componente('topo')
         <img class="content imagem2"src="https://th.bing.com/th/id/OIP.Jw-inHgeU_yMijt3VAIDFQHaFj?pid=ImgDet&rs=1" alt="Ícone 1">
         
         <div class="idParaMidia">
-            <img src="assets/download.jpg" class="fotoMin" alt="publiUser" srcset="">
+            <img src="http://localhost/Owl-artist/public/assets/download.jpg" class="fotoMin" alt="publiUser" srcset="">
             <span class="nameClassUser">Isabela Campos</span>
         </div>
         
@@ -100,8 +100,8 @@ componente('topo')
           <span id="nameSlide">shefjklaherwkjhfker</span>
         </div>
         <div class="arrows">
-          <img src="assets/seta.png" class="arrow left">
-          <img src="assets/seta.png" class="arrow right">
+          <img src="http://localhost/Owl-artist/public/assets/seta.png" class="arrow left">
+          <img src="http://localhost/Owl-artist/public/assets/seta.png" class="arrow right">
           
         </div>
       </div>
