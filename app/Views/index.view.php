@@ -2,13 +2,13 @@
 componente('topo')
 ?>
     <div  class="image-container trasintionSuave">
-        <img id="postP" class =" " src="assets/R.jpg" alt="Imagem de Fundo">
+        <img id="postP" class =" " src="http://localhost/Owl-artist/public/assets/R.jpg" alt="Imagem de Fundo">
         <div id="description" class="image-description">
         </strong>Owl, a nossa arte é divulgar a sua!</strong>
         </div>
     </div>
     <div  id="posterOwl">
-        <img class="detalhe1" src="assets/imagens/detalhe1.png">
+        <img class="detalhe1" src="http://localhost/Owl-artist/public/assets/imagens/detalhe1.png">
         <div class="postTag">Navegue pelas artes produzidas pelos nossos artistas! quem sabe você não se torna um também?!</div>
     </div>
     <div class="infobar" id="infoBar">
