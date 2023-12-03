@@ -2,7 +2,7 @@
 <div class="division">
     <aside id="menuAside">
         <div class="parteUsuario">
-            <img src="assets/mulher.png" id="fotoUser">
+            <img src="http://localhost/Owl-artist/public/assets/mulher.png" id="fotoUser">
             <div class="infoUser">
                 <p class="user"><strong>Laura Maria Silva</strong></p>
                 <p class="user">lauramariasilva2023@gmail.com</p>
@@ -50,7 +50,7 @@
             <section>
                 <div  class="secPremium">
                     <h2 class="titulosMain">Premium</h2>
-                    <img src="assets/seloFormated.png" class="fotoSelo">
+                    <img src="http://localhost/Owl-artist/public/assets/seloFormated.png" class="fotoSelo">
                 </div>
                 <div>
                     <p>Tenha acesso a conteúdos exclusivos da plataforma</p>

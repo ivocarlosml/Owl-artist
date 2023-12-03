@@ -9,17 +9,17 @@
 </head>
 <body>
     <div class="container">
-            <img class="" id="postP" src="assets/R.jpg" alt="" srcset="">
+            <img class="" id="postP" src="http://localhost/Owl-artist/public/assets/R.jpg" alt="" srcset="">
             <div class="container-logcad">
                 <img src="assets/imagens/clperfil.png" alt="logo" class="logcad">
                 <h1>Bem-vindo a OWL</h1>
                 <div class="redes-logcad"> 
                     <div class="gf-logcad"id="gg">
-                        <img src="assets/imagens/google.png" alt="google">
+                        <img src="http://localhost/Owl-artist/public/assets/imagens/google.png" alt="google">
                         <h5>Google</h5>
                     </div>
                     <div class="gf-logcad" id="ff">
-                        <img src="assets/imagens/clfacebook.webp" alt="facebook">
+                        <img src="http://localhost/Owl-artist/public/assets/imagens/clfacebook.webp" alt="facebook">
                         <h5>Facebook</h5>
                     </div>
                 </div>
