@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/configuracoes.css" rel="stylesheet" >
-    <link href="css/dimensionamento.css" rel="stylesheet" > 
-
-    <title>Own Artist ajustes</title>
-</head>
-<body>
-    <header>
-        
-         <a href="configuracoes.html" class="interna" >
-                <img src="assets/engBrancaFormated.png" class="logos" id="logoEngrenagem">
-                <h2 id="titulo">Ajustes</h2>
-        </a>
-
-        <div class="iconesDireita">
-                <a  id="menuLink" >
-                    <img src="assets/menuBrancoFormated.png" class="logos" id="menu">
-                </a>
-
-             <div class="itens">
-                <a href="index.html" class="linkCasa" id="casa" >
-                    <img src="assets/casaBrancaFormated.png" class="logos">
-                </a>
-            </div>
-
-        </div >
-    </header>
+<?php componente("topo")?>
 <div class="division">
     <aside id="menuAside">
         <div class="parteUsuario">

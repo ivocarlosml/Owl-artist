@@ -1,46 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/efects.css">
-    <link rel="stylesheet" href="css/botaoThemeBw.css">
-    <title>OWl - Artes</title>
-</head>
-<body >
-    <header id="header">
-       
-        <div class="trasintionSuave"id="divisor">
-        <div class="user-profile">
-            <a href="login.html">
-                <img classe ="iconInicial"src="assets/imagens/clperfil.png" alt="Perfil do Usuário">
-            </a>
-            
-            <div class="detalhesPerfil">
-                <a href="perfil.html"><div id="nome"><p>Convidado0909</p></div></a>
-                <a href="login.html">
-                <div id="tipoDeArte"><p>Seja um artista</p></div>
-                </a>
-            </div>
-            
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Pesquisar">
-        </div>
-        </div>
-        <div class="icon-group">
-            <input type="checkbox" class="toggle"onclick="turnColorPage()"id="btnTurnMode"type="button">
-            <a href=""><img class="icon" src="assets/suporte.png" alt="Ícone 1"></a>
-            <a href=""><img class="icon" src="assets/criar.png" alt="Ícone 2"></a>
-            <a href="configuracoes.html"><img class="icon" src="assets/config.png" alt="Ícone 3"></a>
-            <a href=""><img class="icon"src="assets/menu.png" alt="Ícone 4"></a>
-            
-            
-        </div>
-        
-    </header>
-    
+<?php
+componente('topo')
+?>
     <div  class="image-container trasintionSuave">
         <img id="postP" class =" " src="assets/R.jpg" alt="Imagem de Fundo">
         <div id="description" class="image-description">
@@ -845,50 +805,7 @@
     </a>
         
     </section>
-    
-    <footer>
-        
-        <div class="detalhesFooter">
-            <div class="topo">
-                <img src="https://4.bp.blogspot.com/-9UBNrgGg-tk/VhrDzvW7DdI/AAAAAAAATT8/-QDGNJPh_fw/s1600/2.jpg" class="logoOwl" alt="Owl logo">
-            <div id="containerDeapoio">
-            <span>OWL ART</span>
-            </div>
-            </div>
-        <h3>Denilson</h3>
-        <h3>Gabriel</h3>
-        <h3>Ivo</h3>
-        <h3>Riquelme</h3>
-        <h3>Marcos</h3>
-        <h3>Leonardo</h3>
-    </div>
-    <div class="contato">
-        <a href="#">
-        <div class="apoioLateral">
-            <img alt="" src="assets/instaLogo.png"class="logoOwl">
-        <span>Instagram</span>
-        </div>
-        </a>
-        <a href="#">
-        <div class="apoioLateral">
-            <img alt="" src="assets/githubLogo.png"class="logoOwl">
-        <span>Github</span>
-        </div>
-        </a>
-        <a href="#">
-        <div class="apoioLateral">
-            <img id="emailLogo"alt="" src="assets/emailLogo.png"class="logoOwl">
-        <span>Email</span>
-        </div>
-        </a>
-        
-    </div>
-    <img src="assets/imagens/detalheLateralFooter.png" id="triangulo-para-direita">
-    </div>
-    
-    </footer>
-    <script src="js/script2.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/themeBW.js"></script>
-</body>
-</html>
+<?php
+componente('rodape')
+?> 
+   
