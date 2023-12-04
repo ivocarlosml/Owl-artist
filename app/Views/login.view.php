@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OWL - Login</title>
-<link rel="stylesheet" href="http://localhost/Owl-artist/public/assets/css/cadastrologin.css">
-<link rel="stylesheet" href="http://localhost/Owl-artist/public/assets/css/efects.css">
+<link rel="stylesheet" href="http://localhost/Owl-artist/public/css/cadastrologin.css">
+<link rel="stylesheet" href="http://localhost/Owl-artist/public/css/efects.css">
 </head>
 <body>
         <div class="container">

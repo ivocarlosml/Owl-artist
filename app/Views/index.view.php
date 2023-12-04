@@ -1,6 +1,45 @@
-<?php
-componente('topo')
-?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<?=css('style')?>">
+    <link rel="stylesheet" href="<?=css('botaoThemeBw')?>">
+    <link rel="stylesheet" href="<?=css('efects')?>">
+    <title>OWl - Artes</title>
+</head>
+<body >
+    <header id="header">
+       
+        <div class="trasintionSuave"id="divisor">
+        <div class="user-profile">
+            <a href="login.html">
+                <img classe ="iconInicial"src="http://localhost/Owl-artist/public/assets/imagens/clperfil.png" alt="Perfil do Usuário">
+            </a>
+            
+            <div class="detalhesPerfil">
+                <a href="perfil.html"><div id="nome"><p>Convidado0909</p></div></a>
+                <a href="login.html">
+                <div id="tipoDeArte"><p>Seja um artista</p></div>
+                </a>
+            </div>
+            
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar">
+        </div>
+        </div>
+        <div class="icon-group">
+            <input type="checkbox" class="toggle"onclick="turnColorPage()"id="btnTurnMode"type="button">
+           <a href=""><img class="icon" src="http://localhost/Owl-artist/public/assets/suporte.png" alt="Ícone 1"></a>
+            <a href=""><img class="icon" src="http://localhost/Owl-artist/public/assets/criar.png" alt="Ícone 2"></a>
+            <a href="configuracoes.html"><img class="icon" src="http://localhost/Owl-artist/public/assets/config.png" alt="Ícone 3"></a>
+            <a href=""><img class="icon"src="http://localhost/Owl-artist/public/assets/menu.png" alt="Ícone 4"></a>
+            
+            
+        </div>
+        
+    </header>
     <div  class="image-container trasintionSuave">
         <img id="postP" class =" " src="http://localhost/Owl-artist/public/assets/R.jpg" alt="Imagem de Fundo">
         <div id="description" class="image-description">
