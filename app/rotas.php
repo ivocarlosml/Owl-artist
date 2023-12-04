@@ -6,4 +6,5 @@ Router::add('/','HomeController','index');
 Router::add('/login','LoginController','login');
 Router::add('/cadastro','LoginController','criarConta');
 Router::add('/configuracoes','Configuracoes','config');
+Router::add('/teste','HomeController', 'teste');
 

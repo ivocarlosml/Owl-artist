@@ -23,17 +23,15 @@ USE `mydb` ;
 CREATE TABLE IF NOT EXISTS `mydb`.`usuario` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NULL,
-  `cargo` VARCHAR(45) NULL,
   `email` VARCHAR(45) NULL,
   `senha` VARCHAR(100) NULL,
   `biografia` VARCHAR(200) NULL,
   `fotoPerfil` VARCHAR(200) NULL,
-  `premium` TINYINT NULL,
-  `admin` TINYINT NULL,
+  `selo` TINYINT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
-
+drop table usuario;
 -- -----------------------------------------------------
 -- Table `mydb`.`publicacao`
 -- -----------------------------------------------------
