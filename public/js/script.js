@@ -5,7 +5,7 @@ let i = 0;
 setInterval(function(){
     
     let listaDeposts = [
-        "assets/R.jpg",
+        "http://localhost/Owl-artist/public/assets/R.jpg",
         
         "https://wallpapercave.com/wp/wp9376389.jpg",
 

@@ -33,7 +33,7 @@
             <input type="checkbox" class="toggle"onclick="turnColorPage()"id="btnTurnMode"type="button">
            <a href=""><img class="icon" src="http://localhost/Owl-artist/public/assets/suporte.png" alt="Ícone 1"></a>
             <a href=""><img class="icon" src="http://localhost/Owl-artist/public/assets/criar.png" alt="Ícone 2"></a>
-            <a href="configuracoes.html"><img class="icon" src="http://localhost/Owl-artist/public/assets/config.png" alt="Ícone 3"></a>
+            <a href="configuracoes.view.php"><img class="icon" src="http://localhost/Owl-artist/public/assets/config.png" alt="Ícone 3"></a>
             <a href=""><img class="icon"src="http://localhost/Owl-artist/public/assets/menu.png" alt="Ícone 4"></a>
             
             
