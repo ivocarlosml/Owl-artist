@@ -31,7 +31,6 @@ CREATE TABLE IF NOT EXISTS `mydb`.`usuario` (
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
-drop table usuario;
 -- -----------------------------------------------------
 -- Table `mydb`.`publicacao`
 -- -----------------------------------------------------
