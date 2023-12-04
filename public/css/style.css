@@ -36,11 +36,11 @@ a{
 }
 .money{
     display: flex;
-
+    justify-content: center;
     align-items: center;
-    background-color: #0e08d2;
+    font-size: larger;
     flex-direction: column;
-    width: 200px;
+    width:70px;
 
 }
 .money p{
@@ -111,6 +111,15 @@ a{
     width: 100%;
     height: 50px;
     margin-right: 20px;
+    
+    
+    padding: 0.3rem;
+    object-fit:contain;
+}
+.iconM {
+    width: 100%;
+    height: 50px;
+    margin-left: 20px;
     
     
     padding: 0.3rem;

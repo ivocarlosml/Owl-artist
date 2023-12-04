@@ -33,7 +33,7 @@ function turnColorPage(){
     textoComSombra.style.color = "black";
     footer.style.backgroundColor="#f2f2f2";
     footer.style.color="black";
-   suporteIcon.src ="http://localhost/Owl-artist/public/assets/suporteB.png";
+   //suporteIcon.src ="http://localhost/Owl-artist/public/assets/suporteB.png";
    addIcon.src ="http://localhost/Owl-artist/public/assets/criarB.png";
    ajudaIcon.src ="http://localhost/Owl-artist/public/assets/configB.png";
    homeIcon.src ="http://localhost/Owl-artist/public/assets/homeB.png";
@@ -62,7 +62,7 @@ function turnColorPage(){
         textoComSombra.style.color = "#f2f2f2";
         footer.style.backgroundColor="black";
         footer.style.color="#f2f2f2";
-       suporteIcon.src ="http://localhost/Owl-artist/public/assets/suporte.png";
+       //suporteIcon.src ="http://localhost/Owl-artist/public/assets/suporte.png";
        addIcon.src ="http://localhost/Owl-artist/public/assets/criar.png";
        ajudaIcon.src ="http://localhost/Owl-artist/public/assets/config.png";
        homeIcon.src ="http://localhost/Owl-artist/public/assets/menu.png";

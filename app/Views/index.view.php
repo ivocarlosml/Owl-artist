@@ -32,8 +32,8 @@
         <div class="icon-group">
             <input type="checkbox" class="toggle"onclick="turnColorPage()"id="btnTurnMode"type="button">
 
-           <a href=""><img class="icon" src="http://localhost/Owl-artist/public/assets/vincentcoin.png" alt="Ícone 1"></a>
-           
+           <a href=""><img class="iconM" src="http://localhost/Owl-artist/public/assets/vincentcoin.png" alt="Ícone 1"></a>
+
            <div class="money">
             <p>450$</p>
            </div>
@@ -42,7 +42,7 @@
 
             <a href="http://localhost/Owl-artist/configuracoes"><img class="icon" src="http://localhost/Owl-artist/public/assets/config.png" alt="Ícone 3"></a>
 
-            <a href=""><img class="icon"src="http://localhost/Owl-artist/public/assets/menu.png" alt="Ícone 4"></a>
+            <a style="border-radius:50%;" href=""><img class="icon"src="http://localhost/Owl-artist/public/assets/owllogo.jpeg" alt="Ícone 4"></a>
             
             
         </div>
