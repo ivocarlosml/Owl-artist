@@ -34,6 +34,18 @@ a{
     text-decoration: none;
     display: block;
 }
+.money{
+    display: flex;
+
+    align-items: center;
+    background-color: #0e08d2;
+    flex-direction: column;
+    width: 200px;
+
+}
+.money p{
+    color: #fff;
+}
 .detalhesPerfil{
     display: flex;
     flex-direction: column;
