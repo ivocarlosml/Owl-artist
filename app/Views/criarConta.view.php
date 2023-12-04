@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OWL - Cadastro</title>
-<link rel="stylesheet" href="css/cadastrologin.css">
-<link rel="stylesheet" href="css/efects.css">
+<link rel="stylesheet" href="http://localhost/Owl-artist/public/css/cadastrologin.css">
+<link rel="stylesheet" href="http://localhost/Owl-artist/public/css/efects.css">
 </head>
 <body>
     <div class="container">
             <img class="" id="postP" src="http://localhost/Owl-artist/public/assets/R.jpg" alt="" srcset="">
             <div class="container-logcad">
-                <img src="assets/imagens/clperfil.png" alt="logo" class="logcad">
+                <img src="http://localhost/Owl-artist/public/assets/imagens/clperfil.png" alt="logo" class="logcad">
                 <h1>Bem-vindo a OWL</h1>
                 <div class="redes-logcad"> 
                     <div class="gf-logcad"id="gg">
@@ -56,6 +56,6 @@
                 
             </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="http://localhost/Owl-artist/public/js/script.js"></script>
 </body>
 </html>

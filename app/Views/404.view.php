@@ -1,4 +1,10 @@
+
 <?php
 componente('topo');
-    echo "<br><br><br><br><br><br><br><h1>erro 404- pagina não encontrada</h1>" ;
-componente('rodape');
+?>
+<div id='erroMsg'>
+            <div  id='description' class='errorApp'>
+                </strong>Erro 404- pagina não encontrada</strong>
+            </div>" ;
+    echo    "<img src='http://localhost/Owl-artist/public/assets/notfound.png' alt='coruja  chorando' srcset=''width='500'heigth='500'>
+    </div>

@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?=css('style')?>">
-    <link rel="stylesheet" href="<?=css('cadastrologin')?>">
-    <link rel="stylesheet" href="<?=css('configuracoes')?>">
-    <link rel="stylesheet" href="<?=css('dimensionamento')?>">
-    <link rel="stylesheet" href="<?=css('perfil')?>">
+    <link rel="stylesheet" href="<?=css('style')?>"> 
     <link rel="stylesheet" href="<?=css('botaoThemeBw')?>">
     <link rel="stylesheet" href="<?=css('efects')?>">
     <title>OWl - Artes</title>

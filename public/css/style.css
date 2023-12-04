@@ -957,3 +957,10 @@ cursor: pointer;
     width: 95%;
     
 }
+#erroMsg {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
