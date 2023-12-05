@@ -22,8 +22,8 @@
                 </a>
 
              <div class="itens">
-                <a href="index.html" class="linkCasa" id="casa" >
-                    <img src="http://localhost/Owl-artist/public/assets/casaBrancaFormated.png" class="logos">
+                <a href="http://localhost/Owl-artist/" class="linkCasa" id="casa" >
+                    <img src="http://localhost/Owl-artist/public/assets/menu.png" class="logos">
                 </a>
             </div>
 
