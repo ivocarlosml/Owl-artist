@@ -11,7 +11,6 @@ class HomeController extends Controller{
         $this->view('index');
     }
 
-<<<<<<< Updated upstream
     //Insere um novo usuário
     public function teste() {
         $usuario = new Usuario;
@@ -78,9 +77,6 @@ class HomeController extends Controller{
             'fotoPerfil' => 'nenhuma foto de perfil',
             'selo' => 1
         ]);
-=======
-    
->>>>>>> Stashed changes
         
         echo "<pre>";
         var_dump($usuario->getProps());
