@@ -3,13 +3,9 @@ namespace OwlArtist\Core;
 class Router{
     protected static array $rotas = [];
 
-<<<<<<< Updated upstream
-    public static function get(String $rota, String $controller, String $acao){}
-=======
     public static function get(String $rota, String $controller, String $acao) {
         static::add($rota,$controller,$acao,'GET');
     }
->>>>>>> Stashed changes
 
     public static function post(String $rota, String $controller, String $acao) {
         static::add($rota,$controller,$acao,'POST');
