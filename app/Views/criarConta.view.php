@@ -27,7 +27,7 @@
                 
                 <h4>Cadastre-se</h4>
 
-                <form action="perfil.html" method="post">
+                <form action="perfil.html" method="POST" action="<?=linkrota('cadastrarconta')?>">
                     <label>Nome:</label>
                         <input type="text"  id="nome" name="nome" required placeholder="Corujinha">
                     

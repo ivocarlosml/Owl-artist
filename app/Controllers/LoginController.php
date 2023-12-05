@@ -7,7 +7,12 @@ class LoginController extends Controller{
     public function login(){
         $this->view('login');
     }
+
     public function criarConta(){
         $this->view('criarConta');
+    }
+
+    public function cadastrarconta(){
+        
     }
 }
