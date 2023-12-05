@@ -42,7 +42,9 @@
 
             <a href="http://localhost/Owl-artist/configuracoes"><img class="icon" src="http://localhost/Owl-artist/public/assets/config.png" alt="Ícone 3"></a>
 
-            <a id="logoINBar"style="border-radius:50%;" href=""><img class=" "src="http://localhost/Owl-artist/public/assets/owllogo.jpeg" alt="Ícone 4"></a>
+            <a id="logoINBar" href="">
+                <img class="logoINBar"src="http://localhost/Owl-artist/public/assets/owllogo.jpeg" alt="Ícone 4">
+            </a>
             
             
         </div>
