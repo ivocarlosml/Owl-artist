@@ -36,4 +36,13 @@ setInterval(function(){
     }
     postsPrincipais.classList.toggle('opacityAnimation'); 
 },3000);
+function toggleContainer() {
+    var container = document.getElementById("containerPostar");
+    if (container.style.display === "none" || container.style.display === "") {
+      container.style.display = "block";
+    } else {
+      container.style.display = "none";
+    }
+  }
+
 

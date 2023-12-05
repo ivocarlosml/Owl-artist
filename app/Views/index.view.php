@@ -38,7 +38,7 @@
             <p>450$</p>
            </div>
 
-            <a href=""><img class="icon" src="http://localhost/Owl-artist/public/assets/criar.png" alt="Ícone 2"></a>
+            <a onclick="toggleContainer()"><img class="icon" src="http://localhost/Owl-artist/public/assets/criar.png" alt="Ícone 2"></a>
 
             <a href="http://localhost/Owl-artist/configuracoes"><img class="icon" src="http://localhost/Owl-artist/public/assets/config.png" alt="Ícone 3"></a>
 
@@ -50,6 +50,24 @@
         </div>
         
     </header>
+    <div id="containerPostar"class="containerPostar" >
+        <div class="containerParaImg">
+            <img id="imagemPraPostar"src="https://www.ahnegao.com.br/wp-content/uploads/2013/08/sailor.jpg" alt="" srcset="">
+        </div>
+        <div id="infosPost">
+        <label class="tituloCad"for="">Descrição da Arte
+        <input  class="InputTexto"id="descricaoImgP"type="text">
+        </label>
+        <label class="tituloCad"for="">hastags
+        
+        <input class="InputTexto" id="hastag"type="text">
+        <button class="btnAbaPostar">postar</button>
+        <button class="btnAbaPostar">cancelar</button>
+        </label>
+        
+        </div>
+        
+    </div>
     <div  class="image-container trasintionSuave">
         <img id="postP" class =" " src="http://localhost/Owl-artist/public/assets/R.jpg" alt="Imagem de Fundo">
         <div id="description" class="image-description">
