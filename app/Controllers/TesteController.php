@@ -1,32 +1,23 @@
 <?php
-namespace OwlArtist\Controllers;
 
-use OwlArtist\Models\DAO\UsuariosDAO;
+namespace OwlArtist\Controllers;
 use OwlArtist\Core\Controller;
-use OwlArtist\Core\Database;
+use OwlArtist\Models\DAO\UsuarioDAO;
 use OwlArtist\Models\Entities\Usuario;
 
-class HomeController extends Controller{
-    public function index(){
-        $this->view('index');
-    }
-
-<<<<<<< Updated upstream
-    //Insere um novo usuário
+class TesteController extends Controller {
     public function teste() {
-        $usuario = new Usuario;
-        $usuario->nome = "Mariana";
-        $usuario->email = "mariana@ifba.edu.br";
-        $usuario->senha = "132123";
-        $usuario->biografia = "Thanks Everybody!!!";
-        $usuario->fotoPerfil = "";
+        $usuario = new Usuario();
+        $usuario->nome = "Astrogildo";
+        $usuario->email = "astrogildo@ifba.edu.br";
+        $usuario->senha = "123456";
+        $usuario->biografia = "só fumo!";
+        $usuario->fotoPerfil = "nenhuma foto de perfil";
         $usuario->selo = 1;
-
-
 
         UsuariosDAO::inserir( $usuario );
     }
-    //Seleciona todos
+
     public function teste2(){
        
         $usuarios =  UsuariosDAO::getAll();
@@ -37,7 +28,6 @@ class HomeController extends Controller{
         }
     }
 
-    //Seleciona 1 usuário
     public function teste3(){
        
         $usuario =  UsuariosDAO::getById(38);
@@ -45,18 +35,17 @@ class HomeController extends Controller{
         var_dump($usuario);
     }
 
-    //Modifica os dados do usuario
     public function teste4(){
        
-        $usuario =  UsuariosDAO::getById(31);
+        $usuario =  UsuariosDAO::getById(38);
         
-        $usuario->nome = "Pedravan Sebatião";
+        $usuario->nome = "Astrogildo da Silva";
 
         UsuariosDao::editar($usuario);
-
         echo "<pre>";
         var_dump($usuario);
     }
+
     public function teste5(){
        
         $usuario =  UsuariosDao::getById(38);
@@ -78,11 +67,5 @@ class HomeController extends Controller{
             'fotoPerfil' => 'nenhuma foto de perfil',
             'selo' => 1
         ]);
-=======
-    
->>>>>>> Stashed changes
-        
-        echo "<pre>";
-        var_dump($usuario->getProps());
     }
 }
