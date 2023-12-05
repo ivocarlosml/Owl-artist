@@ -11,20 +11,21 @@ class HomeController extends Controller{
         $this->view('index');
     }
 
+    //Insere um novo usuário
     public function teste() {
-        $usuario = new Usuario();
-        $usuario->nome = "Astrogildo";
-        $usuario->email = "astrogildo@ifba.edu.br";
-        $usuario->senha = "123456";
-        $usuario->biografia = "só fumo!";
-        $usuario->fotoPerfil = "nenhuma foto de perfil";
+        $usuario = new Usuario;
+        $usuario->nome = "Mariana";
+        $usuario->email = "mariana@ifba.edu.br";
+        $usuario->senha = "132123";
+        $usuario->biografia = "Thanks Everybody!!!";
+        $usuario->fotoPerfil = "";
         $usuario->selo = 1;
 
 
 
         UsuariosDAO::inserir( $usuario );
     }
-
+    //Seleciona todos
     public function teste2(){
        
         $usuarios =  UsuariosDAO::getAll();
@@ -35,6 +36,7 @@ class HomeController extends Controller{
         }
     }
 
+    //Seleciona 1 usuário
     public function teste3(){
        
         $usuario =  UsuariosDAO::getById(38);
@@ -42,13 +44,15 @@ class HomeController extends Controller{
         var_dump($usuario);
     }
 
+    //Modifica os dados do usuario
     public function teste4(){
        
-        $usuario =  UsuariosDAO::getById(38);
+        $usuario =  UsuariosDAO::getById(31);
         
-        $usuario->nome = "Astrogildo da Silva";
+        $usuario->nome = "Pedravan Sebatião";
 
         UsuariosDao::editar($usuario);
+
         echo "<pre>";
         var_dump($usuario);
     }
