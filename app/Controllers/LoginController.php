@@ -15,11 +15,8 @@ class LoginController extends Controller{
     }
 
     public function cadastrarconta(){
-        
         $usuario = new Usuario($this->post());
-        $usuario->cargo = 1;
-
-        $mensagem = "Usuario {$usuario->nome} foi cadastrado com sucesso!";
+        $usuario->cargo = '1';
 
         var_dump(UsuariosDAO::inserir($usuario));
     }
