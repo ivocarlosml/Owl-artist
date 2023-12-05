@@ -27,7 +27,7 @@
             
             <h4>Entrar</h4>
 
-            <form action="index.html" method="post">
+            <form action="http://localhost/Owl-artist/" method="post">
                 
                 <label>E-mail:</label>
                 <input type="email" id="email" name="email" required placeholder="Owlartists2023@gmail.com">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="but">
                     <button class="botoes" id="ce">Entrar</button>
-                    <a href="cadastro.html" class="botoes" id="v">Voltar</a>
+                    <a href="http://localhost/Owl-artist/criarconta" class="botoes" id="v">Voltar</a>
                 </div>
             </form>
         </div>

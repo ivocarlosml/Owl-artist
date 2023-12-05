@@ -49,7 +49,7 @@
                     </div>
                     <div class="but">
                     <button  class="botoes" id="ce">Cadastrar</button>
-                    <a href="login.html"class="botoes" id="v">Voltar</a>
+                    <a href="http://localhost/Owl-artist/login"class="botoes" id="v">Voltar</a>
                     </div>
                 </form>
 
