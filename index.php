@@ -9,8 +9,8 @@ require __DIR__."/app/config.php";
 require __DIR__."/app/Core/helper.php";
 
  $url = $_GET['url']??"";
- 
+ $metodoHttp = $_SERVER["REQUEST_METHOD"];
 
-Router::exec($url);
+Router::exec($url,$metodoHttp);
 
 

@@ -2,11 +2,11 @@
 
 use OwlArtist\Core\Router;
 
-Router::add('/','HomeController','index');
-Router::add('/login','LoginController','login');
-Router::add('/criarconta','LoginController','criarconta');
-Router::add('/cadastrarconta','LoginController','cadastrarconta');
-Router::add('/configuracoes','Configuracoes','config');
+Router::get('/','HomeController','index');
+Router::get('/login','LoginController','login');
+Router::get('/criarconta','LoginController','criarconta');
+Router::get('/configuracoes','Configuracoes','config');
+Router::post('/cadastrarconta','LoginController','cadastrarconta');
 
 /*
 Router::add('/teste','HomeController', 'teste');
