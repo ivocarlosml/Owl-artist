@@ -1,5 +1,7 @@
 <?php
 namespace OwlArtist\Controllers;
+use OwlArtist\Models\Entities\Usuario;
+use OwlArtist\Models\DAO\UsuariosDAO;
 
 use OwlArtist\Core\Controller;
 
@@ -13,6 +15,12 @@ class LoginController extends Controller{
     }
 
     public function cadastrarconta(){
-            var_dump($_POST);
+        
+        $usuario = new Usuario($this->post());
+        $usuario->cargo = 1;
+
+        $mensagem = "Usuario {$usuario->nome} foi cadastrado com sucesso!";
+
+        var_dump(UsuariosDAO::inserir($usuario));
     }
 }
