@@ -3,7 +3,7 @@ namespace OwlArtist\Core;
 class Router{
     protected static array $rotas = [];
 
-    public static function get(String $rota, String $controller, String $acao)
+    public static function get(String $rota, String $controller, String $acao){}
 
     public static function add(String $rota, String $controller, String $acao){
         //$rota = ltrim($rota,'/');
