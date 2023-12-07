@@ -18,6 +18,17 @@ class Usuario extends Entity{
     {
         $this->senha= password_hash($valor,PASSWORD_DEFAULT);
     }
+
+    public static function getRegras():array
+    {
+        return [
+            'nome'=> 'obrigatorio|maiorque:3',
+            'email'=> 'obrigatorio|email',
+            'senha'=> 'obrigatorio|maiorque:5',
+            'telefone'=> 'obrigatorio',
+            'termosdeuso'=> 'obrigatorio'
+        ];
+    }
     
 
 }

@@ -27,6 +27,8 @@
             
             <h4>Entrar</h4>
 
+            <?=flash();?>
+
             <form action="http://localhost/Owl-artist/" method="post">
                 
                 <label>E-mail:</label>
