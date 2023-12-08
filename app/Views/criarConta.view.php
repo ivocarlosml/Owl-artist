@@ -28,6 +28,7 @@
                 
                 <h4>Cadastre-se</h4>
                 <?=flash()?>
+                
                 <form method="POST" action="<?=linkrota('cadastrarconta')?>">
                     <label>Nome:</label>
                         <input type="text"  id="nome" name="nome"  placeholder="Corujinha" value="<?=getValue('nome')?>" 
@@ -50,7 +51,7 @@
                     </div>
                     <div class="but">
                     <button  class="botoes" id="ce">Cadastrar</button>
-                    <a href="http://localhost/Owl-artist/login"class="botoes" id="v">Voltar</a>
+                    <a href="<?=linkrota('criarconta')?>"class="botoes" id="v">Voltar</a>
                     </div>
                 </form>
 

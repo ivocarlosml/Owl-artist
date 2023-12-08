@@ -18,17 +18,40 @@ class Usuario extends Entity{
     {
         $this->senha= password_hash($valor,PASSWORD_DEFAULT);
     }
+    
+    public function autentica(string $senha)
+    {
+        if(password_verify($senha,$this->senha))
+        {
+            $_SESSION['__usuario'] = $this->id;
+            $_SESSION['__logado'] = true;
 
-    public static function getRegras():array
+            return true;
+        }
+
+        return false;
+    }
+
+
+    public static function getRegras() :array
     {
         return [
-            'nome'=> 'obrigatorio|maiorque:3',
-            'email'=> 'obrigatorio|email',
-            'senha'=> 'obrigatorio|maiorque:5',
-            'telefone'=> 'obrigatorio',
-            'termosdeuso'=> 'obrigatorio'
+            'nome' => 'obrigatorio|maiorque:4',
+            'email' => 'obrigatorio|email',
+            'senha' => 'obrigatorio',
+            'telefone' => 'obrigatorio|maiorque:5',
+            'termosdeuso' => 'obrigatorio'
         ];
     }
-    
+
+    public static function getLoginRegras() :array
+    {
+        return [
+            'login' => 'obrigatorio',
+            'senha' => 'obrigatorio'
+        ];
+    }
+
+
 
 }

@@ -23,6 +23,7 @@ class Validator
                     $regra = $pedacos[0];  
                     $parametros[] = $pedacos[1];
                 }
+                
                 if(method_exists(__CLASS__,$regra)){
                     call_user_func_array([__CLASS__,$regra],$parametros);
                 }

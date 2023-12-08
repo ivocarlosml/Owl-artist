@@ -5,7 +5,7 @@ const URL_BASE = "http://localhost/Owl-artist/";
 
 const DB = [
     'servidor' => "localhost",
-    'banco' => "mydb",
+    'banco' => "bancoowl",
     'usuario' => "root",
     'senha' => ""
 ];
