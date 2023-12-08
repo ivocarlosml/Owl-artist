@@ -10,7 +10,7 @@ use OwlArtist\Models\Entities\Usuario;
 
 class UsuariosDAO extends DAO{
 
-    protected static string $tabela = "usuario";
+    protected static string $tabela = "usuarios";
     protected static string $classe = Usuario::class;
     
 

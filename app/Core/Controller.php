@@ -10,11 +10,13 @@ abstract class Controller{
         $this->getVars = $_GET ?? [];
     }
 
-    protected function view(String $arquivo,array $dados=[]){
+    protected function view(String $arquivo,array $dados=[])
+    {
+        extract($dados);
         require PASTA_VIEW."{$arquivo}.view.php";
     }
 
-    protected function post(string $nome = null) {
+    protected function post(?string $nome = null) {
         if(is_null($nome)) {
             return $this->postVars;
         }
@@ -25,7 +27,7 @@ abstract class Controller{
         return null;
     }
 
-    protected function get(string $nome = null) {
+    protected function get(?string $nome = null) {
         if(is_null($nome)) {
             return $this->getVars;
         }
@@ -46,9 +48,13 @@ abstract class Controller{
         }
     }
 
-    public function all() {
+    public function all() 
+    {
+
+
         $inputs = array_merge($this->postVars,$this->getVars);
         return $inputs;
+
     }
     
 }

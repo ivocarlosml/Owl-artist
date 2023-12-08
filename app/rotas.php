@@ -5,8 +5,9 @@ use OwlArtist\Core\Router;
 Router::get('/','HomeController','index');
 Router::get('/login','LoginController','login');
 Router::get('/criarconta','LoginController','criarconta');
+Router::get('/cadastrarconta','LoginController','cadastrarconta');
 Router::get('/configuracoes','Configuracoes','config');
-Router::post('/cadastrarconta','LoginController','cadastrarconta');
+Router::post('/autentica','LoginController','autentica');
 
 /*
 Router::add('/teste','HomeController', 'teste');

@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="http://localhost/Owl-artist/public/css/efects.css">
 </head>
 <body>
+
     <div class="container">
             <img class="" id="postP" src="http://localhost/Owl-artist/public/assets/R.jpg" alt="" srcset="">
             <div class="container-logcad">
@@ -26,30 +27,31 @@
                 <hr>
                 
                 <h4>Cadastre-se</h4>
-
+                <?=flash()?>
+                
                 <form method="POST" action="<?=linkrota('cadastrarconta')?>">
                     <label>Nome:</label>
-                        <input type="text"  id="nome" name="nome" required placeholder="Corujinha">
-                    
+                        <input type="text"  id="nome" name="nome"  placeholder="Corujinha" value="<?=getValue('nome')?>" 
+                    >
                     <label>E-mail:</label>
-                        <input type="email" id="email" name="email" required placeholder="Owlartists2023@gmail.com">
+                        <input type="email" id="email" name="email" placeholder="Owlartists2023@gmail.com" value="<?=getValue('email')?>">
                     
                     <label>Senha:</label>
-                       <input type="password" id="senha" name="senha" required placeholder="1234">
+                       <input type="password" id="senha" name="senha"  placeholder="1234" >
                     
                     <label>Telefone:</label>
-                        <input type="tel"  id="telefone" name="telefone" required placeholder="+55 77 987654321">
+                        <input type="tel"  id="telefone" name="telefone"  placeholder="+55 77 999999999" value="<?=getValue('telefone')?>">
                     
                     <div class="termos">
                             <div class="term">
-                                <input type="checkbox" id="concordo" name="concordo" required>
+                                <input type="checkbox" id="concordo" name="termosdeuso" value = 1 <?=checked('termosdeuso',1)?>>
                                 <a>Ao clicar você concorda com os  termos de uso da Owl Apps</a>
                             </div>
                             <a href="login.html" id="esqueceu"> Já é cadastrado? Clique Aqui </a>
                     </div>
                     <div class="but">
                     <button  class="botoes" id="ce">Cadastrar</button>
-                    <a href="http://localhost/Owl-artist/login"class="botoes" id="v">Voltar</a>
+                    <a href="<?=linkrota('criarconta')?>"class="botoes" id="v">Voltar</a>
                     </div>
                 </form>
 

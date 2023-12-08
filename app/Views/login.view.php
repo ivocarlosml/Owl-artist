@@ -27,24 +27,26 @@
             
             <h4>Entrar</h4>
 
-            <form action="http://localhost/Owl-artist/" method="post">
+            <?=flash();?>
+
+            <form action="<?=linkrota('autentica')?>" method="POST">
                 
                 <label>E-mail:</label>
-                <input type="email" id="email" name="email" required placeholder="Owlartists2023@gmail.com">
+                <input type="email" id="email" name="email"  placeholder="Owlartists2023@gmail.com"  value="<?=getValue('email')?>"  >
                 
                 <label>Senha:</label>
-                <input type="password" id="senha" name="senha" required placeholder="1234">
+                <input type="password" id="senha" name="senha" placeholder="123456"  value="<?=getValue('senha')?>" >
         
                 <div class="termos">
                     <div class="term">
-                        <input type="checkbox" id="concordo" name="concordo" required>
+                        <input type="checkbox" id="concordo" name="concordo"  value="<?=getValue('senha')?>"  >
                         <a>Ao clicar você concorda com os termos de uso da Owl Apps</a>
                     </div>
                     <a href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Desqueceu%2Ba%2Bsenha%26oq%3Desquceu%2Ba%2B%26aqs%3Dchrome.1.69i57j0i13i512l9.4037j0j9%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAlAAQ&hl=pt-BR&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S218608074%3A1692923971405584" id="esqueceu"> Esqueceu a senha? Clique Aqui </a>
                 </div>
                 <div class="but">
                     <button class="botoes" id="ce">Entrar</button>
-                    <a href="http://localhost/Owl-artist/criarconta" class="botoes" id="v">Voltar</a>
+                    <a href="<?=linkrota('criarconta')?>" class="botoes" id="v">Voltar</a>
                 </div>
             </form>
         </div>

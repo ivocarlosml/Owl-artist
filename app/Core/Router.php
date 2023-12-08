@@ -17,11 +17,16 @@ class Router{
         static :: $rotas[$rota] = [$controller,$acao,$metodo];
     }
 
-    public static function exec(string $url, string $metodoHTTP){
+    public static function exec(string $url, string $metodoHTTP)
+    {
         $url = "/".$url;
         $rotas = static::$rotas;
+
+
         if(array_key_exists($url,$rotas)){
 
+            [$controller,$metodo] = $rotas[$url];
+            static::carregarController($controller,$metodo);
             [$controller,$acao,$metodo] = $rotas[$url];
             if($metodo == $metodoHTTP){
                 static:: carregarController($controller,$acao);

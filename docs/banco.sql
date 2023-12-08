@@ -2,25 +2,23 @@
 -- Sun Dec  3 16:38:12 2023
 -- Model: New Model    Version: 1.0
 -- MySQL Workbench Forward Engineering
-
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema bancoowl
 -- -----------------------------------------------------
 
 -- -----------------------------------------------------
 -- Schema mydb
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `bancoowl` DEFAULT CHARACTER SET utf8 ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`usuario`
+-- Table `bancoOWL`.`usuarios`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`usuario` (
+CREATE TABLE IF NOT EXISTS `bancoowl`.`usuarios` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(45) NULL,
   `email` VARCHAR(45) NULL,
@@ -30,11 +28,10 @@ CREATE TABLE IF NOT EXISTS `mydb`.`usuario` (
   `selo` TINYINT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
-
 -- -----------------------------------------------------
 -- Table `mydb`.`publicacao`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`publicacao` (
+CREATE TABLE IF NOT EXISTS `bancoowl`.`publicacao` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `legenda` VARCHAR(45) NULL,
   `data` DATE NULL,
@@ -44,16 +41,16 @@ CREATE TABLE IF NOT EXISTS `mydb`.`publicacao` (
   INDEX `fk_publicacao_usuario_idx` (`usuario_id` ASC),
   CONSTRAINT `fk_publicacao_usuario`
     FOREIGN KEY (`usuario_id`)
-    REFERENCES `mydb`.`usuario` (`id`)
+    REFERENCES `bancoowl`.`usuarios` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`compra`
+-- Table `bancoOWL`.`compra`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `mydb`.`compra` (
+CREATE TABLE IF NOT EXISTS `bancoowl`.`compra` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `nContaBancaria` VARCHAR(45) NULL,
   `formaPagamento` VARCHAR(45) NULL,
@@ -64,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`compra` (
   INDEX `fk_compra_usuario1_idx` (`usuario_id` ASC),
   CONSTRAINT `fk_compra_usuario1`
     FOREIGN KEY (`usuario_id`)
-    REFERENCES `mydb`.`usuario` (`id`)
+    REFERENCES `bancoowl`.`usuarios` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;

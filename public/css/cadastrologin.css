@@ -50,6 +50,23 @@ img {
   justify-content: space-around;
 }
 
+.mensagem {
+    color:#ffffff;
+    display: flex;
+    border-radius: 5px;
+    align-items:center ;
+    padding: 0.4rem;
+    font-size: 10px;
+    font-family:Calibri, 'Trebuchet MS', sans-serif;
+    text-align:justify;
+}
+.sucesso{
+  background-color: #43c403;
+}
+.erro{
+  background-color: rgb(255, 8, 8);
+}
+
 /*--------------------------- ÁREA DE CADASTRO------------------------- */
 
 .container-logcad {
