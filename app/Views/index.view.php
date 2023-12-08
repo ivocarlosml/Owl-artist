@@ -9,6 +9,7 @@
     <title>OWl - Artes</title>
 </head>
 <body >
+<div  id="caixaDeBlur"class="caixaDeBlur"></div>
     <header id="header">
        
         <div class="trasintionSuave"id="divisor">
@@ -50,6 +51,8 @@
         </div>
         
     </header>
+
+
     <div id="containerPostar"class="containerPostar" >
         <div class="containerParaImg">
             <img id="imagemPraPostar"src="https://www.ahnegao.com.br/wp-content/uploads/2013/08/sailor.jpg" alt="" srcset="">
@@ -58,7 +61,7 @@
         <label class="tituloCad"for="">Descrição da Arte
         <input  class="InputTexto"id="descricaoImgP"type="text">
         </label>
-        <label class="tituloCad"for="">hastags
+        <label class="tituloCad"for="">hastags<br>
         
         <input class="InputTexto" id="hastag"type="text">
         <button class="btnAbaPostar">postar</button>

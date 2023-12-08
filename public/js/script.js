@@ -1,4 +1,5 @@
 let postsPrincipais = document.getElementById("postP");
+let caixaDeBlur = document.getElementById("caixaDeBlur");
 
 let i = 0;
 
@@ -39,9 +40,15 @@ setInterval(function(){
 function toggleContainer() {
     var container = document.getElementById("containerPostar");
     if (container.style.display === "none" || container.style.display === "") {
-      container.style.display = "block";
+      container.style.height = "80vh";
+      container.style.width = "60vw";
+      container.style.display = "flex";
+      caixaDeBlur.style.display = "flex";
     } else {
+      container.style.height = "0vh";
+      container.style.width = "0vw";
       container.style.display = "none";
+      caixaDeBlur.style.display = "none";
     }
   }
 
